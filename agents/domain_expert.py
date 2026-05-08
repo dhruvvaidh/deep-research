@@ -1,13 +1,16 @@
 """Domain Expert sub-agent: academic reasoning and cross-referencing of findings."""
 from __future__ import annotations
 
+import json
 from deepagents import CompiledSubAgent
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.agents import create_agent
 import os
 
 from graph.state import SubAgentState
-from prompts.research import RESEARCH_SYSTEM, RESEARCH_HUMAN
+from prompts.research import RESEARCH_HUMAN
+from prompts.subagents import RESEARCHER
+from tools.thinking import think
 from tools.arxiv_search import arxiv_search
 from tools.context_store import get_context_index, store_context, summarize_context
 from tools.tavily_search import tavily_search
@@ -20,17 +23,8 @@ EXPERT_TOOLS = [
     store_context,
     summarize_context,
     get_context_index,
+    think
 ]
-
-_SYSTEM = (
-    RESEARCH_SYSTEM
-    + "\n\nYou are a domain expert. Use arxiv_search for peer-reviewed literature, "
-    "wikipedia_search for background context, and tavily_search for recent developments. "
-    "After each heavy tool call, immediately use store_context(key, raw_output, description) "
-    "to persist the raw data off-context, then summarize_context(key) to get a compact summary. "
-    "Call get_context_index() at the start to see what other agents have already stored — "
-    "use summarize_context() to cross-reference their findings before drawing conclusions."
-)
 
 # Compiled react agent graph — exposes a 'messages' key in state (required by CompiledSubAgent)
 _llm = ChatGoogleGenerativeAI(
@@ -39,7 +33,7 @@ _llm = ChatGoogleGenerativeAI(
         project=os.environ['GOOGLE_PROJECT_ID'],
         vertexai=os.environ['GOOGLE_GENAI_USE_VERTEXAI']
     )
-_domain_expert_graph = create_agent(_llm, EXPERT_TOOLS, system_prompt=_SYSTEM)
+_domain_expert_graph = create_agent(_llm, EXPERT_TOOLS, system_prompt=RESEARCHER)
 
 # CompiledSubAgent spec — used as a tool by a parent deep agent, or invoked directly below
 domain_expert_subagent = CompiledSubAgent(
@@ -81,4 +75,17 @@ def domain_expert_node(state: SubAgentState) -> dict:
         findings = "\n".join(b["text"] for b in raw if isinstance(b, dict) and b.get("type") == "text")
     else:
         findings = raw
-    return {"findings": {task["workstream"]: findings}}
+    
+    thought = None
+    for message in result["messages"]:
+        if hasattr(message, "name") and message.name == "think":
+            raw_thought = message.content
+            if isinstance(raw_thought, str):
+                try:
+                    thought = json.loads(raw_thought)
+                except (json.JSONDecodeError, ValueError):
+                    thought = None
+            elif isinstance(raw_thought, dict):
+                thought = raw_thought
+            break
+    return {"findings": {task["workstream"]: findings}, "thought_log": [thought] if thought else []}

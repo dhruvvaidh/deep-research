@@ -16,7 +16,7 @@ from rich.markdown import Markdown
 from dotenv import load_dotenv
 
 load_dotenv()
-
+model_provider = "google"
 
 def _check_env() -> None:
     required = ["ANTHROPIC_API_KEY", "TAVILY_API_KEY"]

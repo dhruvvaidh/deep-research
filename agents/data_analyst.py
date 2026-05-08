@@ -1,16 +1,19 @@
 """Data Analyst sub-agent: executes Python code in a Daytona sandbox to analyse structured data."""
 from __future__ import annotations
 
+import json
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.agents import create_agent
 import os
 
 from graph.state import SubAgentState
-from prompts.research import RESEARCH_SYSTEM, RESEARCH_HUMAN
+from prompts.research import RESEARCH_HUMAN
+from prompts.subagents import DATA_ANALYST
 from tools.code_executor import code_executor
 from tools.context_store import get_context_index, store_context, summarize_context, save_dataset
 from tools.file_reader import file_reader
 from tools.yfinance_tool import yfinance_data
+from tools.thinking import think
 
 DATA_TOOLS = [
     code_executor,
@@ -20,24 +23,8 @@ DATA_TOOLS = [
     store_context,
     summarize_context,
     get_context_index,
+    think
 ]
-
-_SYSTEM = (
-    RESEARCH_SYSTEM
-    + "\n\nYou specialise in quantitative and financial analysis. Follow this workflow strictly:\n\n"
-    "1. **Fetch data** — use yfinance_data to pull market data. It automatically saves the raw "
-    "DataFrame as a CSV in the sandbox and returns the file path. Do NOT use the raw data in "
-    "your context — only use the returned CSV path.\n"
-    "2. **Analyse via code** — pass the CSV path to code_executor. Your Python code should read "
-    "the CSV from that path (e.g. `pd.read_csv('/home/daytona/artifacts/aapl_1y_ohlcv.csv')`) "
-    "and perform all computations. Never pass raw data directly in the code string.\n"
-    "3. **Store other datasets** — if you produce new tabular data (e.g. computed results), use "
-    "save_dataset(key, csv_string, description) to persist it and get back a path.\n"
-    "4. **Store text context** — for non-tabular results (web search output, text summaries), "
-    "call store_context(key, content, description) then summarize_context(key).\n"
-    "5. **Check existing data** — call get_context_index() first to see what other agents have "
-    "already stored before fetching new data."
-)
 
 
 def data_analyst_node(state: SubAgentState) -> dict:
@@ -65,7 +52,7 @@ def data_analyst_node(state: SubAgentState) -> dict:
         project=os.environ['GOOGLE_PROJECT_ID'],
         vertexai=os.environ['GOOGLE_GENAI_USE_VERTEXAI']
     )
-    agent = create_agent(llm, DATA_TOOLS, system_prompt=_SYSTEM)
+    agent = create_agent(llm, DATA_TOOLS, system_prompt=DATA_ANALYST)
     result = agent.invoke({"messages": [{"role": "user", "content": human_content}]})
 
     raw = result["messages"][-1].content
@@ -73,4 +60,17 @@ def data_analyst_node(state: SubAgentState) -> dict:
         findings = "\n".join(b["text"] for b in raw if isinstance(b, dict) and b.get("type") == "text")
     else:
         findings = raw
-    return {"findings": {task["workstream"]: findings}}
+    
+    thought = None
+    for message in result["messages"]:
+        if hasattr(message, "name") and message.name == "think":
+            raw_thought = message.content
+            if isinstance(raw_thought, str):
+                try:
+                    thought = json.loads(raw_thought)
+                except (json.JSONDecodeError, ValueError):
+                    thought = None
+            elif isinstance(raw_thought, dict):
+                thought = raw_thought
+            break
+    return {"findings": {task["workstream"]: findings}, "thought_log": [thought] if thought else []}

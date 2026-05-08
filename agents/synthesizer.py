@@ -11,8 +11,10 @@ from langchain.agents import create_agent
 from graph.state import ResearchState
 from prompts.synthesize import SYNTHESIZE_SYSTEM, SYNTHESIZE_HUMAN
 from tools.context_store import get_context_index
+from tools.artifact_store import read_artifact
+from tools.thinking import gather_thoughts
 
-SYNTH_TOOLS = [get_context_index]
+SYNTH_TOOLS = [gather_thoughts, get_context_index, read_artifact]
 
 OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "..", "outputs")
 
@@ -21,29 +23,15 @@ def synthesizer_node(state: ResearchState) -> dict:
     """LangGraph node — interrogates the context store then writes the final report.
 
     Process:
-    1. Formats the research plan (workstreams) and specialist findings for the prompt.
-    2. Runs a ReAct agent that calls get_context_index() and summarize_context() to
-       ground conclusions in raw artifact evidence before writing.
-    3. Saves the final report to outputs/<timestamp>.md.
+    1. Calls gather_thoughts to retrieve the full thought_log from state.
+    2. Uses thoughts to reason about which artifacts are relevant.
+    3. Reads context_manifest to get the index of available artifacts.
+    4. Selectively calls read_artifact only on relevant files.
+    5. Saves the final report to outputs/<timestamp>.md.
     """
-    workstreams: list[dict] = state.get("workstreams") or []
-    findings: dict[str, str] = dict(state.get("findings") or {})
-
-    workstreams_text = "\n\n".join(
-        f"**{ws['workstream']}** ({ws['agent_type']})\n"
-        f"Goal: {ws['description']}\n"
-        f"Query: {ws['query']}"
-        for ws in workstreams
-    )
-
-    findings_text = "\n\n".join(
-        f"### {workstream}\n{content}" for workstream, content in findings.items()
-    )
-
     human_content = SYNTHESIZE_HUMAN.format(
         question=state["question"],
-        workstreams_text=workstreams_text,
-        findings_text=findings_text,
+        thought_log=state.get("thought_log", []),
     )
 
     llm = ChatGoogleGenerativeAI(
