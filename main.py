@@ -70,8 +70,8 @@ def main() -> None:
     console.print(md)
     print("=" * 72 + "\n")
     print("[deep-research] Done. Report saved to outputs/")
-    print("[deep-research] Destroying Sandbox")
-    destroy_sandbox(sandbox,daytona_client)
+    #print("[deep-research] Destroying Sandbox")
+    #destroy_sandbox(sandbox,daytona_client)
 
 
 if __name__ == "__main__":

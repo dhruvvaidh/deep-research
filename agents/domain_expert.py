@@ -16,15 +16,21 @@ from tools.context_store import get_context_index, store_context, summarize_cont
 from tools.tavily_search import tavily_search
 from tools.wikipedia import wikipedia_search
 
-EXPERT_TOOLS = [
-    arxiv_search,
-    wikipedia_search,
-    tavily_search,
-    store_context,
-    summarize_context,
-    get_context_index,
-    think
-]
+from langchain.agents.middleware import wrap_tool_call
+from langchain.messages import ToolMessage
+
+
+@wrap_tool_call
+def handle_tool_errors(request, handler):
+    """Handle tool execution errors with custom messages."""
+    try:
+        return handler(request)
+    except Exception as e:
+        
+        return ToolMessage(
+            content=f"Tool error: Please check your input and try again. ({str(e)})",
+            tool_call_id=request.tool_call["id"]
+        )
 
 # Compiled react agent graph — exposes a 'messages' key in state (required by CompiledSubAgent)
 _llm = ChatGoogleGenerativeAI(
@@ -33,18 +39,6 @@ _llm = ChatGoogleGenerativeAI(
         project=os.environ['GOOGLE_PROJECT_ID'],
         vertexai=os.environ['GOOGLE_GENAI_USE_VERTEXAI']
     )
-_domain_expert_graph = create_agent(_llm, EXPERT_TOOLS, system_prompt=RESEARCHER)
-
-# CompiledSubAgent spec — used as a tool by a parent deep agent, or invoked directly below
-domain_expert_subagent = CompiledSubAgent(
-    name="domain_expert",
-    description=(
-        "Academic and cross-domain research specialist. Searches arxiv, Wikipedia, and the web. "
-        "Calls get_context_index() first to discover what other agents have already stored "
-        "before beginning research."
-    ),
-    runnable=_domain_expert_graph,
-)
 
 
 def domain_expert_node(state: SubAgentState) -> dict:
@@ -64,6 +58,26 @@ def domain_expert_node(state: SubAgentState) -> dict:
         workstream=task["workstream"],
         description=task["description"],
         query=task["query"],
+    )
+
+    EXPERT_TOOLS = [arxiv_search,wikipedia_search,tavily_search,
+                    store_context,summarize_context,get_context_index,think]
+
+    _domain_expert_graph = create_agent(model = _llm,
+                                        tools= EXPERT_TOOLS, 
+                                        system_prompt=RESEARCHER, 
+                                        middleware=[handle_tool_errors]
+                                        )
+
+    # CompiledSubAgent spec — used as a tool by a parent deep agent, or invoked directly below
+    domain_expert_subagent = CompiledSubAgent(
+        name="domain_expert",
+        description=(
+            "Academic and cross-domain research specialist. Searches arxiv, Wikipedia, and the web. "
+            "Calls get_context_index() first to discover what other agents have already stored "
+            "before beginning research."
+        ),
+        runnable=_domain_expert_graph,
     )
 
     result = domain_expert_subagent["runnable"].invoke(

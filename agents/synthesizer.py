@@ -25,7 +25,7 @@ def synthesizer_node(state: ResearchState) -> dict:
     Process:
     1. Calls gather_thoughts to retrieve the full thought_log from state.
     2. Uses thoughts to reason about which artifacts are relevant.
-    3. Reads context_manifest to get the index of available artifacts.
+    3. Reads context_manifest by calling get_context_index to get the index of available artifacts.
     4. Selectively calls read_artifact only on relevant files.
     5. Saves the final report to outputs/<timestamp>.md.
     """
