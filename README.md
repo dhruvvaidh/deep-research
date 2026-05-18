@@ -1,4 +1,4 @@
-# Deep Research Agent
+# Argus - a Deep Research Agent
 
 A multi-agent deep research pipeline built with **LangGraph**, **LangChain**, and **LangChain Deep Agents**, leveraging parallel specialist agents and sandboxed execution via Daytona.
 
