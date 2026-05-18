@@ -35,7 +35,7 @@ def handle_tool_errors(request, handler):
 # Compiled react agent graph — exposes a 'messages' key in state (required by CompiledSubAgent)
 _llm = ChatGoogleGenerativeAI(
         model=os.environ['MODEL_NAME'],
-        api_key=os.environ['GEMINI_API_KEY'],
+        api_key=os.environ['GOOGLE_API_KEY'],
         project=os.environ['GOOGLE_PROJECT_ID'],
         vertexai=os.environ['GOOGLE_GENAI_USE_VERTEXAI']
     )

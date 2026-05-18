@@ -5,7 +5,8 @@ from __future__ import annotations
 import os
 from datetime import datetime
 
-from langchain_google_genai import ChatGoogleGenerativeAI
+from utils import get_llm
+import config
 from langchain.agents import create_agent
 
 from graph.state import ResearchState
@@ -34,11 +35,9 @@ def synthesizer_node(state: ResearchState) -> dict:
         thought_log=state.get("thought_log", []),
     )
 
-    llm = ChatGoogleGenerativeAI(
-        model=os.environ['MODEL_NAME'],
-        api_key=os.environ['GEMINI_API_KEY'],
-        project=os.environ['GOOGLE_PROJECT_ID'],
-        vertexai=os.environ['GOOGLE_GENAI_USE_VERTEXAI']
+    llm = get_llm(
+        model_provider=config.MODEL_PROVIDER,
+        model_name=config.MODEL_NAME,
     )
     agent = create_agent(llm, SYNTH_TOOLS, system_prompt=SYNTHESIZE_SYSTEM)
     result = agent.invoke({"messages": [{"role": "user", "content": human_content}]})

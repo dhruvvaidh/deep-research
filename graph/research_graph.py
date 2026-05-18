@@ -64,7 +64,4 @@ def build_graph():
     return g.compile()
 
 
-# Module-level compiled graph — import and invoke directly:
-#   from graph.research_graph import graph
-#   result = graph.invoke({"question": "..."})
 graph = build_graph()

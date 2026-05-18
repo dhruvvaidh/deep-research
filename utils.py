@@ -1,4 +1,5 @@
 from dataclasses import dataclass, field
+from langchain_core.language_models import BaseChatModel
 from datetime import datetime
 import os
 
@@ -87,8 +88,7 @@ def _verify_api_key(provider: str, api_key: str) -> None:
                 raise LLMAuthenticationError(
                     provider="Google",
                     env_var=ENV_VARS[provider],
-                    reason="API key was rejected by Google Generative AI.",
-                    original_exception=e,
+                    reason="API key was rejected by Google Generative AI."
                 )
 
         case "openai":
@@ -114,3 +114,77 @@ def _verify_api_key(provider: str, api_key: str) -> None:
                     reason="Token was rejected by HuggingFace Hub.",
                     original_exception=e,
                 ) from e
+            
+
+def get_llm(model_provider: str, model_name: str = None, **kwargs) -> BaseChatModel:
+    provider = model_provider.lower().replace(" ", "_")
+
+    if provider not in ENV_VARS:
+        raise LLMAuthenticationError(
+            f"Unknown provider '{model_provider}'. "
+            f"Supported: {list(ENV_VARS.keys())}"
+        )
+
+    api_key = _get_api_key(provider)
+    _verify_api_key(provider, api_key)
+
+    match provider:
+
+        case "anthropic":
+            from langchain_anthropic import ChatAnthropic
+            try:
+                return ChatAnthropic(
+                    model=model_name or "claude-sonnet-4-20250514",
+                    api_key=api_key,
+                    **kwargs
+                )
+            except:
+                raise LLMAuthenticationError(
+                    provider=provider,
+                    reason="Invalid Model Name"
+                )
+
+
+        case "google":
+            from langchain_google_genai import ChatGoogleGenerativeAI
+            try:
+                return ChatGoogleGenerativeAI(
+                    model=model_name or "gemini-2.5-flash",
+                    google_api_key=api_key,
+                    project=os.environ['GOOGLE_PROJECT_ID'],
+                    vertexai=os.environ['GOOGLE_GENAI_USE_VERTEXAI']
+                )
+            except:
+                raise LLMAuthenticationError(
+                    provider=provider,
+                    reason="Invalid Model Name or Project needs to be configured on GCP"
+                )
+
+        case "openai":
+            from langchain_openai import ChatOpenAI
+            try:
+                return ChatOpenAI(
+                    model=model_name or "gpt-4o",
+                    api_key=api_key,
+                    **kwargs
+                )
+            except:
+                raise LLMAuthenticationError(
+                    provider=provider,
+                    reason="Invalid Model Name"
+                )
+
+        case "huggingface":
+            from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
+            try:
+                endpoint = HuggingFaceEndpoint(
+                    repo_id=model_name or "mistralai/Mistral-7B-Instruct-v0.3",
+                    huggingfacehub_api_token=api_key,
+                    **kwargs
+                )
+                return ChatHuggingFace(llm=endpoint)
+            except:
+                raise LLMAuthenticationError(
+                    provider=provider,
+                    reason="Invalid Model Name or Repo ID"
+                )
