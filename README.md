@@ -2,8 +2,6 @@
 
 A multi-agent deep research pipeline built with **LangGraph**, **LangChain**, and **LangChain Deep Agents**, leveraging parallel specialist agents and sandboxed execution via Daytona.
 
-**Models Used:** Google Gemini 2.5 Flash · Claude Sonnet 4.6
-
 ---
 
 ## Table of Contents
