@@ -24,6 +24,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.tools import tool
 
 import tools.artifact_store as _artifact_store_module
+from utils import google_thinking_kwargs
 
 CONTEXT_DIR_PREFIX = "ctx_"
 MANIFEST_FILENAME = "context_manifest.json"
@@ -135,7 +136,8 @@ def summarize_context(key: str) -> str:
         model=os.environ['MODEL_NAME'],
         api_key=os.environ['GOOGLE_API_KEY'],
         project=os.environ['GOOGLE_PROJECT_ID'],
-        vertexai=os.environ['GOOGLE_GENAI_USE_VERTEXAI']
+        vertexai=os.environ['GOOGLE_GENAI_USE_VERTEXAI'],
+        **google_thinking_kwargs(),
     )
     response = llm.invoke(_SUMMARIZE_PROMPT.format(content=content))
     summary: str = response.content

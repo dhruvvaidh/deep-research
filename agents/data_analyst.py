@@ -14,6 +14,7 @@ from tools.context_store import get_context_index, store_context, summarize_cont
 from tools.file_reader import file_reader
 from tools.yfinance_tool import yfinance_data
 from tools.thinking import think
+from utils import google_thinking_kwargs
 
 DATA_TOOLS = [
     code_executor,
@@ -50,7 +51,8 @@ def data_analyst_node(state: SubAgentState) -> dict:
         model=os.environ['MODEL_NAME'],
         api_key=os.environ['GOOGLE_API_KEY'],
         project=os.environ['GOOGLE_PROJECT_ID'],
-        vertexai=os.environ['GOOGLE_GENAI_USE_VERTEXAI']
+        vertexai=os.environ['GOOGLE_GENAI_USE_VERTEXAI'],
+        **google_thinking_kwargs(),
     )
     agent = create_agent(llm, DATA_TOOLS, system_prompt=DATA_ANALYST)
     result = agent.invoke({"messages": [{"role": "user", "content": human_content}]})

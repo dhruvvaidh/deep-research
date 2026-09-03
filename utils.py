@@ -116,6 +116,24 @@ def _verify_api_key(provider: str, api_key: str) -> None:
                 ) from e
             
 
+def get_thinking_budget() -> int | None:
+    """Parse THINKING_BUDGET from the environment.
+
+    Only meaningful for Gemini models. 0 disables thinking, -1 enables dynamic
+    thinking (model decides), and a positive integer caps thinking tokens. Returns
+    None if unset, in which case the provider's own default applies.
+    See https://ai.google.dev/gemini-api/docs/thinking#set-budget
+    """
+    raw = os.getenv("THINKING_BUDGET", "").strip()
+    return int(raw) if raw else None
+
+
+def google_thinking_kwargs() -> dict:
+    """kwargs to splice into a ChatGoogleGenerativeAI(...) call to apply THINKING_BUDGET."""
+    budget = get_thinking_budget()
+    return {"thinking_budget": budget} if budget is not None else {}
+
+
 def get_llm(model_provider: str, model_name: str = None, **kwargs) -> BaseChatModel:
     provider = model_provider.lower().replace(" ", "_")
 
@@ -152,7 +170,8 @@ def get_llm(model_provider: str, model_name: str = None, **kwargs) -> BaseChatMo
                     model=model_name or "gemini-2.5-flash",
                     google_api_key=api_key,
                     project=os.environ['GOOGLE_PROJECT_ID'],
-                    vertexai=os.environ['GOOGLE_GENAI_USE_VERTEXAI']
+                    vertexai=os.environ['GOOGLE_GENAI_USE_VERTEXAI'],
+                    **google_thinking_kwargs(),
                 )
             except:
                 raise LLMAuthenticationError(

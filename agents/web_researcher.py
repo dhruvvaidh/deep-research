@@ -13,6 +13,7 @@ from tools.context_store import get_context_index, store_context, summarize_cont
 from tools.tavily_search import tavily_search
 from tools.web_scraper import web_scraper
 from tools.thinking import think
+from utils import google_thinking_kwargs
 
 WEB_TOOLS = [
     tavily_search,
@@ -47,7 +48,8 @@ def web_researcher_node(state: SubAgentState) -> dict:
         model=os.environ['MODEL_NAME'],
         api_key=os.environ['GOOGLE_API_KEY'],
         project=os.environ['GOOGLE_PROJECT_ID'],
-        vertexai=os.environ['GOOGLE_GENAI_USE_VERTEXAI']
+        vertexai=os.environ['GOOGLE_GENAI_USE_VERTEXAI'],
+        **google_thinking_kwargs(),
     )
     agent = create_agent(llm, WEB_TOOLS, system_prompt=WEB_RESEARCHER)
     result = agent.invoke({"messages": [{"role": "user", "content": human_content}]})

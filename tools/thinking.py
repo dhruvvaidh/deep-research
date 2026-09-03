@@ -9,12 +9,14 @@ from langchain.tools import tool
 from prompts.think import THINK_PROMPT
 from prompts.reflect import REFLECT_PROMPT
 from graph.state import ThoughtEntry
+from utils import google_thinking_kwargs
 
 llm = ChatGoogleGenerativeAI(
         model=os.environ['MODEL_NAME'],
         api_key=os.environ['GOOGLE_API_KEY'],
         project=os.environ['GOOGLE_PROJECT_ID'],
-        vertexai=os.environ['GOOGLE_GENAI_USE_VERTEXAI']
+        vertexai=os.environ['GOOGLE_GENAI_USE_VERTEXAI'],
+        **google_thinking_kwargs(),
     )
 
 

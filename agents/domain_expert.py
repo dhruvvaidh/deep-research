@@ -15,6 +15,7 @@ from tools.arxiv_search import arxiv_search
 from tools.context_store import get_context_index, store_context, summarize_context
 from tools.tavily_search import tavily_search
 from tools.wikipedia import wikipedia_search
+from utils import google_thinking_kwargs
 
 from langchain.agents.middleware import wrap_tool_call
 from langchain.messages import ToolMessage
@@ -37,7 +38,8 @@ _llm = ChatGoogleGenerativeAI(
         model=os.environ['MODEL_NAME'],
         api_key=os.environ['GOOGLE_API_KEY'],
         project=os.environ['GOOGLE_PROJECT_ID'],
-        vertexai=os.environ['GOOGLE_GENAI_USE_VERTEXAI']
+        vertexai=os.environ['GOOGLE_GENAI_USE_VERTEXAI'],
+        **google_thinking_kwargs(),
     )
 
 
