@@ -22,8 +22,10 @@ arxiv==2.4.1
 wikipedia==1.4.0
 yfinance==1.2.0
 beautifulsoup4==4.12.2
-requests==2.31.0
+requests==2.32.3
 
 # Utilities
-python-dotenv==0.21.0
+python-dotenv==1.0.1
 rich==13.3.5
+google-genai==1.75.0
+langsmith==0.12.1

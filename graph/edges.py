@@ -7,8 +7,8 @@ from __future__ import annotations
 
 from langgraph.types import Send
 
+import config
 from graph.state import ResearchState, SubAgentState
-from config import MAX_ITERATIONS
 
 # Map agent_type values to the node names registered in the graph
 AGENT_NODE_MAP: dict[str, str] = {
@@ -23,7 +23,7 @@ _DEFAULT_NODE = "web_researcher"
 def check_sufficient(state: ResearchState) -> str:
     """Decide whether to synthesize or fan out another round of research."""
     iteration = state.get("iteration", 0)
-    if iteration >= MAX_ITERATIONS or state.get("sufficient", False):
+    if iteration > config.MAX_ITERATIONS or state.get("sufficient", False):
         return "synthesizer"
     return "router"
 

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "ai_code_assistants",
+    "question": "For an enterprise engineering leader deciding where to invest in 2026: what is the competitive landscape of AI coding assistants (GitHub Copilot, Cursor, Claude Code, and comparable tools), how do their adoption and pricing compare, and what does published research say about their measured impact on developer productivity?"
+  },
+  {
+    "id": "smr_energy_bet",
+    "question": "Is investing in small modular reactor (SMR) companies a sound corporate energy-diversification bet in 2026? Cover the market and regulatory landscape for SMRs, the financial performance of leading public SMR-adjacent companies, and the nuclear engineering research underpinning near-term commercial viability."
+  },
+  {
+    "id": "glp1_market",
+    "question": "Are GLP-1 weight-loss drugs a durable pharmaceutical market opportunity or an overhyped bubble? Cover the competitive and market landscape, the financial performance of leading manufacturers such as Novo Nordisk and Eli Lilly, and the clinical research evidence on long-term efficacy and safety."
+  }
+]

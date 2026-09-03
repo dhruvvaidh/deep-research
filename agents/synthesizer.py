@@ -40,16 +40,31 @@ def synthesizer_node(state: ResearchState) -> dict:
         model_name=config.MODEL_NAME,
     )
     agent = create_agent(llm, SYNTH_TOOLS, system_prompt=SYNTHESIZE_SYSTEM)
-    result = agent.invoke({"messages": [{"role": "user", "content": human_content}]})
+    input_payload = {"messages": [{"role": "user", "content": human_content}]}
 
-    raw = result["messages"][-1].content
-    if isinstance(raw, list):
-        report = "\n".join(
-            block["text"] for block in raw
-            if isinstance(block, dict) and block.get("type") == "text"
+    # The underlying model occasionally ends its turn with empty content instead of
+    # the report (observed: finish_reason=STOP, zero output tokens). Retry rather than
+    # silently persisting an empty report after a long, expensive ReAct loop.
+    report = ""
+    for attempt in range(1, 4):
+        result = agent.invoke(input_payload)
+        raw = result["messages"][-1].content
+        if isinstance(raw, list):
+            report = "\n".join(
+                block["text"] for block in raw
+                if isinstance(block, dict) and block.get("type") == "text"
+            )
+        else:
+            report = raw or ""
+        if report.strip():
+            break
+        print(f"[synthesizer] attempt {attempt}/3 returned an empty report; retrying...")
+
+    if not report.strip():
+        report = (
+            "_Synthesis failed: the model returned an empty response after 3 attempts. "
+            "Raw research findings are still available in the sandbox context store._"
         )
-    else:
-        report = raw
 
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")

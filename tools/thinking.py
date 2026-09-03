@@ -17,6 +17,17 @@ llm = ChatGoogleGenerativeAI(
         vertexai=os.environ['GOOGLE_GENAI_USE_VERTEXAI']
     )
 
+
+def strip_json_fences(text: str) -> str:
+    """Strip a leading/trailing markdown code fence (```json ... ``` or ``` ... ```),
+    since Gemini sometimes wraps JSON output in one despite prompt instructions not to."""
+    text = text.strip()
+    if text.startswith("```"):
+        text = text.split("\n", 1)[1] if "\n" in text else text[3:]
+        if text.endswith("```"):
+            text = text[:-3]
+    return text.strip()
+
 @tool
 def think(task: str, observations: str, manifest_index: dict) -> ThoughtEntry:
     """Reflect on whether current findings sufficiently answer the task.
@@ -26,8 +37,11 @@ def think(task: str, observations: str, manifest_index: dict) -> ThoughtEntry:
         observations=observations,
         manifest_index=json.dumps(manifest_index, indent=2)
     )
-    result = llm.invoke(prompt)  # structured output → ThoughtEntry
-    return result
+    result = llm.invoke(prompt)
+    raw = result.content
+    if isinstance(raw, list):
+        raw = "\n".join(b["text"] for b in raw if isinstance(b, dict) and b.get("type") == "text")
+    return strip_json_fences(raw)
 
 @tool
 def reflect(
@@ -76,8 +90,17 @@ def reflect(
     raw = result.content
     if isinstance(raw, list):
         raw = "\n".join(b["text"] for b in raw if isinstance(b, dict) and b.get("type") == "text")
+    raw = strip_json_fences(raw)
 
-    return json.loads(raw)
+    try:
+        return json.loads(raw)
+    except json.JSONDecodeError:
+        return {
+            "sufficient": False,
+            "confidence": 0.0,
+            "gaps": [question],
+            "reasoning": f"Failed to parse reflect response as JSON: {raw[:200]!r}",
+        }
 
 @tool
 def gather_thoughts(thought_log: list[ThoughtEntry]) -> str:

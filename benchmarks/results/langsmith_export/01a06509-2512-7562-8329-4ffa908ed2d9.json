@@ -1,0 +1,4413 @@
+{
+  "root": {
+    "run_id": "01a06509-2512-7562-8329-4ffa908ed2d9",
+    "parent_run_id": null,
+    "name": "benchmark_ai_code_assistants_iter1",
+    "run_type": "chain",
+    "start_time": "2026-09-03T02:11:33.266987+00:00",
+    "end_time": "2026-09-03T02:14:51.860650+00:00",
+    "latency_seconds": 198.593663,
+    "prompt_tokens": 356482,
+    "completion_tokens": 54307,
+    "total_tokens": 410789,
+    "total_cost": 0.18565381,
+    "tags": [
+      "benchmark",
+      "ai_code_assistants",
+      "max_iter_1"
+    ]
+  },
+  "runs": [
+    {
+      "run_id": "01a0650b-d5e6-7cb2-8771-c2d1f8f738d2",
+      "parent_run_id": "01a0650b-d5da-7911-860a-8106137d8be4",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:14:29.606856+00:00",
+      "end_time": "2026-09-03T02:14:51.853917+00:00",
+      "latency_seconds": 22.247061,
+      "prompt_tokens": 14177,
+      "completion_tokens": 5012,
+      "total_tokens": 19189,
+      "total_cost": 0.01504511,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-d5da-7911-860a-8106137d8be4",
+      "parent_run_id": "01a0650b-af1c-7713-bb27-adcc6eaf42d1",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:14:29.594834+00:00",
+      "end_time": "2026-09-03T02:14:51.855032+00:00",
+      "latency_seconds": 22.260198,
+      "prompt_tokens": 14177,
+      "completion_tokens": 5012,
+      "total_tokens": 19189,
+      "total_cost": 0.01504511,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "graph:step:7",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-d4ba-7212-bf39-5781a81ab3ce",
+      "parent_run_id": "01a0650b-d4b5-7ee1-8bfc-8ee80bda88c7",
+      "name": "read_artifact",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:14:29.306857+00:00",
+      "end_time": "2026-09-03T02:14:29.582710+00:00",
+      "latency_seconds": 0.275853,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-d4b9-72e0-b86a-dc81e1901c36",
+      "parent_run_id": "01a0650b-d4ad-77f0-b6c4-80f2a406ebe1",
+      "name": "read_artifact",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:14:29.305291+00:00",
+      "end_time": "2026-09-03T02:14:29.583505+00:00",
+      "latency_seconds": 0.278214,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-d4b7-7e31-b87b-64bf3629ca94",
+      "parent_run_id": "01a0650b-d4ad-77f0-b6c4-80e272bd4724",
+      "name": "read_artifact",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:14:29.303446+00:00",
+      "end_time": "2026-09-03T02:14:29.584686+00:00",
+      "latency_seconds": 0.28124,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-d4b5-7ee1-8bfc-8ee80bda88c7",
+      "parent_run_id": "01a0650b-af1c-7713-bb27-adcc6eaf42d1",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:14:29.301793+00:00",
+      "end_time": "2026-09-03T02:14:29.588341+00:00",
+      "latency_seconds": 0.286548,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "graph:step:6",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-d4b4-7e02-99a4-32dc3b828aaa",
+      "parent_run_id": "01a0650b-d4aa-71c2-b95c-5e1724258616",
+      "name": "read_artifact",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:14:29.300141+00:00",
+      "end_time": "2026-09-03T02:14:29.584005+00:00",
+      "latency_seconds": 0.283864,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-d4b2-72f3-afba-ef2fd3c5f7d1",
+      "parent_run_id": "01a0650b-d4ac-7b40-bb04-fa9c99977a43",
+      "name": "read_artifact",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:14:29.298038+00:00",
+      "end_time": "2026-09-03T02:14:29.581101+00:00",
+      "latency_seconds": 0.283063,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-d4b1-7713-a38d-065bc901d426",
+      "parent_run_id": "01a0650b-d4a5-7390-860d-96f0a15cef8c",
+      "name": "read_artifact",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:14:29.297466+00:00",
+      "end_time": "2026-09-03T02:14:29.583751+00:00",
+      "latency_seconds": 0.286285,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-d4af-7662-b2f7-10b08c095079",
+      "parent_run_id": "01a0650b-d4ab-7870-a873-19ef128a051d",
+      "name": "read_artifact",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:14:29.295986+00:00",
+      "end_time": "2026-09-03T02:14:29.581367+00:00",
+      "latency_seconds": 0.285381,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-d4af-7662-b2f7-10ad225c30de",
+      "parent_run_id": "01a0650b-d4a8-7cd2-b049-bc4f28a0bbd4",
+      "name": "read_artifact",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:14:29.295174+00:00",
+      "end_time": "2026-09-03T02:14:29.579445+00:00",
+      "latency_seconds": 0.284271,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-d4ad-77f0-b6c4-80f2a406ebe1",
+      "parent_run_id": "01a0650b-af1c-7713-bb27-adcc6eaf42d1",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:14:29.294017+00:00",
+      "end_time": "2026-09-03T02:14:29.590160+00:00",
+      "latency_seconds": 0.296143,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "graph:step:6",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-d4ad-77f0-b6c4-80e272bd4724",
+      "parent_run_id": "01a0650b-af1c-7713-bb27-adcc6eaf42d1",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:14:29.293158+00:00",
+      "end_time": "2026-09-03T02:14:29.591478+00:00",
+      "latency_seconds": 0.29832,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "graph:step:6",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-d4ac-7b40-bb04-fa9c99977a43",
+      "parent_run_id": "01a0650b-af1c-7713-bb27-adcc6eaf42d1",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:14:29.292419+00:00",
+      "end_time": "2026-09-03T02:14:29.587057+00:00",
+      "latency_seconds": 0.294638,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "graph:step:6",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-d4ab-7870-a873-19ef128a051d",
+      "parent_run_id": "01a0650b-af1c-7713-bb27-adcc6eaf42d1",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:14:29.291577+00:00",
+      "end_time": "2026-09-03T02:14:29.587469+00:00",
+      "latency_seconds": 0.295892,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "graph:step:6",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-d4aa-71c2-b95c-5e1724258616",
+      "parent_run_id": "01a0650b-af1c-7713-bb27-adcc6eaf42d1",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:14:29.290120+00:00",
+      "end_time": "2026-09-03T02:14:29.590589+00:00",
+      "latency_seconds": 0.300469,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "graph:step:6",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-d4a8-7cd2-b049-bc4f28a0bbd4",
+      "parent_run_id": "01a0650b-af1c-7713-bb27-adcc6eaf42d1",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:14:29.288950+00:00",
+      "end_time": "2026-09-03T02:14:29.585930+00:00",
+      "latency_seconds": 0.29698,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "graph:step:6",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-d4a7-74a1-b5b0-fcb3930d09ec",
+      "parent_run_id": "01a0650b-d4a3-7903-8341-32c021783658",
+      "name": "read_artifact",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:14:29.287138+00:00",
+      "end_time": "2026-09-03T02:14:29.580333+00:00",
+      "latency_seconds": 0.293195,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-d4a5-7390-860d-96f0a15cef8c",
+      "parent_run_id": "01a0650b-af1c-7713-bb27-adcc6eaf42d1",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:14:29.285613+00:00",
+      "end_time": "2026-09-03T02:14:29.591765+00:00",
+      "latency_seconds": 0.306152,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "graph:step:6",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-d4a3-7903-8341-32c021783658",
+      "parent_run_id": "01a0650b-af1c-7713-bb27-adcc6eaf42d1",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:14:29.283584+00:00",
+      "end_time": "2026-09-03T02:14:29.586388+00:00",
+      "latency_seconds": 0.302804,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "graph:step:6",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-c3eb-7642-8a78-2854bcc1d9a0",
+      "parent_run_id": "01a0650b-c3db-7e53-9f8d-b959ad472fde",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:14:25.003551+00:00",
+      "end_time": "2026-09-03T02:14:29.280040+00:00",
+      "latency_seconds": 4.276489,
+      "prompt_tokens": 6725,
+      "completion_tokens": 876,
+      "total_tokens": 7601,
+      "total_cost": 0.0042075,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-c3db-7e53-9f8d-b959ad472fde",
+      "parent_run_id": "01a0650b-af1c-7713-bb27-adcc6eaf42d1",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:14:24.987316+00:00",
+      "end_time": "2026-09-03T02:14:29.281475+00:00",
+      "latency_seconds": 4.294159,
+      "prompt_tokens": 6725,
+      "completion_tokens": 876,
+      "total_tokens": 7601,
+      "total_cost": 0.0042075,
+      "tags": [
+        "benchmark",
+        "graph:step:5",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-c22e-75e2-b6b0-4cfd81e4b35a",
+      "parent_run_id": "01a0650b-c22d-7982-94b6-f0d04b88132d",
+      "name": "get_context_index",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:14:24.558988+00:00",
+      "end_time": "2026-09-03T02:14:24.983603+00:00",
+      "latency_seconds": 0.424615,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-c22d-7982-94b6-f0d04b88132d",
+      "parent_run_id": "01a0650b-af1c-7713-bb27-adcc6eaf42d1",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:14:24.557199+00:00",
+      "end_time": "2026-09-03T02:14:24.985677+00:00",
+      "latency_seconds": 0.428478,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "graph:step:4",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-bc40-7043-a47d-4b9128e529ea",
+      "parent_run_id": "01a0650b-bc37-7202-8bd7-bfbc19a7f62f",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:14:23.040798+00:00",
+      "end_time": "2026-09-03T02:14:24.553913+00:00",
+      "latency_seconds": 1.513115,
+      "prompt_tokens": 2526,
+      "completion_tokens": 275,
+      "total_tokens": 2801,
+      "total_cost": 0.0014453,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-bc37-7202-8bd7-bfbc19a7f62f",
+      "parent_run_id": "01a0650b-af1c-7713-bb27-adcc6eaf42d1",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:14:23.031421+00:00",
+      "end_time": "2026-09-03T02:14:24.555720+00:00",
+      "latency_seconds": 1.524299,
+      "prompt_tokens": 2526,
+      "completion_tokens": 275,
+      "total_tokens": 2801,
+      "total_cost": 0.0014453,
+      "tags": [
+        "benchmark",
+        "graph:step:3",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-bc34-7620-8529-8c9ece1c49f4",
+      "parent_run_id": "01a0650b-bc32-7e22-9a71-b784fb144eb2",
+      "name": "gather_thoughts",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:14:23.028323+00:00",
+      "end_time": "2026-09-03T02:14:23.029864+00:00",
+      "latency_seconds": 0.001541,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-bc32-7e22-9a71-b784fb144eb2",
+      "parent_run_id": "01a0650b-af1c-7713-bb27-adcc6eaf42d1",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:14:23.026111+00:00",
+      "end_time": "2026-09-03T02:14:23.030691+00:00",
+      "latency_seconds": 0.00458,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "graph:step:2",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-af22-7012-a031-24cbe1d5a60f",
+      "parent_run_id": "01a0650b-af1d-7263-9462-78de138e7eb4",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:14:19.682232+00:00",
+      "end_time": "2026-09-03T02:14:23.022922+00:00",
+      "latency_seconds": 3.34069,
+      "prompt_tokens": 1586,
+      "completion_tokens": 694,
+      "total_tokens": 2280,
+      "total_cost": 0.0022108,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-af1d-7263-9462-78de138e7eb4",
+      "parent_run_id": "01a0650b-af1c-7713-bb27-adcc6eaf42d1",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:14:19.677763+00:00",
+      "end_time": "2026-09-03T02:14:23.024799+00:00",
+      "latency_seconds": 3.347036,
+      "prompt_tokens": 1586,
+      "completion_tokens": 694,
+      "total_tokens": 2280,
+      "total_cost": 0.0022108,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "max_iter_1",
+        "graph:step:1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-af1c-7713-bb27-adcc6eaf42d1",
+      "parent_run_id": "01a0650b-ada5-75a2-991a-460475abfc4f",
+      "name": "LangGraph",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:14:19.676913+00:00",
+      "end_time": "2026-09-03T02:14:51.856096+00:00",
+      "latency_seconds": 32.179183,
+      "prompt_tokens": 25014,
+      "completion_tokens": 6857,
+      "total_tokens": 31871,
+      "total_cost": 0.02290871,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-ada5-75a2-991a-460475abfc4f",
+      "parent_run_id": "01a06509-2512-7562-8329-4ffa908ed2d9",
+      "name": "synthesizer",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:14:19.301514+00:00",
+      "end_time": "2026-09-03T02:14:51.859848+00:00",
+      "latency_seconds": 32.558334,
+      "prompt_tokens": 25014,
+      "completion_tokens": 6857,
+      "total_tokens": 31871,
+      "total_cost": 0.02290871,
+      "tags": [
+        "benchmark",
+        "graph:step:5",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-ada3-71c0-b8e0-2c70df8e601d",
+      "parent_run_id": "01a0650b-5500-7cd3-b346-3de61725cbe5",
+      "name": "check_sufficient",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:14:19.299272+00:00",
+      "end_time": "2026-09-03T02:14:19.300122+00:00",
+      "latency_seconds": 0.00085,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "seq:step:3",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-92c4-7bc2-96db-270f06e51f66",
+      "parent_run_id": "01a0650b-92bc-7ed2-b133-1abe1956aca7",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:14:12.420708+00:00",
+      "end_time": "2026-09-03T02:14:19.294910+00:00",
+      "latency_seconds": 6.874202,
+      "prompt_tokens": 2866,
+      "completion_tokens": 1588,
+      "total_tokens": 4454,
+      "total_cost": 0.0048298,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-92bc-7ed2-b133-1abe1956aca7",
+      "parent_run_id": "01a0650b-61ce-7b81-9064-336087d39134",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:14:12.412348+00:00",
+      "end_time": "2026-09-03T02:14:19.296760+00:00",
+      "latency_seconds": 6.884412,
+      "prompt_tokens": 2866,
+      "completion_tokens": 1588,
+      "total_tokens": 4454,
+      "total_cost": 0.0048298,
+      "tags": [
+        "benchmark",
+        "graph:step:3",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-6c45-7b20-be18-caf516cdea5c",
+      "parent_run_id": "01a0650b-6c43-7661-b3ca-7b255a2cd976",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:14:02.565907+00:00",
+      "end_time": "2026-09-03T02:14:12.410725+00:00",
+      "latency_seconds": 9.844818,
+      "prompt_tokens": 718,
+      "completion_tokens": 2039,
+      "total_tokens": 2757,
+      "total_cost": 0.0053129,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-6c43-7661-b3ca-7b255a2cd976",
+      "parent_run_id": "01a0650b-6c42-7062-a9ad-8e1cecf3df0e",
+      "name": "reflect",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:14:02.564053+00:00",
+      "end_time": "2026-09-03T02:14:12.411202+00:00",
+      "latency_seconds": 9.847149,
+      "prompt_tokens": 718,
+      "completion_tokens": 2039,
+      "total_tokens": 2757,
+      "total_cost": 0.0053129,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-6c42-7062-a9ad-8e1cecf3df0e",
+      "parent_run_id": "01a0650b-61ce-7b81-9064-336087d39134",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:14:02.562032+00:00",
+      "end_time": "2026-09-03T02:14:12.411791+00:00",
+      "latency_seconds": 9.849759,
+      "prompt_tokens": 718,
+      "completion_tokens": 2039,
+      "total_tokens": 2757,
+      "total_cost": 0.0053129,
+      "tags": [
+        "benchmark",
+        "graph:step:2",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-61df-70f2-bf88-9cc3f4b5c912",
+      "parent_run_id": "01a0650b-61d0-7660-9f68-7e992d62fdae",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:13:59.903222+00:00",
+      "end_time": "2026-09-03T02:14:02.559567+00:00",
+      "latency_seconds": 2.656345,
+      "prompt_tokens": 1724,
+      "completion_tokens": 629,
+      "total_tokens": 2353,
+      "total_cost": 0.0020897,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-61d0-7660-9f68-7e992d62fdae",
+      "parent_run_id": "01a0650b-61ce-7b81-9064-336087d39134",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:13:59.888318+00:00",
+      "end_time": "2026-09-03T02:14:02.560885+00:00",
+      "latency_seconds": 2.672567,
+      "prompt_tokens": 1724,
+      "completion_tokens": 629,
+      "total_tokens": 2353,
+      "total_cost": 0.0020897,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "max_iter_1",
+        "graph:step:1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-61ce-7b81-9064-336087d39134",
+      "parent_run_id": "01a0650b-5500-7cd3-b346-3de61725cbe5",
+      "name": "LangGraph",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:13:59.886623+00:00",
+      "end_time": "2026-09-03T02:14:19.298155+00:00",
+      "latency_seconds": 19.411532,
+      "prompt_tokens": 5308,
+      "completion_tokens": 4256,
+      "total_tokens": 9564,
+      "total_cost": 0.0122324,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-5643-7c40-9696-e5be81183ae1",
+      "parent_run_id": "01a0650b-563c-78b1-918b-6e750455d854",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:13:56.931714+00:00",
+      "end_time": "2026-09-03T02:13:59.883823+00:00",
+      "latency_seconds": 2.952109,
+      "prompt_tokens": 1724,
+      "completion_tokens": 0,
+      "total_tokens": 1724,
+      "total_cost": 0.0005172,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-563c-78b1-918b-6e750455d854",
+      "parent_run_id": "01a0650b-563b-76a2-9305-72b071061abc",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:13:56.924956+00:00",
+      "end_time": "2026-09-03T02:13:59.885077+00:00",
+      "latency_seconds": 2.960121,
+      "prompt_tokens": 1724,
+      "completion_tokens": 0,
+      "total_tokens": 1724,
+      "total_cost": 0.0005172,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "max_iter_1",
+        "graph:step:1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-563b-76a2-9305-72b071061abc",
+      "parent_run_id": "01a0650b-5500-7cd3-b346-3de61725cbe5",
+      "name": "LangGraph",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:13:56.923956+00:00",
+      "end_time": "2026-09-03T02:13:59.885873+00:00",
+      "latency_seconds": 2.961917,
+      "prompt_tokens": 1724,
+      "completion_tokens": 0,
+      "total_tokens": 1724,
+      "total_cost": 0.0005172,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-5500-7cd3-b346-3de61725cbe5",
+      "parent_run_id": "01a06509-2512-7562-8329-4ffa908ed2d9",
+      "name": "orchestrator",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:13:56.608801+00:00",
+      "end_time": "2026-09-03T02:14:19.300490+00:00",
+      "latency_seconds": 22.691689,
+      "prompt_tokens": 7032,
+      "completion_tokens": 4256,
+      "total_tokens": 11288,
+      "total_cost": 0.0127496,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "graph:step:4",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-323d-7ee3-9f2f-f3994c5e5d96",
+      "parent_run_id": "01a0650b-322d-7fa1-a369-4d13cbab448d",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:13:47.709162+00:00",
+      "end_time": "2026-09-03T02:13:56.599107+00:00",
+      "latency_seconds": 8.889945,
+      "prompt_tokens": 22405,
+      "completion_tokens": 1658,
+      "total_tokens": 24063,
+      "total_cost": 0.00742535,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650b-322d-7fa1-a369-4d13cbab448d",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:13:47.693744+00:00",
+      "end_time": "2026-09-03T02:13:56.601352+00:00",
+      "latency_seconds": 8.907608,
+      "prompt_tokens": 22405,
+      "completion_tokens": 1658,
+      "total_tokens": 24063,
+      "total_cost": 0.00742535,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "graph:step:43",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-fb70-7ba1-95df-41c03c9b5a78",
+      "parent_run_id": "01a0650a-fb6f-7e52-9b55-1b4b211b83f6",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:13:33.680806+00:00",
+      "end_time": "2026-09-03T02:13:47.689662+00:00",
+      "latency_seconds": 14.008856,
+      "prompt_tokens": 4793,
+      "completion_tokens": 2961,
+      "total_tokens": 7754,
+      "total_cost": 0.0088404,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-fb6f-7e52-9b55-1b4b211b83f6",
+      "parent_run_id": "01a0650a-fb6d-77b1-874b-fe7eff341286",
+      "name": "think",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:13:33.679336+00:00",
+      "end_time": "2026-09-03T02:13:47.690671+00:00",
+      "latency_seconds": 14.011335,
+      "prompt_tokens": 4793,
+      "completion_tokens": 2961,
+      "total_tokens": 7754,
+      "total_cost": 0.0088404,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-fb6d-77b1-874b-fe7eff341286",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:13:33.677543+00:00",
+      "end_time": "2026-09-03T02:13:47.691867+00:00",
+      "latency_seconds": 14.014324,
+      "prompt_tokens": 4793,
+      "completion_tokens": 2961,
+      "total_tokens": 7754,
+      "total_cost": 0.0088404,
+      "tags": [
+        "benchmark",
+        "graph:step:42",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-b6d6-7452-b714-5926105d3bc6",
+      "parent_run_id": "01a0650a-b6c4-7611-9979-a52e8503e075",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:13:16.118060+00:00",
+      "end_time": "2026-09-03T02:13:33.673146+00:00",
+      "latency_seconds": 17.555086,
+      "prompt_tokens": 17974,
+      "completion_tokens": 4464,
+      "total_tokens": 22438,
+      "total_cost": 0.0165522,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-b6c4-7611-9979-a52e8503e075",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:13:16.100450+00:00",
+      "end_time": "2026-09-03T02:13:33.675345+00:00",
+      "latency_seconds": 17.574895,
+      "prompt_tokens": 17974,
+      "completion_tokens": 4464,
+      "total_tokens": 22438,
+      "total_cost": 0.0165522,
+      "tags": [
+        "benchmark",
+        "graph:step:41",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-b5ba-77e0-8ee2-08eeca27608f",
+      "parent_run_id": "01a0650a-b5b8-7202-b784-66ea0957ff9f",
+      "name": "get_context_index",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:13:15.834862+00:00",
+      "end_time": "2026-09-03T02:13:16.097261+00:00",
+      "latency_seconds": 0.262399,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-b5b8-7202-b784-66ea0957ff9f",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:13:15.832445+00:00",
+      "end_time": "2026-09-03T02:13:16.098462+00:00",
+      "latency_seconds": 0.266017,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "graph:step:40",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-aed4-7683-92fb-74f5f8d0fffe",
+      "parent_run_id": "01a0650a-aec0-71f2-8635-be541dc8b53c",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:13:14.068286+00:00",
+      "end_time": "2026-09-03T02:13:15.827654+00:00",
+      "latency_seconds": 1.759368,
+      "prompt_tokens": 13775,
+      "completion_tokens": 183,
+      "total_tokens": 13958,
+      "total_cost": 0.00106326,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-aec0-71f2-8635-be541dc8b53c",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:13:14.048887+00:00",
+      "end_time": "2026-09-03T02:13:15.829991+00:00",
+      "latency_seconds": 1.781104,
+      "prompt_tokens": 13775,
+      "completion_tokens": 183,
+      "total_tokens": 13958,
+      "total_cost": 0.00106326,
+      "tags": [
+        "benchmark",
+        "graph:step:39",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-a42b-7213-82cb-6357c43d51b9",
+      "parent_run_id": "01a0650a-a417-7ee1-a2ad-0d7b59d833a7",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:13:11.339928+00:00",
+      "end_time": "2026-09-03T02:13:18.810965+00:00",
+      "latency_seconds": 7.471037,
+      "prompt_tokens": 8914,
+      "completion_tokens": 1558,
+      "total_tokens": 10472,
+      "total_cost": 0.00443053,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-a417-7ee1-a2ad-0d7b59d833a7",
+      "parent_run_id": "01a06509-337f-79d3-b797-6c7d044a8495",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:13:11.319373+00:00",
+      "end_time": "2026-09-03T02:13:18.812709+00:00",
+      "latency_seconds": 7.493336,
+      "prompt_tokens": 8914,
+      "completion_tokens": 1558,
+      "total_tokens": 10472,
+      "total_cost": 0.00443053,
+      "tags": [
+        "benchmark",
+        "graph:step:17",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-9f38-73f2-8a82-eb2df79b7d10",
+      "parent_run_id": "01a0650a-9e48-7142-9764-f2fa3c21b5b4",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:13:10.072417+00:00",
+      "end_time": "2026-09-03T02:13:13.392766+00:00",
+      "latency_seconds": 3.320349,
+      "prompt_tokens": 436,
+      "completion_tokens": 602,
+      "total_tokens": 1038,
+      "total_cost": 0.0016358,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-9e48-7142-9764-f2fa3c21b5b4",
+      "parent_run_id": "01a0650a-9e46-7a33-a08c-4477d239b54e",
+      "name": "summarize_context",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:13:09.832796+00:00",
+      "end_time": "2026-09-03T02:13:14.045361+00:00",
+      "latency_seconds": 4.212565,
+      "prompt_tokens": 436,
+      "completion_tokens": 602,
+      "total_tokens": 1038,
+      "total_cost": 0.0016358,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-9e46-7a33-a08c-4477d239b54e",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:13:09.831009+00:00",
+      "end_time": "2026-09-03T02:13:14.047069+00:00",
+      "latency_seconds": 4.21606,
+      "prompt_tokens": 436,
+      "completion_tokens": 602,
+      "total_tokens": 1038,
+      "total_cost": 0.0016358,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "graph:step:38",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-9b0c-7a00-9863-b6af587e76cf",
+      "parent_run_id": "01a0650a-9af7-7df0-84ff-25344d86bfbc",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:13:09.004343+00:00",
+      "end_time": "2026-09-03T02:13:09.827997+00:00",
+      "latency_seconds": 0.823654,
+      "prompt_tokens": 13550,
+      "completion_tokens": 37,
+      "total_tokens": 13587,
+      "total_cost": 0.00110299,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-9af7-7df0-84ff-25344d86bfbc",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:13:08.984025+00:00",
+      "end_time": "2026-09-03T02:13:09.829506+00:00",
+      "latency_seconds": 0.845481,
+      "prompt_tokens": 13550,
+      "completion_tokens": 37,
+      "total_tokens": 13587,
+      "total_cost": 0.00110299,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "graph:step:37",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-9037-7331-9492-4d9525ff6079",
+      "parent_run_id": "01a0650a-9035-7a62-8930-e9830601fe09",
+      "name": "store_context",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:13:06.231543+00:00",
+      "end_time": "2026-09-03T02:13:08.979690+00:00",
+      "latency_seconds": 2.748147,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-9035-7a62-8930-e9830601fe09",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:13:06.229154+00:00",
+      "end_time": "2026-09-03T02:13:08.981629+00:00",
+      "latency_seconds": 2.752475,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "graph:step:36",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-850a-7d62-a68c-cfb223005428",
+      "parent_run_id": "01a0650a-84f8-7712-b891-7989ef148acd",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:13:03.370209+00:00",
+      "end_time": "2026-09-03T02:13:06.225793+00:00",
+      "latency_seconds": 2.855584,
+      "prompt_tokens": 13062,
+      "completion_tokens": 573,
+      "total_tokens": 13635,
+      "total_cost": 0.00204657,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-84f8-7712-b891-7989ef148acd",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:13:03.352477+00:00",
+      "end_time": "2026-09-03T02:13:06.227345+00:00",
+      "latency_seconds": 2.874868,
+      "prompt_tokens": 13062,
+      "completion_tokens": 573,
+      "total_tokens": 13635,
+      "total_cost": 0.00204657,
+      "tags": [
+        "benchmark",
+        "graph:step:35",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-7c8e-7de3-a289-24fe4828129d",
+      "parent_run_id": "01a0650a-7c8c-7510-b762-159ae84e7d9a",
+      "name": "tavily_search",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:13:01.198313+00:00",
+      "end_time": "2026-09-03T02:13:03.348174+00:00",
+      "latency_seconds": 2.149861,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-7c8c-7510-b762-159ae84e7d9a",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:13:01.196236+00:00",
+      "end_time": "2026-09-03T02:13:03.350158+00:00",
+      "latency_seconds": 2.153922,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "graph:step:34",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-78d6-7bd3-aab1-9b710a774a74",
+      "parent_run_id": "01a0650a-78c5-7811-8d4b-6a93e8fada2a",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:13:00.246318+00:00",
+      "end_time": "2026-09-03T02:13:01.193138+00:00",
+      "latency_seconds": 0.94682,
+      "prompt_tokens": 12651,
+      "completion_tokens": 52,
+      "total_tokens": 12703,
+      "total_cost": 0.00062779,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-78c5-7811-8d4b-6a93e8fada2a",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:13:00.229896+00:00",
+      "end_time": "2026-09-03T02:13:01.194790+00:00",
+      "latency_seconds": 0.964894,
+      "prompt_tokens": 12651,
+      "completion_tokens": 52,
+      "total_tokens": 12703,
+      "total_cost": 0.00062779,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "graph:step:33",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-7286-7491-bf30-7417e47489aa",
+      "parent_run_id": "01a0650a-7285-7b93-a96f-23894cb8a72e",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:12:58.630380+00:00",
+      "end_time": "2026-09-03T02:13:11.315163+00:00",
+      "latency_seconds": 12.684783,
+      "prompt_tokens": 700,
+      "completion_tokens": 2256,
+      "total_tokens": 2956,
+      "total_cost": 0.00585,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-7285-7b93-a96f-23894cb8a72e",
+      "parent_run_id": "01a0650a-7283-7771-aad5-3735037a7a19",
+      "name": "think",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:12:58.629092+00:00",
+      "end_time": "2026-09-03T02:13:11.316204+00:00",
+      "latency_seconds": 12.687112,
+      "prompt_tokens": 700,
+      "completion_tokens": 2256,
+      "total_tokens": 2956,
+      "total_cost": 0.00585,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-7283-7771-aad5-3735037a7a19",
+      "parent_run_id": "01a0650a-7281-7fe0-9a06-a3eb204f648c",
+      "name": "handle_tool_errors.wrap_tool_call",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:12:58.627541+00:00",
+      "end_time": "2026-09-03T02:13:11.316590+00:00",
+      "latency_seconds": 12.689049,
+      "prompt_tokens": 700,
+      "completion_tokens": 2256,
+      "total_tokens": 2956,
+      "total_cost": 0.00585,
+      "tags": []
+    },
+    {
+      "run_id": "01a0650a-7281-7fe0-9a06-a3eb204f648c",
+      "parent_run_id": "01a06509-337f-79d3-b797-6c7d044a8495",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:12:58.625193+00:00",
+      "end_time": "2026-09-03T02:13:11.317852+00:00",
+      "latency_seconds": 12.692659,
+      "prompt_tokens": 700,
+      "completion_tokens": 2256,
+      "total_tokens": 2956,
+      "total_cost": 0.00585,
+      "tags": [
+        "benchmark",
+        "graph:step:16",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-6f0f-7e03-b3ac-0a88934cebb7",
+      "parent_run_id": "01a0650a-6e31-7d12-9c50-57ab5653879c",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:12:57.743567+00:00",
+      "end_time": "2026-09-03T02:12:59.578157+00:00",
+      "latency_seconds": 1.83459,
+      "prompt_tokens": 429,
+      "completion_tokens": 320,
+      "total_tokens": 749,
+      "total_cost": 0.0009287,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-6e31-7d12-9c50-57ab5653879c",
+      "parent_run_id": "01a0650a-6e2f-7853-86e3-81e34cd9554b",
+      "name": "summarize_context",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:12:57.521518+00:00",
+      "end_time": "2026-09-03T02:13:00.225656+00:00",
+      "latency_seconds": 2.704138,
+      "prompt_tokens": 429,
+      "completion_tokens": 320,
+      "total_tokens": 749,
+      "total_cost": 0.0009287,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-6e2f-7853-86e3-81e34cd9554b",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:12:57.519426+00:00",
+      "end_time": "2026-09-03T02:13:00.228381+00:00",
+      "latency_seconds": 2.708955,
+      "prompt_tokens": 429,
+      "completion_tokens": 320,
+      "total_tokens": 749,
+      "total_cost": 0.0009287,
+      "tags": [
+        "benchmark",
+        "graph:step:32",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-6b02-79d3-a814-9841bc27430e",
+      "parent_run_id": "01a0650a-6aee-7892-babb-22f574b97ae0",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:12:56.706130+00:00",
+      "end_time": "2026-09-03T02:12:57.515105+00:00",
+      "latency_seconds": 0.808975,
+      "prompt_tokens": 12493,
+      "completion_tokens": 39,
+      "total_tokens": 12532,
+      "total_cost": 0.0038454,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-6aee-7892-babb-22f574b97ae0",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:12:56.686142+00:00",
+      "end_time": "2026-09-03T02:12:57.517410+00:00",
+      "latency_seconds": 0.831268,
+      "prompt_tokens": 12493,
+      "completion_tokens": 39,
+      "total_tokens": 12532,
+      "total_cost": 0.0038454,
+      "tags": [
+        "benchmark",
+        "graph:step:31",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-6812-71d2-abb6-ab5c237e16bd",
+      "parent_run_id": "01a0650a-67fc-7123-900d-d3749e928ed4",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:12:55.954198+00:00",
+      "end_time": "2026-09-03T02:12:58.621491+00:00",
+      "latency_seconds": 2.667293,
+      "prompt_tokens": 8472,
+      "completion_tokens": 423,
+      "total_tokens": 8895,
+      "total_cost": 0.00168723,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-67fc-7123-900d-d3749e928ed4",
+      "parent_run_id": "01a06509-337f-79d3-b797-6c7d044a8495",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:12:55.932264+00:00",
+      "end_time": "2026-09-03T02:12:58.623608+00:00",
+      "latency_seconds": 2.691344,
+      "prompt_tokens": 8472,
+      "completion_tokens": 423,
+      "total_tokens": 8895,
+      "total_cost": 0.00168723,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "graph:step:15",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-6702-7761-b5f9-2afbc8767d89",
+      "parent_run_id": "01a0650a-6700-72b2-bcdf-4dc833b66a63",
+      "name": "store_context",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:12:55.682096+00:00",
+      "end_time": "2026-09-03T02:12:56.681330+00:00",
+      "latency_seconds": 0.999234,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-6700-72b2-bcdf-4dc833b66a63",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:12:55.680046+00:00",
+      "end_time": "2026-09-03T02:12:56.683601+00:00",
+      "latency_seconds": 1.003555,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "max_iter_1",
+        "graph:step:30"
+      ]
+    },
+    {
+      "run_id": "01a0650a-5c7b-79e2-b42a-cedfb0e3882b",
+      "parent_run_id": "01a0650a-5c6b-71a1-b499-8f5c3241d148",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:12:52.987228+00:00",
+      "end_time": "2026-09-03T02:12:55.677107+00:00",
+      "latency_seconds": 2.689879,
+      "prompt_tokens": 12013,
+      "completion_tokens": 539,
+      "total_tokens": 12552,
+      "total_cost": 0.0018788,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-5c6b-71a1-b499-8f5c3241d148",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:12:52.971172+00:00",
+      "end_time": "2026-09-03T02:12:55.678550+00:00",
+      "latency_seconds": 2.707378,
+      "prompt_tokens": 12013,
+      "completion_tokens": 539,
+      "total_tokens": 12552,
+      "total_cost": 0.0018788,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "graph:step:29",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-5143-78c2-aa79-9175c421105e",
+      "parent_run_id": "01a0650a-5142-7d12-b4a9-9c5859e864d5",
+      "name": "tavily_search",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:12:50.115796+00:00",
+      "end_time": "2026-09-03T02:12:52.966854+00:00",
+      "latency_seconds": 2.851058,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-5142-7d12-b4a9-9c5859e864d5",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:12:50.114202+00:00",
+      "end_time": "2026-09-03T02:12:52.968695+00:00",
+      "latency_seconds": 2.854493,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "max_iter_1",
+        "graph:step:28"
+      ]
+    },
+    {
+      "run_id": "01a0650a-49a2-7922-a831-4d686a015e1b",
+      "parent_run_id": "01a0650a-4990-78a0-8963-b75e96c691fe",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:12:48.162155+00:00",
+      "end_time": "2026-09-03T02:12:50.111051+00:00",
+      "latency_seconds": 1.948896,
+      "prompt_tokens": 11604,
+      "completion_tokens": 214,
+      "total_tokens": 11818,
+      "total_cost": 0.00115231,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-4990-78a0-8963-b75e96c691fe",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:12:48.144991+00:00",
+      "end_time": "2026-09-03T02:12:50.112764+00:00",
+      "latency_seconds": 1.967773,
+      "prompt_tokens": 11604,
+      "completion_tokens": 214,
+      "total_tokens": 11818,
+      "total_cost": 0.00115231,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "graph:step:27",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-429e-7170-a292-638e43acab98",
+      "parent_run_id": "01a0650a-41a7-79d2-a50e-f5a18dffe5cb",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:12:46.366181+00:00",
+      "end_time": "2026-09-03T02:12:55.283921+00:00",
+      "latency_seconds": 8.91774,
+      "prompt_tokens": 807,
+      "completion_tokens": 2032,
+      "total_tokens": 2839,
+      "total_cost": 0.0053221,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-41a7-79d2-a50e-f5a18dffe5cb",
+      "parent_run_id": "01a0650a-41a6-7850-9260-a1d280899bd4",
+      "name": "summarize_context",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:12:46.119888+00:00",
+      "end_time": "2026-09-03T02:12:55.929028+00:00",
+      "latency_seconds": 9.80914,
+      "prompt_tokens": 807,
+      "completion_tokens": 2032,
+      "total_tokens": 2839,
+      "total_cost": 0.0053221,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-41a6-7850-9260-a1d280899bd4",
+      "parent_run_id": "01a0650a-41a4-7740-bfd8-ef01eb12b658",
+      "name": "handle_tool_errors.wrap_tool_call",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:12:46.118743+00:00",
+      "end_time": "2026-09-03T02:12:55.929595+00:00",
+      "latency_seconds": 9.810852,
+      "prompt_tokens": 807,
+      "completion_tokens": 2032,
+      "total_tokens": 2839,
+      "total_cost": 0.0053221,
+      "tags": []
+    },
+    {
+      "run_id": "01a0650a-41a4-7740-bfd8-ef01eb12b658",
+      "parent_run_id": "01a06509-337f-79d3-b797-6c7d044a8495",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:12:46.116497+00:00",
+      "end_time": "2026-09-03T02:12:55.930817+00:00",
+      "latency_seconds": 9.81432,
+      "prompt_tokens": 807,
+      "completion_tokens": 2032,
+      "total_tokens": 2839,
+      "total_cost": 0.0053221,
+      "tags": [
+        "benchmark",
+        "graph:step:14",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-3e8e-7a62-9a89-1579ddbe3eda",
+      "parent_run_id": "01a0650a-3e79-7fd1-9420-71fbb4ce3f91",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:12:45.326582+00:00",
+      "end_time": "2026-09-03T02:12:46.113060+00:00",
+      "latency_seconds": 0.786478,
+      "prompt_tokens": 7858,
+      "completion_tokens": 32,
+      "total_tokens": 7890,
+      "total_cost": 0.00077717,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-3e79-7fd1-9420-71fbb4ce3f91",
+      "parent_run_id": "01a06509-337f-79d3-b797-6c7d044a8495",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:12:45.305114+00:00",
+      "end_time": "2026-09-03T02:12:46.114907+00:00",
+      "latency_seconds": 0.809793,
+      "prompt_tokens": 7858,
+      "completion_tokens": 32,
+      "total_tokens": 7890,
+      "total_cost": 0.00077717,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "max_iter_1",
+        "graph:step:13"
+      ]
+    },
+    {
+      "run_id": "01a0650a-3adb-75e0-b746-0a2452c31271",
+      "parent_run_id": "01a0650a-3ada-7860-976a-b17c89c54a31",
+      "name": "store_context",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:12:44.379194+00:00",
+      "end_time": "2026-09-03T02:12:45.300203+00:00",
+      "latency_seconds": 0.921009,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-3ada-7860-976a-b17c89c54a31",
+      "parent_run_id": "01a0650a-3ad8-76b3-8dee-5ef1a6038a2f",
+      "name": "handle_tool_errors.wrap_tool_call",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:12:44.378307+00:00",
+      "end_time": "2026-09-03T02:12:45.301144+00:00",
+      "latency_seconds": 0.922837,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": []
+    },
+    {
+      "run_id": "01a0650a-3ad8-76b3-8dee-5ef1a6038a2f",
+      "parent_run_id": "01a06509-337f-79d3-b797-6c7d044a8495",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:12:44.376666+00:00",
+      "end_time": "2026-09-03T02:12:45.302897+00:00",
+      "latency_seconds": 0.926231,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "graph:step:12",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-333a-7353-a43e-2e93106ed5f9",
+      "parent_run_id": "01a0650a-325b-7471-907f-32a60e92ce8e",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:12:42.426898+00:00",
+      "end_time": "2026-09-03T02:12:47.556657+00:00",
+      "latency_seconds": 5.129759,
+      "prompt_tokens": 483,
+      "completion_tokens": 930,
+      "total_tokens": 1413,
+      "total_cost": 0.0024699,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-325b-7471-907f-32a60e92ce8e",
+      "parent_run_id": "01a0650a-3258-7e70-86bd-9216f522cc37",
+      "name": "summarize_context",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:12:42.203228+00:00",
+      "end_time": "2026-09-03T02:12:48.141497+00:00",
+      "latency_seconds": 5.938269,
+      "prompt_tokens": 483,
+      "completion_tokens": 930,
+      "total_tokens": 1413,
+      "total_cost": 0.0024699,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-3258-7e70-86bd-9216f522cc37",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:12:42.200875+00:00",
+      "end_time": "2026-09-03T02:12:48.143099+00:00",
+      "latency_seconds": 5.942224,
+      "prompt_tokens": 483,
+      "completion_tokens": 930,
+      "total_tokens": 1413,
+      "total_cost": 0.0024699,
+      "tags": [
+        "benchmark",
+        "graph:step:26",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-2f24-7673-993b-2a9ce3f313cb",
+      "parent_run_id": "01a0650a-2f0e-7ed0-a743-f0a9d3a92ff8",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:12:41.380979+00:00",
+      "end_time": "2026-09-03T02:12:42.197177+00:00",
+      "latency_seconds": 0.816198,
+      "prompt_tokens": 11419,
+      "completion_tokens": 33,
+      "total_tokens": 11452,
+      "total_cost": 0.00064458,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-2f0e-7ed0-a743-f0a9d3a92ff8",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:12:41.358344+00:00",
+      "end_time": "2026-09-03T02:12:42.199110+00:00",
+      "latency_seconds": 0.840766,
+      "prompt_tokens": 11419,
+      "completion_tokens": 33,
+      "total_tokens": 11452,
+      "total_cost": 0.00064458,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "max_iter_1",
+        "graph:step:25"
+      ]
+    },
+    {
+      "run_id": "01a0650a-2ba0-7252-8c29-c654d2b7f6f1",
+      "parent_run_id": "01a0650a-2b9e-7a90-81d1-31130e0cc8c0",
+      "name": "store_context",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:12:40.480671+00:00",
+      "end_time": "2026-09-03T02:12:41.354101+00:00",
+      "latency_seconds": 0.87343,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-2b9e-7a90-81d1-31130e0cc8c0",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:12:40.478991+00:00",
+      "end_time": "2026-09-03T02:12:41.356201+00:00",
+      "latency_seconds": 0.87721,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "graph:step:24",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-2919-7911-b0d7-ef7d74cb880e",
+      "parent_run_id": "01a0650a-2914-7071-b41b-da26d24cf5e7",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:12:39.833986+00:00",
+      "end_time": "2026-09-03T02:12:44.374368+00:00",
+      "latency_seconds": 4.540382,
+      "prompt_tokens": 6969,
+      "completion_tokens": 1004,
+      "total_tokens": 7973,
+      "total_cost": 0.00317159,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-2914-7071-b41b-da26d24cf5e7",
+      "parent_run_id": "01a06509-337f-79d3-b797-6c7d044a8495",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:12:39.828112+00:00",
+      "end_time": "2026-09-03T02:12:44.375665+00:00",
+      "latency_seconds": 4.547553,
+      "prompt_tokens": 6969,
+      "completion_tokens": 1004,
+      "total_tokens": 7973,
+      "total_cost": 0.00317159,
+      "tags": [
+        "benchmark",
+        "graph:step:11",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-1f63-7091-b0b7-3ac09754615b",
+      "parent_run_id": "01a0650a-1f52-7151-8b88-3a4a0f667d78",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:12:37.347797+00:00",
+      "end_time": "2026-09-03T02:12:40.475351+00:00",
+      "latency_seconds": 3.127554,
+      "prompt_tokens": 10889,
+      "completion_tokens": 567,
+      "total_tokens": 11456,
+      "total_cost": 0.00205548,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-1f52-7151-8b88-3a4a0f667d78",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:12:37.330634+00:00",
+      "end_time": "2026-09-03T02:12:40.477157+00:00",
+      "latency_seconds": 3.146523,
+      "prompt_tokens": 10889,
+      "completion_tokens": 567,
+      "total_tokens": 11456,
+      "total_cost": 0.00205548,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "graph:step:23",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-16e8-7d61-9b9b-a2c9e499018c",
+      "parent_run_id": "01a0650a-16e6-7780-8681-a9974b509da1",
+      "name": "tavily_search",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:12:35.176825+00:00",
+      "end_time": "2026-09-03T02:12:37.326333+00:00",
+      "latency_seconds": 2.149508,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-16e6-7780-8681-a9974b509da1",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:12:35.174179+00:00",
+      "end_time": "2026-09-03T02:12:37.328279+00:00",
+      "latency_seconds": 2.1541,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "graph:step:22",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-127a-74f2-8b4e-7809784cfed8",
+      "parent_run_id": "01a0650a-126b-7473-932c-c638a074f5db",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:12:34.042562+00:00",
+      "end_time": "2026-09-03T02:12:35.169767+00:00",
+      "latency_seconds": 1.127205,
+      "prompt_tokens": 10434,
+      "completion_tokens": 91,
+      "total_tokens": 10525,
+      "total_cost": 0.0007279,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-126b-7473-932c-c638a074f5db",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:12:34.027164+00:00",
+      "end_time": "2026-09-03T02:12:35.171920+00:00",
+      "latency_seconds": 1.144756,
+      "prompt_tokens": 10434,
+      "completion_tokens": 91,
+      "total_tokens": 10525,
+      "total_cost": 0.0007279,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "max_iter_1",
+        "graph:step:21"
+      ]
+    },
+    {
+      "run_id": "01a0650a-02d4-7440-82ab-c9cd96449ee3",
+      "parent_run_id": "01a0650a-0010-7462-b453-27a51f830eca",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:12:30.036653+00:00",
+      "end_time": "2026-09-03T02:12:33.433916+00:00",
+      "latency_seconds": 3.397263,
+      "prompt_tokens": 392,
+      "completion_tokens": 690,
+      "total_tokens": 1082,
+      "total_cost": 0.0018426,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-0010-7462-b453-27a51f830eca",
+      "parent_run_id": "01a0650a-000f-7e01-af85-a783c5680963",
+      "name": "summarize_context",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:12:29.328783+00:00",
+      "end_time": "2026-09-03T02:12:34.024085+00:00",
+      "latency_seconds": 4.695302,
+      "prompt_tokens": 392,
+      "completion_tokens": 690,
+      "total_tokens": 1082,
+      "total_cost": 0.0018426,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a0650a-000f-7e01-af85-a783c5680963",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:12:29.327032+00:00",
+      "end_time": "2026-09-03T02:12:34.025635+00:00",
+      "latency_seconds": 4.698603,
+      "prompt_tokens": 392,
+      "completion_tokens": 690,
+      "total_tokens": 1082,
+      "total_cost": 0.0018426,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "graph:step:20",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-fd0c-7471-81b9-be659f692b6d",
+      "parent_run_id": "01a06509-fcf6-7bb1-a8ef-3fdb84a69402",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:12:28.556115+00:00",
+      "end_time": "2026-09-03T02:12:29.323350+00:00",
+      "latency_seconds": 0.767235,
+      "prompt_tokens": 10258,
+      "completion_tokens": 33,
+      "total_tokens": 10291,
+      "total_cost": 0.0005301,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-fcf6-7bb1-a8ef-3fdb84a69402",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:12:28.534833+00:00",
+      "end_time": "2026-09-03T02:12:29.325306+00:00",
+      "latency_seconds": 0.790473,
+      "prompt_tokens": 10258,
+      "completion_tokens": 33,
+      "total_tokens": 10291,
+      "total_cost": 0.0005301,
+      "tags": [
+        "benchmark",
+        "graph:step:19",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-f50e-70e3-804c-7c7c9bb206f3",
+      "parent_run_id": "01a06509-f50b-7490-94f0-99becaade58d",
+      "name": "store_context",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:12:26.510280+00:00",
+      "end_time": "2026-09-03T02:12:28.531881+00:00",
+      "latency_seconds": 2.021601,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-f50b-7490-94f0-99becaade58d",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:12:26.507949+00:00",
+      "end_time": "2026-09-03T02:12:28.533255+00:00",
+      "latency_seconds": 2.025306,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "max_iter_1",
+        "graph:step:18"
+      ]
+    },
+    {
+      "run_id": "01a06509-e896-7d10-84ae-bc17226413dc",
+      "parent_run_id": "01a06509-e884-74c3-8165-44897be9074c",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:12:23.318042+00:00",
+      "end_time": "2026-09-03T02:12:26.503791+00:00",
+      "latency_seconds": 3.185749,
+      "prompt_tokens": 9820,
+      "completion_tokens": 481,
+      "total_tokens": 10301,
+      "total_cost": 0.00174928,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-e884-74c3-8165-44897be9074c",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:12:23.300387+00:00",
+      "end_time": "2026-09-03T02:12:26.505958+00:00",
+      "latency_seconds": 3.205571,
+      "prompt_tokens": 9820,
+      "completion_tokens": 481,
+      "total_tokens": 10301,
+      "total_cost": 0.00174928,
+      "tags": [
+        "benchmark",
+        "graph:step:17",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-dfe6-7052-a51a-3c67fad3c66a",
+      "parent_run_id": "01a06509-dfe5-70f3-b675-76f63e4af17c",
+      "name": "tavily_search",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:12:21.094732+00:00",
+      "end_time": "2026-09-03T02:12:23.296355+00:00",
+      "latency_seconds": 2.201623,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-dfe5-70f3-b675-76f63e4af17c",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:12:21.093071+00:00",
+      "end_time": "2026-09-03T02:12:23.298314+00:00",
+      "latency_seconds": 2.205243,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "graph:step:16",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-d84e-7f12-aa6d-afcfc69f88a1",
+      "parent_run_id": "01a06509-d83a-7e63-96d9-c61cf8f554fd",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:12:19.150953+00:00",
+      "end_time": "2026-09-03T02:12:21.089924+00:00",
+      "latency_seconds": 1.938971,
+      "prompt_tokens": 9448,
+      "completion_tokens": 231,
+      "total_tokens": 9679,
+      "total_cost": 0.00122031,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-d83a-7e63-96d9-c61cf8f554fd",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:12:19.130057+00:00",
+      "end_time": "2026-09-03T02:12:21.091686+00:00",
+      "latency_seconds": 1.961629,
+      "prompt_tokens": 9448,
+      "completion_tokens": 231,
+      "total_tokens": 9679,
+      "total_cost": 0.00122031,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "graph:step:15",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-b462-7961-9868-2394746eb8ef",
+      "parent_run_id": "01a06509-b375-76a2-9651-b475a5344631",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:12:09.954671+00:00",
+      "end_time": "2026-09-03T02:12:18.601133+00:00",
+      "latency_seconds": 8.646462,
+      "prompt_tokens": 1633,
+      "completion_tokens": 1924,
+      "total_tokens": 3557,
+      "total_cost": 0.0052999,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-b375-76a2-9651-b475a5344631",
+      "parent_run_id": "01a06509-b373-73e0-97f2-5e9ddc6a8756",
+      "name": "summarize_context",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:12:09.717322+00:00",
+      "end_time": "2026-09-03T02:12:19.126851+00:00",
+      "latency_seconds": 9.409529,
+      "prompt_tokens": 1633,
+      "completion_tokens": 1924,
+      "total_tokens": 3557,
+      "total_cost": 0.0052999,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-b373-73e0-97f2-5e9ddc6a8756",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:12:09.715594+00:00",
+      "end_time": "2026-09-03T02:12:19.128510+00:00",
+      "latency_seconds": 9.412916,
+      "prompt_tokens": 1633,
+      "completion_tokens": 1924,
+      "total_tokens": 3557,
+      "total_cost": 0.0052999,
+      "tags": [
+        "benchmark",
+        "graph:step:14",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-b03c-7021-8d05-9e2d6fc280dc",
+      "parent_run_id": "01a06509-b029-7dd3-ab3c-361f16c93f42",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:12:08.892563+00:00",
+      "end_time": "2026-09-03T02:12:09.712672+00:00",
+      "latency_seconds": 0.820109,
+      "prompt_tokens": 8351,
+      "completion_tokens": 41,
+      "total_tokens": 8392,
+      "total_cost": 0.00092354,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-b029-7dd3-ab3c-361f16c93f42",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:12:08.873470+00:00",
+      "end_time": "2026-09-03T02:12:09.714237+00:00",
+      "latency_seconds": 0.840767,
+      "prompt_tokens": 8351,
+      "completion_tokens": 41,
+      "total_tokens": 8392,
+      "total_cost": 0.00092354,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "max_iter_1",
+        "graph:step:13"
+      ]
+    },
+    {
+      "run_id": "01a06509-af28-76e1-8ad7-63ffefc504c9",
+      "parent_run_id": "01a06509-af13-78a1-89ac-95863355c77d",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:12:08.616182+00:00",
+      "end_time": "2026-09-03T02:12:15.590835+00:00",
+      "latency_seconds": 6.974653,
+      "prompt_tokens": 4984,
+      "completion_tokens": 1537,
+      "total_tokens": 6521,
+      "total_cost": 0.00510631,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-af13-78a1-89ac-95863355c77d",
+      "parent_run_id": "01a06509-33a9-7dd2-a447-230d44904159",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:12:08.595737+00:00",
+      "end_time": "2026-09-03T02:12:15.592731+00:00",
+      "latency_seconds": 6.996994,
+      "prompt_tokens": 4984,
+      "completion_tokens": 1537,
+      "total_tokens": 6521,
+      "total_cost": 0.00510631,
+      "tags": [
+        "benchmark",
+        "graph:step:11",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-acbe-7bc0-924a-33c9970474eb",
+      "parent_run_id": "01a06509-acbb-7af0-81fb-bbadbe052b1e",
+      "name": "store_context",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:12:07.998138+00:00",
+      "end_time": "2026-09-03T02:12:08.869148+00:00",
+      "latency_seconds": 0.87101,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-acbb-7af0-81fb-bbadbe052b1e",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:12:07.995857+00:00",
+      "end_time": "2026-09-03T02:12:08.871622+00:00",
+      "latency_seconds": 0.875765,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "graph:step:12",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-a839-7ae3-86a1-62839f653239",
+      "parent_run_id": "01a06509-a838-7332-aab2-dd55cd3abc1c",
+      "name": "arxiv_search",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:12:06.841621+00:00",
+      "end_time": "2026-09-03T02:12:39.827362+00:00",
+      "latency_seconds": 32.985741,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-a838-7332-aab2-dd55cd3abc1c",
+      "parent_run_id": "01a06509-a836-7a43-b8d1-288c823d5a48",
+      "name": "handle_tool_errors.wrap_tool_call",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:12:06.840432+00:00",
+      "end_time": "2026-09-03T02:12:39.827525+00:00",
+      "latency_seconds": 32.987093,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": []
+    },
+    {
+      "run_id": "01a06509-a836-7a43-b8d1-288c823d5a48",
+      "parent_run_id": "01a06509-337f-79d3-b797-6c7d044a8495",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:12:06.838855+00:00",
+      "end_time": "2026-09-03T02:12:39.827786+00:00",
+      "latency_seconds": 32.988931,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "max_iter_1",
+        "graph:step:10"
+      ]
+    },
+    {
+      "run_id": "01a06509-a23a-7fe3-a431-d8264ce5b6ef",
+      "parent_run_id": "01a06509-a225-77c2-a02d-c8506daa07e3",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:12:05.306777+00:00",
+      "end_time": "2026-09-03T02:12:06.836110+00:00",
+      "latency_seconds": 1.529333,
+      "prompt_tokens": 6143,
+      "completion_tokens": 156,
+      "total_tokens": 6299,
+      "total_cost": 0.00080163,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-a225-77c2-a02d-c8506daa07e3",
+      "parent_run_id": "01a06509-337f-79d3-b797-6c7d044a8495",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:12:05.285063+00:00",
+      "end_time": "2026-09-03T02:12:06.837552+00:00",
+      "latency_seconds": 1.552489,
+      "prompt_tokens": 6143,
+      "completion_tokens": 156,
+      "total_tokens": 6299,
+      "total_cost": 0.00080163,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "graph:step:9",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-91c1-7311-b13f-5e3f168e9dab",
+      "parent_run_id": "01a06509-91bf-7d23-9a82-d0d8a5a9205c",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:12:01.089393+00:00",
+      "end_time": "2026-09-03T02:12:08.591795+00:00",
+      "latency_seconds": 7.502402,
+      "prompt_tokens": 544,
+      "completion_tokens": 1401,
+      "total_tokens": 1945,
+      "total_cost": 0.0036657,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-91bf-7d23-9a82-d0d8a5a9205c",
+      "parent_run_id": "01a06509-91be-7660-98c4-f4277843d9ce",
+      "name": "think",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:12:01.088002+00:00",
+      "end_time": "2026-09-03T02:12:08.592868+00:00",
+      "latency_seconds": 7.504866,
+      "prompt_tokens": 544,
+      "completion_tokens": 1401,
+      "total_tokens": 1945,
+      "total_cost": 0.0036657,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-91be-7660-98c4-f4277843d9ce",
+      "parent_run_id": "01a06509-33a9-7dd2-a447-230d44904159",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:12:01.086193+00:00",
+      "end_time": "2026-09-03T02:12:08.594262+00:00",
+      "latency_seconds": 7.508069,
+      "prompt_tokens": 544,
+      "completion_tokens": 1401,
+      "total_tokens": 1945,
+      "total_cost": 0.0036657,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "max_iter_1",
+        "graph:step:10"
+      ]
+    },
+    {
+      "run_id": "01a06509-8e7f-7b12-ab7c-6e95a5d788f2",
+      "parent_run_id": "01a06509-8e79-78a1-9f5f-5a70f93ba0da",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:12:00.255469+00:00",
+      "end_time": "2026-09-03T02:12:07.992475+00:00",
+      "latency_seconds": 7.737006,
+      "prompt_tokens": 6632,
+      "completion_tokens": 1823,
+      "total_tokens": 8455,
+      "total_cost": 0.00535694,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-8e79-78a1-9f5f-5a70f93ba0da",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:12:00.249273+00:00",
+      "end_time": "2026-09-03T02:12:07.994333+00:00",
+      "latency_seconds": 7.74506,
+      "prompt_tokens": 6632,
+      "completion_tokens": 1823,
+      "total_tokens": 8455,
+      "total_cost": 0.00535694,
+      "tags": [
+        "benchmark",
+        "graph:step:11",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-8c06-75a3-afde-c1e1eea0c369",
+      "parent_run_id": "01a06509-8c04-7162-bf65-48717b8c7f1c",
+      "name": "web_scraper",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:11:59.622719+00:00",
+      "end_time": "2026-09-03T02:12:00.248502+00:00",
+      "latency_seconds": 0.625783,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-8c04-7162-bf65-48717b8c7f1c",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:59.620876+00:00",
+      "end_time": "2026-09-03T02:12:00.248894+00:00",
+      "latency_seconds": 0.628018,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "max_iter_1",
+        "graph:step:10"
+      ]
+    },
+    {
+      "run_id": "01a06509-8a8c-76a2-ba30-7bc74e5deb88",
+      "parent_run_id": "01a06509-8a77-7441-99aa-449635248d53",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:11:59.244750+00:00",
+      "end_time": "2026-09-03T02:12:01.082647+00:00",
+      "latency_seconds": 1.837897,
+      "prompt_tokens": 4688,
+      "completion_tokens": 258,
+      "total_tokens": 4946,
+      "total_cost": 0.0020514,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-8a77-7441-99aa-449635248d53",
+      "parent_run_id": "01a06509-33a9-7dd2-a447-230d44904159",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:59.223736+00:00",
+      "end_time": "2026-09-03T02:12:01.084739+00:00",
+      "latency_seconds": 1.861003,
+      "prompt_tokens": 4688,
+      "completion_tokens": 258,
+      "total_tokens": 4946,
+      "total_cost": 0.0020514,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "graph:step:9",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-8525-7e30-8705-d63829b77f71",
+      "parent_run_id": "01a06509-8513-71c0-b6ce-8469148087b7",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:11:57.861024+00:00",
+      "end_time": "2026-09-03T02:11:59.617906+00:00",
+      "latency_seconds": 1.756882,
+      "prompt_tokens": 4965,
+      "completion_tokens": 213,
+      "total_tokens": 5178,
+      "total_cost": 0.00084696,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-8513-71c0-b6ce-8469148087b7",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:57.843485+00:00",
+      "end_time": "2026-09-03T02:11:59.619411+00:00",
+      "latency_seconds": 1.775926,
+      "prompt_tokens": 4965,
+      "completion_tokens": 213,
+      "total_tokens": 5178,
+      "total_cost": 0.00084696,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "graph:step:9",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-7246-7b60-8403-430068cc47da",
+      "parent_run_id": "01a06509-7152-7a80-b22d-1fd77e31f32e",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:11:53.030601+00:00",
+      "end_time": "2026-09-03T02:12:04.777745+00:00",
+      "latency_seconds": 11.747144,
+      "prompt_tokens": 1339,
+      "completion_tokens": 2606,
+      "total_tokens": 3945,
+      "total_cost": 0.0069167,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-7152-7a80-b22d-1fd77e31f32e",
+      "parent_run_id": "01a06509-7151-7652-ba22-94a26b325c83",
+      "name": "summarize_context",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:11:52.786604+00:00",
+      "end_time": "2026-09-03T02:12:05.281454+00:00",
+      "latency_seconds": 12.49485,
+      "prompt_tokens": 1339,
+      "completion_tokens": 2606,
+      "total_tokens": 3945,
+      "total_cost": 0.0069167,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-7151-7652-ba22-94a26b325c83",
+      "parent_run_id": "01a06509-714e-70f0-a558-41b993129699",
+      "name": "handle_tool_errors.wrap_tool_call",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:52.785304+00:00",
+      "end_time": "2026-09-03T02:12:05.282106+00:00",
+      "latency_seconds": 12.496802,
+      "prompt_tokens": 1339,
+      "completion_tokens": 2606,
+      "total_tokens": 3945,
+      "total_cost": 0.0069167,
+      "tags": []
+    },
+    {
+      "run_id": "01a06509-714e-70f0-a558-41b993129699",
+      "parent_run_id": "01a06509-337f-79d3-b797-6c7d044a8495",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:52.783027+00:00",
+      "end_time": "2026-09-03T02:12:05.283571+00:00",
+      "latency_seconds": 12.500544,
+      "prompt_tokens": 1339,
+      "completion_tokens": 2606,
+      "total_tokens": 3945,
+      "total_cost": 0.0069167,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "graph:step:8",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-6e71-7472-9a4f-198af415448b",
+      "parent_run_id": "01a06509-6e58-7333-9ecf-3c295f9d0690",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:11:52.049198+00:00",
+      "end_time": "2026-09-03T02:11:52.777876+00:00",
+      "latency_seconds": 0.728678,
+      "prompt_tokens": 5650,
+      "completion_tokens": 38,
+      "total_tokens": 5688,
+      "total_cost": 0.00084338,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-6e58-7333-9ecf-3c295f9d0690",
+      "parent_run_id": "01a06509-337f-79d3-b797-6c7d044a8495",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:52.024869+00:00",
+      "end_time": "2026-09-03T02:11:52.781244+00:00",
+      "latency_seconds": 0.756375,
+      "prompt_tokens": 5650,
+      "completion_tokens": 38,
+      "total_tokens": 5688,
+      "total_cost": 0.00084338,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "graph:step:7",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-6ac2-7630-b5e7-591815450644",
+      "parent_run_id": "01a06509-6ac0-7650-a93f-3f0f514fc0d2",
+      "name": "store_context",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:11:51.106209+00:00",
+      "end_time": "2026-09-03T02:11:52.021084+00:00",
+      "latency_seconds": 0.914875,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-6ac0-7650-a93f-3f0f514fc0d2",
+      "parent_run_id": "01a06509-6abe-7bb3-bc3e-adc35694b603",
+      "name": "handle_tool_errors.wrap_tool_call",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:51.104835+00:00",
+      "end_time": "2026-09-03T02:11:52.021980+00:00",
+      "latency_seconds": 0.917145,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": []
+    },
+    {
+      "run_id": "01a06509-6abe-7bb3-bc3e-adc35694b603",
+      "parent_run_id": "01a06509-337f-79d3-b797-6c7d044a8495",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:51.102667+00:00",
+      "end_time": "2026-09-03T02:11:52.023474+00:00",
+      "latency_seconds": 0.920807,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "graph:step:6",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-6973-7030-86a3-807aa1c7aeba",
+      "parent_run_id": "01a06509-6888-7ec3-90af-bce3c06af544",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:11:50.771709+00:00",
+      "end_time": "2026-09-03T02:11:57.301653+00:00",
+      "latency_seconds": 6.529944,
+      "prompt_tokens": 1008,
+      "completion_tokens": 1353,
+      "total_tokens": 2361,
+      "total_cost": 0.0036849,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-6888-7ec3-90af-bce3c06af544",
+      "parent_run_id": "01a06509-6886-7cb3-aa41-b71d481e2551",
+      "name": "summarize_context",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:11:50.536403+00:00",
+      "end_time": "2026-09-03T02:11:57.840638+00:00",
+      "latency_seconds": 7.304235,
+      "prompt_tokens": 1008,
+      "completion_tokens": 1353,
+      "total_tokens": 2361,
+      "total_cost": 0.0036849,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-6886-7cb3-aa41-b71d481e2551",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:50.534629+00:00",
+      "end_time": "2026-09-03T02:11:57.842198+00:00",
+      "latency_seconds": 7.307569,
+      "prompt_tokens": 1008,
+      "completion_tokens": 1353,
+      "total_tokens": 2361,
+      "total_cost": 0.0036849,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "graph:step:8",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-6562-7120-8deb-804178d82987",
+      "parent_run_id": "01a06509-6553-7572-9398-c3b10e7985d7",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:11:49.730356+00:00",
+      "end_time": "2026-09-03T02:11:50.531346+00:00",
+      "latency_seconds": 0.80099,
+      "prompt_tokens": 4538,
+      "completion_tokens": 42,
+      "total_tokens": 4580,
+      "total_cost": 0.00053382,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-6553-7572-9398-c3b10e7985d7",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:49.715195+00:00",
+      "end_time": "2026-09-03T02:11:50.533224+00:00",
+      "latency_seconds": 0.818029,
+      "prompt_tokens": 4538,
+      "completion_tokens": 42,
+      "total_tokens": 4580,
+      "total_cost": 0.00053382,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "graph:step:7",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-64fe-7c13-a7a3-30dc8c52b288",
+      "parent_run_id": "01a06509-63ed-7451-b21b-1f644e276b87",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:11:49.630663+00:00",
+      "end_time": "2026-09-03T02:11:58.674752+00:00",
+      "latency_seconds": 9.044089,
+      "prompt_tokens": 843,
+      "completion_tokens": 2075,
+      "total_tokens": 2918,
+      "total_cost": 0.0054404,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-63ed-7451-b21b-1f644e276b87",
+      "parent_run_id": "01a06509-63eb-7422-86e3-2bf62e2ccc53",
+      "name": "summarize_context",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:11:49.357931+00:00",
+      "end_time": "2026-09-03T02:11:59.220887+00:00",
+      "latency_seconds": 9.862956,
+      "prompt_tokens": 843,
+      "completion_tokens": 2075,
+      "total_tokens": 2918,
+      "total_cost": 0.0054404,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-63eb-7422-86e3-2bf62e2ccc53",
+      "parent_run_id": "01a06509-33a9-7dd2-a447-230d44904159",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:49.356019+00:00",
+      "end_time": "2026-09-03T02:11:59.222394+00:00",
+      "latency_seconds": 9.866375,
+      "prompt_tokens": 843,
+      "completion_tokens": 2075,
+      "total_tokens": 2918,
+      "total_cost": 0.0054404,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "graph:step:8",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-61eb-7322-92c5-348691aee632",
+      "parent_run_id": "01a06509-61e9-72d2-87af-4e5f3f3d0a2c",
+      "name": "store_context",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:11:48.843596+00:00",
+      "end_time": "2026-09-03T02:11:49.712456+00:00",
+      "latency_seconds": 0.86886,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-61e9-72d2-87af-4e5f3f3d0a2c",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:48.841767+00:00",
+      "end_time": "2026-09-03T02:11:49.713954+00:00",
+      "latency_seconds": 0.872187,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "graph:step:6",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-6144-7f82-8cc4-2f1f525fc5e5",
+      "parent_run_id": "01a06509-6132-7e40-bfd3-fd068517941f",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:11:48.677032+00:00",
+      "end_time": "2026-09-03T02:11:49.352766+00:00",
+      "latency_seconds": 0.675734,
+      "prompt_tokens": 4145,
+      "completion_tokens": 43,
+      "total_tokens": 4188,
+      "total_cost": 0.001351,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-6132-7e40-bfd3-fd068517941f",
+      "parent_run_id": "01a06509-33a9-7dd2-a447-230d44904159",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:48.658285+00:00",
+      "end_time": "2026-09-03T02:11:49.354491+00:00",
+      "latency_seconds": 0.696206,
+      "prompt_tokens": 4145,
+      "completion_tokens": 43,
+      "total_tokens": 4188,
+      "total_cost": 0.001351,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "graph:step:7",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-6046-73d0-893d-75afa3ec7c1c",
+      "parent_run_id": "01a06509-6032-74f3-a23b-39e8651c4986",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:11:48.422565+00:00",
+      "end_time": "2026-09-03T02:11:50.876724+00:00",
+      "latency_seconds": 2.454159,
+      "prompt_tokens": 3323,
+      "completion_tokens": 362,
+      "total_tokens": 3685,
+      "total_cost": 0.00118775,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-6032-74f3-a23b-39e8651c4986",
+      "parent_run_id": "01a06509-33a1-7453-ab2d-e81073b0cd85",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:48.402252+00:00",
+      "end_time": "2026-09-03T02:11:50.878473+00:00",
+      "latency_seconds": 2.476221,
+      "prompt_tokens": 3323,
+      "completion_tokens": 362,
+      "total_tokens": 3685,
+      "total_cost": 0.00118775,
+      "tags": [
+        "benchmark",
+        "graph:step:5",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-5d68-7c61-8712-28a8a8428556",
+      "parent_run_id": "01a06509-5d66-7fb3-b7aa-bbd3e3e94fc1",
+      "name": "store_context",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:11:47.688888+00:00",
+      "end_time": "2026-09-03T02:11:48.654559+00:00",
+      "latency_seconds": 0.965671,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-5d66-7fb3-b7aa-bbd3e3e94fc1",
+      "parent_run_id": "01a06509-33a9-7dd2-a447-230d44904159",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:47.686683+00:00",
+      "end_time": "2026-09-03T02:11:48.656574+00:00",
+      "latency_seconds": 0.969891,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "graph:step:6",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-5464-7871-a3ba-1a355c539f7c",
+      "parent_run_id": "01a06509-5450-7fe0-b694-ced0d14360f2",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:11:45.380710+00:00",
+      "end_time": "2026-09-03T02:11:51.099269+00:00",
+      "latency_seconds": 5.718559,
+      "prompt_tokens": 4169,
+      "completion_tokens": 1511,
+      "total_tokens": 5680,
+      "total_cost": 0.00433835,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-5450-7fe0-b694-ced0d14360f2",
+      "parent_run_id": "01a06509-337f-79d3-b797-6c7d044a8495",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:45.360436+00:00",
+      "end_time": "2026-09-03T02:11:51.101201+00:00",
+      "latency_seconds": 5.740765,
+      "prompt_tokens": 4169,
+      "completion_tokens": 1511,
+      "total_tokens": 5680,
+      "total_cost": 0.00433835,
+      "tags": [
+        "benchmark",
+        "graph:step:5",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-5423-7141-a26d-b4f6e6b593a7",
+      "parent_run_id": "01a06509-5421-7070-8eb3-883b79eb6131",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:11:45.315469+00:00",
+      "end_time": "2026-09-03T02:11:48.397934+00:00",
+      "latency_seconds": 3.082465,
+      "prompt_tokens": 439,
+      "completion_tokens": 536,
+      "total_tokens": 975,
+      "total_cost": 0.0014717,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-5421-7070-8eb3-883b79eb6131",
+      "parent_run_id": "01a06509-5420-73a0-a794-7efefeffdde3",
+      "name": "think",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:11:45.313529+00:00",
+      "end_time": "2026-09-03T02:11:48.399208+00:00",
+      "latency_seconds": 3.085679,
+      "prompt_tokens": 439,
+      "completion_tokens": 536,
+      "total_tokens": 975,
+      "total_cost": 0.0014717,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-5420-73a0-a794-7efefeffdde3",
+      "parent_run_id": "01a06509-33a1-7453-ab2d-e81073b0cd85",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:45.312167+00:00",
+      "end_time": "2026-09-03T02:11:48.400766+00:00",
+      "latency_seconds": 3.088599,
+      "prompt_tokens": 439,
+      "completion_tokens": 536,
+      "total_tokens": 975,
+      "total_cost": 0.0014717,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "graph:step:4",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-4e7f-7c03-b660-86d5c9c10dc6",
+      "parent_run_id": "01a06509-4e6f-7723-b9a4-7b773746e45a",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:11:43.871294+00:00",
+      "end_time": "2026-09-03T02:11:48.838582+00:00",
+      "latency_seconds": 4.967288,
+      "prompt_tokens": 3407,
+      "completion_tokens": 1136,
+      "total_tokens": 4543,
+      "total_cost": 0.00318494,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-4e6f-7723-b9a4-7b773746e45a",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:43.855122+00:00",
+      "end_time": "2026-09-03T02:11:48.840192+00:00",
+      "latency_seconds": 4.98507,
+      "prompt_tokens": 3407,
+      "completion_tokens": 1136,
+      "total_tokens": 4543,
+      "total_cost": 0.00318494,
+      "tags": [
+        "benchmark",
+        "graph:step:5",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-4d79-70b0-b1aa-707296e7aad7",
+      "parent_run_id": "01a06509-4d66-7971-b70a-22faa5b07774",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:11:43.609621+00:00",
+      "end_time": "2026-09-03T02:11:47.683218+00:00",
+      "latency_seconds": 4.073597,
+      "prompt_tokens": 3220,
+      "completion_tokens": 944,
+      "total_tokens": 4164,
+      "total_cost": 0.003326,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-4d66-7971-b70a-22faa5b07774",
+      "parent_run_id": "01a06509-33a9-7dd2-a447-230d44904159",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:43.590644+00:00",
+      "end_time": "2026-09-03T02:11:47.685199+00:00",
+      "latency_seconds": 4.094555,
+      "prompt_tokens": 3220,
+      "completion_tokens": 944,
+      "total_tokens": 4164,
+      "total_cost": 0.003326,
+      "tags": [
+        "benchmark",
+        "graph:step:5",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-4d16-79f3-8bc9-e93ab1d1022d",
+      "parent_run_id": "01a06509-4d00-7270-8279-d4905814215b",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:11:43.510231+00:00",
+      "end_time": "2026-09-03T02:11:45.310040+00:00",
+      "latency_seconds": 1.799809,
+      "prompt_tokens": 3152,
+      "completion_tokens": 283,
+      "total_tokens": 3435,
+      "total_cost": 0.00147004,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-4d00-7270-8279-d4905814215b",
+      "parent_run_id": "01a06509-33a1-7453-ab2d-e81073b0cd85",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:43.488556+00:00",
+      "end_time": "2026-09-03T02:11:45.311327+00:00",
+      "latency_seconds": 1.822771,
+      "prompt_tokens": 3152,
+      "completion_tokens": 283,
+      "total_tokens": 3435,
+      "total_cost": 0.00147004,
+      "tags": [
+        "benchmark",
+        "graph:step:3",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-4c2e-74c0-a03d-782da07bcc33",
+      "parent_run_id": "01a06509-4c2c-7241-a625-8412bba5cc47",
+      "name": "get_context_index",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:11:43.278327+00:00",
+      "end_time": "2026-09-03T02:11:43.485425+00:00",
+      "latency_seconds": 0.207098,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-4c2c-7241-a625-8412bba5cc47",
+      "parent_run_id": "01a06509-33a1-7453-ab2d-e81073b0cd85",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:43.276845+00:00",
+      "end_time": "2026-09-03T02:11:43.487135+00:00",
+      "latency_seconds": 0.21029,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "graph:step:2",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-43ca-75e3-9b76-e1b5cccbba63",
+      "parent_run_id": "01a06509-43c8-7812-ba9b-1cecad0ad017",
+      "name": "tavily_search",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:11:41.130352+00:00",
+      "end_time": "2026-09-03T02:11:45.357537+00:00",
+      "latency_seconds": 4.227185,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-43c8-7812-ba9b-1cecad0ad017",
+      "parent_run_id": "01a06509-43c6-7f81-863c-0209401879fc",
+      "name": "handle_tool_errors.wrap_tool_call",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:41.128873+00:00",
+      "end_time": "2026-09-03T02:11:45.358093+00:00",
+      "latency_seconds": 4.22922,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": []
+    },
+    {
+      "run_id": "01a06509-43c6-7f81-863c-0209401879fc",
+      "parent_run_id": "01a06509-337f-79d3-b797-6c7d044a8495",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:41.126976+00:00",
+      "end_time": "2026-09-03T02:11:45.359244+00:00",
+      "latency_seconds": 4.232268,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "graph:step:4",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-439c-7b52-a960-b305526d1f4a",
+      "parent_run_id": "01a06509-439a-7543-b782-2eab82d68f7e",
+      "name": "tavily_search",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:11:41.084721+00:00",
+      "end_time": "2026-09-03T02:11:43.587301+00:00",
+      "latency_seconds": 2.50258,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-439a-7543-b782-2eab82d68f7e",
+      "parent_run_id": "01a06509-33a9-7dd2-a447-230d44904159",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:41.082927+00:00",
+      "end_time": "2026-09-03T02:11:43.589055+00:00",
+      "latency_seconds": 2.506128,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "graph:step:4",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-433b-7373-a5e0-b44bac53c4ed",
+      "parent_run_id": "01a06509-4339-7622-bbec-7ecb852fe8b0",
+      "name": "tavily_search",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:11:40.987809+00:00",
+      "end_time": "2026-09-03T02:11:43.851740+00:00",
+      "latency_seconds": 2.863931,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-4339-7622-bbec-7ecb852fe8b0",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:40.985961+00:00",
+      "end_time": "2026-09-03T02:11:43.853572+00:00",
+      "latency_seconds": 2.867611,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "graph:step:4",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-406d-73f0-9b00-735d60494734",
+      "parent_run_id": "01a06509-4066-7b42-aff2-8d29a05289a3",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:11:40.269412+00:00",
+      "end_time": "2026-09-03T02:11:40.982716+00:00",
+      "latency_seconds": 0.713304,
+      "prompt_tokens": 2352,
+      "completion_tokens": 52,
+      "total_tokens": 2404,
+      "total_cost": 0.0004144,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-4066-7b42-aff2-8d29a05289a3",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:40.262183+00:00",
+      "end_time": "2026-09-03T02:11:40.984485+00:00",
+      "latency_seconds": 0.722302,
+      "prompt_tokens": 2352,
+      "completion_tokens": 52,
+      "total_tokens": 2404,
+      "total_cost": 0.0004144,
+      "tags": [
+        "benchmark",
+        "graph:step:3",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-4063-7932-977e-930138ea7e06",
+      "parent_run_id": "01a06509-4058-7062-bd25-50e7022d576c",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:11:40.259205+00:00",
+      "end_time": "2026-09-03T02:11:41.079999+00:00",
+      "latency_seconds": 0.820794,
+      "prompt_tokens": 2347,
+      "completion_tokens": 62,
+      "total_tokens": 2409,
+      "total_cost": 0.0008591,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-4058-7062-bd25-50e7022d576c",
+      "parent_run_id": "01a06509-33a9-7dd2-a447-230d44904159",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:40.248688+00:00",
+      "end_time": "2026-09-03T02:11:41.081619+00:00",
+      "latency_seconds": 0.832931,
+      "prompt_tokens": 2347,
+      "completion_tokens": 62,
+      "total_tokens": 2409,
+      "total_cost": 0.0008591,
+      "tags": [
+        "benchmark",
+        "graph:step:3",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-4050-7b10-b2f4-bfead88be129",
+      "parent_run_id": "01a06509-403c-7a92-bb82-1570ef06c488",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:11:40.240878+00:00",
+      "end_time": "2026-09-03T02:11:41.124421+00:00",
+      "latency_seconds": 0.883543,
+      "prompt_tokens": 2751,
+      "completion_tokens": 93,
+      "total_tokens": 2844,
+      "total_cost": 0.0010578,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-403c-7a92-bb82-1570ef06c488",
+      "parent_run_id": "01a06509-337f-79d3-b797-6c7d044a8495",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:40.220433+00:00",
+      "end_time": "2026-09-03T02:11:41.125925+00:00",
+      "latency_seconds": 0.905492,
+      "prompt_tokens": 2751,
+      "completion_tokens": 93,
+      "total_tokens": 2844,
+      "total_cost": 0.0010578,
+      "tags": [
+        "benchmark",
+        "graph:step:3",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-3c97-7e43-9dcf-9cb1c5ade90a",
+      "parent_run_id": "01a06509-3c96-77b2-a1f4-1209634d27b8",
+      "name": "get_context_index",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:11:39.287778+00:00",
+      "end_time": "2026-09-03T02:11:40.216663+00:00",
+      "latency_seconds": 0.928885,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-3c96-77b2-a1f4-1209634d27b8",
+      "parent_run_id": "01a06509-3c92-7f63-9013-cf3c691ae934",
+      "name": "handle_tool_errors.wrap_tool_call",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:39.286200+00:00",
+      "end_time": "2026-09-03T02:11:40.217635+00:00",
+      "latency_seconds": 0.931435,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": []
+    },
+    {
+      "run_id": "01a06509-3c92-7f63-9013-cf3c691ae934",
+      "parent_run_id": "01a06509-337f-79d3-b797-6c7d044a8495",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:39.282711+00:00",
+      "end_time": "2026-09-03T02:11:40.219095+00:00",
+      "latency_seconds": 0.936384,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "graph:step:2",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-3c2c-7bb3-942d-8277432bec76",
+      "parent_run_id": "01a06509-3c2b-7823-83cb-a61ad6d4a7df",
+      "name": "get_context_index",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:11:39.180406+00:00",
+      "end_time": "2026-09-03T02:11:40.247389+00:00",
+      "latency_seconds": 1.066983,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-3c2b-7823-83cb-a61ad6d4a7df",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:39.179134+00:00",
+      "end_time": "2026-09-03T02:11:40.261882+00:00",
+      "latency_seconds": 1.082748,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "graph:step:2",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-3b63-7d50-bf5e-a03c1dc977b5",
+      "parent_run_id": "01a06509-3b60-7de0-a0b7-57be127ffa87",
+      "name": "get_context_index",
+      "run_type": "tool",
+      "start_time": "2026-09-03T02:11:38.979101+00:00",
+      "end_time": "2026-09-03T02:11:40.247716+00:00",
+      "latency_seconds": 1.268615,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-3b60-7de0-a0b7-57be127ffa87",
+      "parent_run_id": "01a06509-33a9-7dd2-a447-230d44904159",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:38.976689+00:00",
+      "end_time": "2026-09-03T02:11:40.248231+00:00",
+      "latency_seconds": 1.271542,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "graph:step:2",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-33ae-7d02-ab6d-4327e4db27e3",
+      "parent_run_id": "01a06509-33a9-7dd2-a447-231a9da4915c",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:11:37.006134+00:00",
+      "end_time": "2026-09-03T02:11:38.973177+00:00",
+      "latency_seconds": 1.967043,
+      "prompt_tokens": 2322,
+      "completion_tokens": 276,
+      "total_tokens": 2598,
+      "total_cost": 0.0013866,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-33a9-7dd2-a447-231a9da4915c",
+      "parent_run_id": "01a06509-33a9-7dd2-a447-230d44904159",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:37.001980+00:00",
+      "end_time": "2026-09-03T02:11:38.975183+00:00",
+      "latency_seconds": 1.973203,
+      "prompt_tokens": 2322,
+      "completion_tokens": 276,
+      "total_tokens": 2598,
+      "total_cost": 0.0013866,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "max_iter_1",
+        "graph:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06509-33a9-7dd2-a447-230d44904159",
+      "parent_run_id": "01a06509-337b-7701-8e32-3ae508e392e2",
+      "name": "LangGraph",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:37.001640+00:00",
+      "end_time": "2026-09-03T02:12:15.594241+00:00",
+      "latency_seconds": 38.592601,
+      "prompt_tokens": 23093,
+      "completion_tokens": 6596,
+      "total_tokens": 29689,
+      "total_cost": 0.02318651,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-33a7-7383-98cd-d926026eeecd",
+      "parent_run_id": "01a06509-33a2-7653-a117-2c6dad298b09",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:11:36.999998+00:00",
+      "end_time": "2026-09-03T02:11:43.274294+00:00",
+      "latency_seconds": 6.274296,
+      "prompt_tokens": 3127,
+      "completion_tokens": 1185,
+      "total_tokens": 4312,
+      "total_cost": 0.0039006,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-33a2-7653-a117-2c6dad298b09",
+      "parent_run_id": "01a06509-33a1-7453-ab2d-e81073b0cd85",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:36.994354+00:00",
+      "end_time": "2026-09-03T02:11:43.275748+00:00",
+      "latency_seconds": 6.281394,
+      "prompt_tokens": 3127,
+      "completion_tokens": 1185,
+      "total_tokens": 4312,
+      "total_cost": 0.0039006,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "max_iter_1",
+        "graph:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06509-33a1-7453-ab2d-e81073b0cd85",
+      "parent_run_id": "01a06509-337a-7193-935d-e38291f182de",
+      "name": "LangGraph",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:36.993928+00:00",
+      "end_time": "2026-09-03T02:11:50.879889+00:00",
+      "latency_seconds": 13.885961,
+      "prompt_tokens": 10041,
+      "completion_tokens": 2366,
+      "total_tokens": 12407,
+      "total_cost": 0.00803009,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-339e-7b21-9808-d1fba38b5eb3",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f78404d762e5",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:11:36.990844+00:00",
+      "end_time": "2026-09-03T02:11:39.177333+00:00",
+      "latency_seconds": 2.186489,
+      "prompt_tokens": 2327,
+      "completion_tokens": 315,
+      "total_tokens": 2642,
+      "total_cost": 0.0014856,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-3399-73d3-8ba6-f78404d762e5",
+      "parent_run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:36.985940+00:00",
+      "end_time": "2026-09-03T02:11:39.178338+00:00",
+      "latency_seconds": 2.192398,
+      "prompt_tokens": 2327,
+      "completion_tokens": 315,
+      "total_tokens": 2642,
+      "total_cost": 0.0014856,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "max_iter_1",
+        "graph:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06509-3399-73d3-8ba6-f7735c65efd9",
+      "parent_run_id": "01a06509-337a-7193-935d-e37ec0805184",
+      "name": "LangGraph",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:36.985440+00:00",
+      "end_time": "2026-09-03T02:13:56.602779+00:00",
+      "latency_seconds": 139.617339,
+      "prompt_tokens": 233541,
+      "completion_tokens": 21597,
+      "total_tokens": 255138,
+      "total_cost": 0.08007072,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-338a-7372-987b-c58fa31cce2f",
+      "parent_run_id": "01a06509-3380-7b80-86d5-08634f9e7ee5",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:11:36.970512+00:00",
+      "end_time": "2026-09-03T02:11:39.280249+00:00",
+      "latency_seconds": 2.309737,
+      "prompt_tokens": 2726,
+      "completion_tokens": 351,
+      "total_tokens": 3077,
+      "total_cost": 0.0016953,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-3380-7b80-86d5-08634f9e7ee5",
+      "parent_run_id": "01a06509-337f-79d3-b797-6c7d044a8495",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:36.960481+00:00",
+      "end_time": "2026-09-03T02:11:39.281608+00:00",
+      "latency_seconds": 2.321127,
+      "prompt_tokens": 2726,
+      "completion_tokens": 351,
+      "total_tokens": 3077,
+      "total_cost": 0.0016953,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "max_iter_1",
+        "graph:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06509-337f-79d3-b797-6c7d044a8495",
+      "parent_run_id": "01a06509-337b-7701-8e32-3af53f31d068",
+      "name": "LangGraph",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:36.959793+00:00",
+      "end_time": "2026-09-03T02:13:18.813681+00:00",
+      "latency_seconds": 101.853888,
+      "prompt_tokens": 56498,
+      "completion_tokens": 12060,
+      "total_tokens": 68558,
+      "total_cost": 0.03689178,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-337b-7701-8e32-3af53f31d068",
+      "parent_run_id": "01a06509-2512-7562-8329-4ffa908ed2d9",
+      "name": "domain_expert",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:36.955764+00:00",
+      "end_time": "2026-09-03T02:13:18.814248+00:00",
+      "latency_seconds": 101.858484,
+      "prompt_tokens": 56498,
+      "completion_tokens": 12060,
+      "total_tokens": 68558,
+      "total_cost": 0.03689178,
+      "tags": [
+        "benchmark",
+        "graph:step:3",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-337b-7701-8e32-3ae508e392e2",
+      "parent_run_id": "01a06509-2512-7562-8329-4ffa908ed2d9",
+      "name": "web_researcher",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:36.955159+00:00",
+      "end_time": "2026-09-03T02:12:15.600665+00:00",
+      "latency_seconds": 38.645506,
+      "prompt_tokens": 23093,
+      "completion_tokens": 6596,
+      "total_tokens": 29689,
+      "total_cost": 0.02318651,
+      "tags": [
+        "benchmark",
+        "graph:step:3",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-337a-7193-935d-e38291f182de",
+      "parent_run_id": "01a06509-2512-7562-8329-4ffa908ed2d9",
+      "name": "data_analyst",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:36.954658+00:00",
+      "end_time": "2026-09-03T02:11:50.885355+00:00",
+      "latency_seconds": 13.930697,
+      "prompt_tokens": 10041,
+      "completion_tokens": 2366,
+      "total_tokens": 12407,
+      "total_cost": 0.00803009,
+      "tags": [
+        "benchmark",
+        "graph:step:3",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-337a-7193-935d-e37ec0805184",
+      "parent_run_id": "01a06509-2512-7562-8329-4ffa908ed2d9",
+      "name": "web_researcher",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:36.954064+00:00",
+      "end_time": "2026-09-03T02:13:56.607809+00:00",
+      "latency_seconds": 139.653745,
+      "prompt_tokens": 233541,
+      "completion_tokens": 21597,
+      "total_tokens": 255138,
+      "total_cost": 0.08007072,
+      "tags": [
+        "benchmark",
+        "graph:step:3",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-3378-7301-8b9c-56cafef3ebf8",
+      "parent_run_id": "01a06509-3378-7301-8b9c-56b76910848c",
+      "name": "route_workstreams",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:36.952922+00:00",
+      "end_time": "2026-09-03T02:11:36.953199+00:00",
+      "latency_seconds": 0.000277,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "seq:step:3",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-3378-7301-8b9c-56b76910848c",
+      "parent_run_id": "01a06509-2512-7562-8329-4ffa908ed2d9",
+      "name": "router",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:36.952505+00:00",
+      "end_time": "2026-09-03T02:11:36.953405+00:00",
+      "latency_seconds": 0.0009,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "graph:step:2",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-3377-7943-9fd6-28fb0bce3668",
+      "parent_run_id": "01a06509-2559-7143-8bad-629a84f7d63f",
+      "name": "check_sufficient",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:36.951439+00:00",
+      "end_time": "2026-09-03T02:11:36.951828+00:00",
+      "latency_seconds": 0.000389,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "seq:step:3",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-26e0-72e0-a886-91f694287db0",
+      "parent_run_id": "01a06509-26da-7800-9716-2172cd2b7088",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T02:11:33.728551+00:00",
+      "end_time": "2026-09-03T02:11:36.919429+00:00",
+      "latency_seconds": 3.190878,
+      "prompt_tokens": 1263,
+      "completion_tokens": 575,
+      "total_tokens": 1838,
+      "total_cost": 0.0018164,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-26da-7800-9716-2172cd2b7088",
+      "parent_run_id": "01a06509-26d9-7b51-ab1a-1a8fee426b58",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:33.722400+00:00",
+      "end_time": "2026-09-03T02:11:36.921420+00:00",
+      "latency_seconds": 3.19902,
+      "prompt_tokens": 1263,
+      "completion_tokens": 575,
+      "total_tokens": 1838,
+      "total_cost": 0.0018164,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "max_iter_1",
+        "graph:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06509-26d9-7b51-ab1a-1a8fee426b58",
+      "parent_run_id": "01a06509-2559-7143-8bad-629a84f7d63f",
+      "name": "LangGraph",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:33.721285+00:00",
+      "end_time": "2026-09-03T02:11:36.922832+00:00",
+      "latency_seconds": 3.201547,
+      "prompt_tokens": 1263,
+      "completion_tokens": 575,
+      "total_tokens": 1838,
+      "total_cost": 0.0018164,
+      "tags": [
+        "benchmark",
+        "seq:step:1",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06509-2559-7143-8bad-629a84f7d63f",
+      "parent_run_id": "01a06509-2512-7562-8329-4ffa908ed2d9",
+      "name": "orchestrator",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:33.337407+00:00",
+      "end_time": "2026-09-03T02:11:36.951978+00:00",
+      "latency_seconds": 3.614571,
+      "prompt_tokens": 1263,
+      "completion_tokens": 575,
+      "total_tokens": 1838,
+      "total_cost": 0.0018164,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "max_iter_1",
+        "graph:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06509-2512-7562-8329-4ffa908ed2d9",
+      "parent_run_id": null,
+      "name": "benchmark_ai_code_assistants_iter1",
+      "run_type": "chain",
+      "start_time": "2026-09-03T02:11:33.266987+00:00",
+      "end_time": "2026-09-03T02:14:51.860650+00:00",
+      "latency_seconds": 198.593663,
+      "prompt_tokens": 356482,
+      "completion_tokens": 54307,
+      "total_tokens": 410789,
+      "total_cost": 0.18565381,
+      "tags": [
+        "benchmark",
+        "ai_code_assistants",
+        "max_iter_1"
+      ]
+    }
+  ]
+}

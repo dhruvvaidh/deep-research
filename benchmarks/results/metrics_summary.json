@@ -1,0 +1,407 @@
+{
+  "model": "gemini-2.5-flash",
+  "n_runs_analyzed": 9,
+  "n_traces_found": 9,
+  "method1_context_compression": {
+    "per_run": [
+      {
+        "question_id": "ai_code_assistants",
+        "max_iterations": 1,
+        "keys_stored": 9,
+        "keys_summarized": 9,
+        "raw_chars_all": 29769,
+        "raw_chars_summarized_subset": 29769,
+        "summary_chars": 15326,
+        "compression_ratio": 1.9423854887119927,
+        "raw_tokens_est": 7442.25,
+        "summary_tokens_est": 3831.5,
+        "naive_cost_usd_est": 0.002232675,
+        "summarization_tokens_actual": 19902,
+        "summarization_cost_usd_actual": 0.033540999999999994,
+        "net_savings_usd_est": -0.031308325
+      },
+      {
+        "question_id": "ai_code_assistants",
+        "max_iterations": 2,
+        "keys_stored": 18,
+        "keys_summarized": 15,
+        "raw_chars_all": 65919,
+        "raw_chars_summarized_subset": 57970,
+        "summary_chars": 29151,
+        "compression_ratio": 1.9886110253507598,
+        "raw_tokens_est": 16479.75,
+        "summary_tokens_est": 7287.75,
+        "naive_cost_usd_est": 0.004943925,
+        "summarization_tokens_actual": 49200,
+        "summarization_cost_usd_actual": 0.08389500000000001,
+        "net_savings_usd_est": -0.07895107500000001
+      },
+      {
+        "question_id": "ai_code_assistants",
+        "max_iterations": 3,
+        "keys_stored": 23,
+        "keys_summarized": 19,
+        "raw_chars_all": 76338,
+        "raw_chars_summarized_subset": 65831,
+        "summary_chars": 34467,
+        "compression_ratio": 1.9099718571387123,
+        "raw_tokens_est": 19084.5,
+        "summary_tokens_est": 8616.75,
+        "naive_cost_usd_est": 0.00572535,
+        "summarization_tokens_actual": 65074,
+        "summarization_cost_usd_actual": 0.114879,
+        "net_savings_usd_est": -0.10915364999999999
+      },
+      {
+        "question_id": "smr_energy_bet",
+        "max_iterations": 1,
+        "keys_stored": 11,
+        "keys_summarized": 7,
+        "raw_chars_all": 86882,
+        "raw_chars_summarized_subset": 25834,
+        "summary_chars": 13141,
+        "compression_ratio": 1.9659082261623926,
+        "raw_tokens_est": 21720.5,
+        "summary_tokens_est": 3285.25,
+        "naive_cost_usd_est": 0.00651615,
+        "summarization_tokens_actual": 17439,
+        "summarization_cost_usd_actual": 0.0286661,
+        "net_savings_usd_est": -0.02214995
+      },
+      {
+        "question_id": "smr_energy_bet",
+        "max_iterations": 2,
+        "keys_stored": 26,
+        "keys_summarized": 19,
+        "raw_chars_all": 286363,
+        "raw_chars_summarized_subset": 48502,
+        "summary_chars": 27743,
+        "compression_ratio": 1.7482608225498324,
+        "raw_tokens_est": 71590.75,
+        "summary_tokens_est": 6935.75,
+        "naive_cost_usd_est": 0.021477225,
+        "summarization_tokens_actual": 48396,
+        "summarization_cost_usd_actual": 0.0902956,
+        "net_savings_usd_est": -0.068818375
+      },
+      {
+        "question_id": "smr_energy_bet",
+        "max_iterations": 3,
+        "keys_stored": 29,
+        "keys_summarized": 20,
+        "raw_chars_all": 267309,
+        "raw_chars_summarized_subset": 64718,
+        "summary_chars": 33151,
+        "compression_ratio": 1.952218635938584,
+        "raw_tokens_est": 66827.25,
+        "summary_tokens_est": 8287.75,
+        "naive_cost_usd_est": 0.020048175,
+        "summarization_tokens_actual": 87009,
+        "summarization_cost_usd_actual": 0.14473990000000003,
+        "net_savings_usd_est": -0.12469172500000003
+      },
+      {
+        "question_id": "glp1_market",
+        "max_iterations": 1,
+        "keys_stored": 9,
+        "keys_summarized": 8,
+        "raw_chars_all": 167826,
+        "raw_chars_summarized_subset": 24514,
+        "summary_chars": 11284,
+        "compression_ratio": 2.172456575682382,
+        "raw_tokens_est": 41956.5,
+        "summary_tokens_est": 2821.0,
+        "naive_cost_usd_est": 0.01258695,
+        "summarization_tokens_actual": 22325,
+        "summarization_cost_usd_actual": 0.0395281,
+        "net_savings_usd_est": -0.026941149999999997
+      },
+      {
+        "question_id": "glp1_market",
+        "max_iterations": 2,
+        "keys_stored": 13,
+        "keys_summarized": 11,
+        "raw_chars_all": 334597,
+        "raw_chars_summarized_subset": 46984,
+        "summary_chars": 20840,
+        "compression_ratio": 2.254510556621881,
+        "raw_tokens_est": 83649.25,
+        "summary_tokens_est": 5210.0,
+        "naive_cost_usd_est": 0.025094774999999996,
+        "summarization_tokens_actual": 57643,
+        "summarization_cost_usd_actual": 0.09609250000000001,
+        "net_savings_usd_est": -0.07099772500000001
+      },
+      {
+        "question_id": "glp1_market",
+        "max_iterations": 3,
+        "keys_stored": 15,
+        "keys_summarized": 12,
+        "raw_chars_all": 321780,
+        "raw_chars_summarized_subset": 34190,
+        "summary_chars": 14955,
+        "compression_ratio": 2.286191909060515,
+        "raw_tokens_est": 80445.0,
+        "summary_tokens_est": 3738.75,
+        "naive_cost_usd_est": 0.0241335,
+        "summarization_tokens_actual": 49775,
+        "summarization_cost_usd_actual": 0.08619489999999999,
+        "net_savings_usd_est": -0.06206139999999999
+      }
+    ],
+    "aggregate": {
+      "median_compression_ratio": 1.9659082261623926,
+      "total_net_savings_usd_est": -0.5950733750000001,
+      "mean_net_savings_usd_per_run_est": -0.06611926388888889,
+      "note": "net_savings_usd_est is a conservative floor: it compares the cost of the real summarize_context LLM calls against the counterfactual cost of sending all stored raw content once as prompt tokens. It does not count that, in a naive design, uncompressed raw content would also be re-sent on every subsequent agent turn within the same ReAct loop -- so actual savings in a long-running agent are larger than this estimate."
+    }
+  },
+  "method2_parallel_speedup": {
+    "per_run": [
+      {
+        "question_id": "ai_code_assistants",
+        "max_iterations": 1,
+        "concurrent_clusters": 1,
+        "cluster_sizes": [
+          4
+        ],
+        "speedups": [
+          2.105839925739192
+        ]
+      },
+      {
+        "question_id": "ai_code_assistants",
+        "max_iterations": 2,
+        "concurrent_clusters": 2,
+        "cluster_sizes": [
+          4,
+          6
+        ],
+        "speedups": [
+          1.827848604287419,
+          2.756181043131741
+        ]
+      },
+      {
+        "question_id": "ai_code_assistants",
+        "max_iterations": 3,
+        "concurrent_clusters": 3,
+        "cluster_sizes": [
+          4,
+          4,
+          4
+        ],
+        "speedups": [
+          1.840403263436842,
+          2.8457230234827136,
+          1.9531881965593336
+        ]
+      },
+      {
+        "question_id": "smr_energy_bet",
+        "max_iterations": 1,
+        "concurrent_clusters": 1,
+        "cluster_sizes": [
+          4
+        ],
+        "speedups": [
+          2.1598929380576113
+        ]
+      },
+      {
+        "question_id": "smr_energy_bet",
+        "max_iterations": 2,
+        "concurrent_clusters": 2,
+        "cluster_sizes": [
+          4,
+          4
+        ],
+        "speedups": [
+          1.8874166097328102,
+          1.7654201288399554
+        ]
+      },
+      {
+        "question_id": "smr_energy_bet",
+        "max_iterations": 3,
+        "concurrent_clusters": 3,
+        "cluster_sizes": [
+          5,
+          4,
+          9
+        ],
+        "speedups": [
+          2.290327687429247,
+          1.7871740630518238,
+          2.440930670720076
+        ]
+      },
+      {
+        "question_id": "glp1_market",
+        "max_iterations": 1,
+        "concurrent_clusters": 1,
+        "cluster_sizes": [
+          6
+        ],
+        "speedups": [
+          2.0640383286912707
+        ]
+      },
+      {
+        "question_id": "glp1_market",
+        "max_iterations": 2,
+        "concurrent_clusters": 2,
+        "cluster_sizes": [
+          4,
+          3
+        ],
+        "speedups": [
+          1.6160138429326643,
+          1.810205955350576
+        ]
+      },
+      {
+        "question_id": "glp1_market",
+        "max_iterations": 3,
+        "concurrent_clusters": 3,
+        "cluster_sizes": [
+          5,
+          10,
+          5
+        ],
+        "speedups": [
+          1.4133095221646763,
+          3.095618473332034,
+          3.449886953063548
+        ]
+      }
+    ],
+    "aggregate": {
+      "median_speedup": 2.0086132626253024,
+      "n_concurrent_clusters": 18,
+      "note": "Speedup = sum(individual specialist latencies) / actual wall-clock span for specialist runs whose LangSmith start/end intervals overlap within the same trace. No separate sequential run was needed."
+    }
+  },
+  "method3_iteration_tradeoff": {
+    "by_max_iterations": {
+      "1": {
+        "n_runs": 3,
+        "mean_total_tokens": 386239.6666666667,
+        "mean_cost_usd": 0.18943975333333335,
+        "mean_wall_clock_seconds": 275.76719562533737,
+        "mean_self_reported_confidence": 0.7041666666666667,
+        "runs": [
+          {
+            "question_id": "ai_code_assistants",
+            "wall_clock_seconds": 198.60668041699682,
+            "report_chars": 19637,
+            "mean_confidence": 0.6625,
+            "prompt_tokens": 356482,
+            "completion_tokens": 54307,
+            "total_tokens": 410789,
+            "cost_usd": 0.18565381
+          },
+          {
+            "question_id": "smr_energy_bet",
+            "wall_clock_seconds": 193.33888037499855,
+            "report_chars": 18884,
+            "mean_confidence": 0.8666666666666667,
+            "prompt_tokens": 329471,
+            "completion_tokens": 48917,
+            "total_tokens": 378388,
+            "cost_usd": 0.17373719
+          },
+          {
+            "question_id": "glp1_market",
+            "wall_clock_seconds": 435.3560260840168,
+            "report_chars": 14380,
+            "mean_confidence": 0.5833333333333334,
+            "prompt_tokens": 308764,
+            "completion_tokens": 60778,
+            "total_tokens": 369542,
+            "cost_usd": 0.20892826
+          }
+        ]
+      },
+      "2": {
+        "n_runs": 3,
+        "mean_total_tokens": 1027518.6666666666,
+        "mean_cost_usd": 0.46306139,
+        "mean_wall_clock_seconds": 635.2383728053343,
+        "mean_self_reported_confidence": 0.6767857142857143,
+        "runs": [
+          {
+            "question_id": "ai_code_assistants",
+            "wall_clock_seconds": 670.8988552499795,
+            "report_chars": 26838,
+            "mean_confidence": 0.8571428571428571,
+            "prompt_tokens": 890690,
+            "completion_tokens": 126980,
+            "total_tokens": 1017670,
+            "cost_usd": 0.49156235
+          },
+          {
+            "question_id": "smr_energy_bet",
+            "wall_clock_seconds": 702.249881375028,
+            "report_chars": 21514,
+            "mean_confidence": 0.6857142857142857,
+            "prompt_tokens": 1117393,
+            "completion_tokens": 145866,
+            "total_tokens": 1263259,
+            "cost_usd": 0.51311607
+          },
+          {
+            "question_id": "glp1_market",
+            "wall_clock_seconds": 532.5663817909954,
+            "report_chars": 22007,
+            "mean_confidence": 0.4875,
+            "prompt_tokens": 693521,
+            "completion_tokens": 108106,
+            "total_tokens": 801627,
+            "cost_usd": 0.38450575
+          }
+        ]
+      },
+      "3": {
+        "n_runs": 3,
+        "mean_total_tokens": 1509859,
+        "mean_cost_usd": 0.65593486,
+        "mean_wall_clock_seconds": 879.6411455833392,
+        "mean_self_reported_confidence": 0.6183333333333334,
+        "runs": [
+          {
+            "question_id": "ai_code_assistants",
+            "wall_clock_seconds": 808.6103347919998,
+            "report_chars": 20919,
+            "mean_confidence": 0.78,
+            "prompt_tokens": 1279546,
+            "completion_tokens": 156810,
+            "total_tokens": 1436356,
+            "cost_usd": 0.60355104
+          },
+          {
+            "question_id": "smr_energy_bet",
+            "wall_clock_seconds": 1101.012789875007,
+            "report_chars": 22250,
+            "mean_confidence": 0.675,
+            "prompt_tokens": 1753879,
+            "completion_tokens": 195556,
+            "total_tokens": 1949435,
+            "cost_usd": 0.82203367
+          },
+          {
+            "question_id": "glp1_market",
+            "wall_clock_seconds": 729.3003120830108,
+            "report_chars": 16043,
+            "mean_confidence": 0.4,
+            "prompt_tokens": 1006522,
+            "completion_tokens": 137264,
+            "total_tokens": 1143786,
+            "cost_usd": 0.54221987
+          }
+        ]
+      }
+    },
+    "note": "mean_self_reported_confidence comes from the orchestrator's own reflect/think tool output (0-1 self-assessment), not an external ground-truth quality judge."
+  }
+}

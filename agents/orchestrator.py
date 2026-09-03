@@ -10,7 +10,7 @@ from langchain.agents import create_agent
 
 from graph.state import ResearchState
 from prompts.decompose import DECOMPOSE_SYSTEM
-from tools.thinking import reflect, gather_thoughts
+from tools.thinking import reflect, gather_thoughts, strip_json_fences
 
 
 def orchestrator_node(state: ResearchState) -> dict:
@@ -27,7 +27,7 @@ def orchestrator_node(state: ResearchState) -> dict:
     )
 
     agent = create_agent(llm, [reflect, gather_thoughts], system_prompt=DECOMPOSE_SYSTEM)
-    result = agent.invoke({
+    input_payload = {
         "messages": [{
             "role": "user",
             "content": json.dumps({
@@ -37,13 +37,30 @@ def orchestrator_node(state: ResearchState) -> dict:
                 "context_manifest": state.get("manifest_index", {}),
             })
         }]
-    })
+    }
 
-    raw = result["messages"][-1].content
-    if isinstance(raw, list):
-        raw = "\n".join(b["text"] for b in raw if isinstance(b, dict) and b.get("type") == "text")
+    # The underlying model occasionally returns an empty/malformed response at this
+    # tool-calling boundary (observed: Gemini finish_reason=MALFORMED_FUNCTION_CALL,
+    # zero output tokens). Retry a couple of times before giving up.
+    parsed = None
+    last_error: Exception | None = None
+    for attempt in range(1, 4):
+        result = agent.invoke(input_payload)
+        raw = result["messages"][-1].content
+        if isinstance(raw, list):
+            raw = "\n".join(b["text"] for b in raw if isinstance(b, dict) and b.get("type") == "text")
+        raw = strip_json_fences(raw)
+        try:
+            parsed = json.loads(raw)
+            break
+        except json.JSONDecodeError as e:
+            last_error = e
+            print(f"[orchestrator] attempt {attempt}/3 returned unparseable output ({e}); retrying...")
 
-    parsed = json.loads(raw)
+    if parsed is None:
+        print(f"[orchestrator] all attempts failed to produce parseable output ({last_error}); "
+              f"treating research as sufficient rather than losing this run's progress.")
+        return {"sufficient": True, "iteration": iteration}
 
     if isinstance(parsed, dict) and parsed.get("sufficient"):
         print(f"[orchestrator] Research sufficient. Moving to synthesizer.")

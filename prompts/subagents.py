@@ -22,6 +22,9 @@ All large data (CSVs, raw tool outputs) must be saved to files in the sandbox. N
 - **store_context(key, content, description)** — Persists non-tabular content (web search results, text summaries, raw tool outputs) to the sandbox filesystem under a key. Keeps bulky content out of the context window.
 - **summarize_context(key)** — Reads a stored context file by key and returns an LLM-generated summary compact enough to include in your findings.
 
+**Reflection:**
+- **think(task, observations, manifest_index)** — Records whether your workstream's findings are sufficient. Call this once, right before delivering your findings.
+
 ## Workflow Steps
 
 Follow this workflow strictly:
@@ -41,7 +44,9 @@ Follow this workflow strictly:
 
 5. **Store text outputs** — For non-tabular results (summaries, interpretations), use store_context(key, content, description), then call summarize_context(key) to generate a compact summary.
 
-6. **Deliver findings** — Provide your analysis, insights, and conclusions based on the computed results.
+6. **Reflect** — Before delivering your findings, call think(task, observations, manifest_index) with your assigned workstream task, a short summary of what you found, and the manifest from get_context_index(). This is REQUIRED — the orchestrator's cross-workstream reflection depends on every workstream recording a think entry.
+
+7. **Deliver findings** — Provide your analysis, insights, and conclusions based on the computed results.
 
 ## Important Rules
 
@@ -96,7 +101,10 @@ Before drawing conclusions:
 - Look for consensus, contradictions, or complementary information
 - Note the recency and reliability of different sources
 
-**Step 6: Provide Your Research Findings**
+**Step 6: Reflect**
+Before writing your final response, call think(task, observations, manifest_index) with your assigned workstream task, a short summary of your observations, and the manifest from get_context_index(). This is REQUIRED — the orchestrator's cross-workstream reflection depends on every workstream recording a think entry.
+
+**Step 7: Provide Your Research Findings**
 Structure your response as follows:
 
 <scratchpad>
@@ -115,6 +123,8 @@ Structure your response as follows:
 </research_findings>
 
 **Tool Descriptions:**
+
+- **think(task, observations, manifest_index)**: Records whether your workstream's findings are sufficient. Call this once, right before writing your final response (Step 6).
 
 - **get_context_index()**: Returns a manifest of all stored context (keys, descriptions, file sizes). Call this FIRST to see what other agents have already researched.
 
@@ -139,6 +149,7 @@ You have access to the following tools:
 - store_context: Persists raw tool output (web pages, search results, etc.) to the sandbox filesystem under a key and registers it in a shared manifest. Keeps bulky content off the context window.
 - summarize_context: Reads a stored context file by key and returns an LLM-generated summary compact enough to include in agent findings.
 - get_context_index: Returns the full manifest of everything stored in the sandbox — keys, descriptions, sizes — so any agent can discover what has already been fetched before making redundant calls.
+- think: Records whether your workstream's findings are sufficient. Call this once, right before delivering your final findings.
 
 CRITICAL CONTEXT MANAGEMENT RULES:
 
@@ -169,6 +180,7 @@ Then execute your research following this pattern:
 7. Immediately store_context() with each scraped page
 8. Use summarize_context() on each to extract key information
 9. Synthesize findings from all summaries
+10. Call think(task, observations, manifest_index) with your assigned workstream task, a short summary of your observations, and the manifest from get_context_index(). This is REQUIRED — the orchestrator's cross-workstream reflection depends on every workstream recording a think entry.
 
 OUTPUT FORMAT:
 

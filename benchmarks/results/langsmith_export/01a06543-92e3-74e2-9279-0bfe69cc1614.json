@@ -1,0 +1,5546 @@
+{
+  "root": {
+    "run_id": "01a06543-92e3-74e2-9279-0bfe69cc1614",
+    "parent_run_id": null,
+    "name": "benchmark_glp1_market_iter1",
+    "run_type": "chain",
+    "start_time": "2026-09-03T03:15:22.467435+00:00",
+    "end_time": "2026-09-03T03:22:37.792064+00:00",
+    "latency_seconds": 435.324629,
+    "prompt_tokens": 308764,
+    "completion_tokens": 60778,
+    "total_tokens": 369542,
+    "total_cost": 0.20892826,
+    "tags": [
+      "benchmark",
+      "glp1_market",
+      "max_iter_1"
+    ]
+  },
+  "runs": [
+    {
+      "run_id": "01a06549-f5d8-70f1-b088-e00a31471a9f",
+      "parent_run_id": "01a06549-f5c1-7c72-a151-6fd5d7bd6beb",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:22:21.016523+00:00",
+      "end_time": "2026-09-03T03:22:37.779773+00:00",
+      "latency_seconds": 16.76325,
+      "prompt_tokens": 12144,
+      "completion_tokens": 3841,
+      "total_tokens": 15985,
+      "total_cost": 0.0132457,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06549-f5c1-7c72-a151-6fd5d7bd6beb",
+      "parent_run_id": "01a06549-cbe8-7900-98c2-cf2812e65990",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:22:20.993927+00:00",
+      "end_time": "2026-09-03T03:22:37.781380+00:00",
+      "latency_seconds": 16.787453,
+      "prompt_tokens": 12144,
+      "completion_tokens": 3841,
+      "total_tokens": 15985,
+      "total_cost": 0.0132457,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:7",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06549-f485-7811-8980-6b87b12653ed",
+      "parent_run_id": "01a06549-f47e-7d40-a2ec-d27758c164c9",
+      "name": "read_artifact",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:22:20.677053+00:00",
+      "end_time": "2026-09-03T03:22:20.965309+00:00",
+      "latency_seconds": 0.288256,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06549-f484-7dd3-ab62-f522bedb7432",
+      "parent_run_id": "01a06549-f47b-7282-966b-f3e0ddaa51f7",
+      "name": "read_artifact",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:22:20.676222+00:00",
+      "end_time": "2026-09-03T03:22:20.962808+00:00",
+      "latency_seconds": 0.286586,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06549-f480-7963-b56f-890be6ef56d1",
+      "parent_run_id": "01a06549-f47c-7693-880e-b68b60534e5f",
+      "name": "read_artifact",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:22:20.672597+00:00",
+      "end_time": "2026-09-03T03:22:20.958791+00:00",
+      "latency_seconds": 0.286194,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06549-f47e-7d40-a2ec-d289ced0f28f",
+      "parent_run_id": "01a06549-f478-7291-b438-74d410ca9e37",
+      "name": "read_artifact",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:22:20.670979+00:00",
+      "end_time": "2026-09-03T03:22:20.965591+00:00",
+      "latency_seconds": 0.294612,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06549-f47e-7d40-a2ec-d27758c164c9",
+      "parent_run_id": "01a06549-cbe8-7900-98c2-cf2812e65990",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:22:20.670118+00:00",
+      "end_time": "2026-09-03T03:22:20.971182+00:00",
+      "latency_seconds": 0.301064,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:6",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06549-f47c-7693-880e-b68b60534e5f",
+      "parent_run_id": "01a06549-cbe8-7900-98c2-cf2812e65990",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:22:20.668787+00:00",
+      "end_time": "2026-09-03T03:22:20.966018+00:00",
+      "latency_seconds": 0.297231,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:6",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06549-f47b-7282-966b-f3e0ddaa51f7",
+      "parent_run_id": "01a06549-cbe8-7900-98c2-cf2812e65990",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:22:20.667256+00:00",
+      "end_time": "2026-09-03T03:22:20.968707+00:00",
+      "latency_seconds": 0.301451,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:6",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06549-f47a-78e3-b131-fded201eb7b4",
+      "parent_run_id": "01a06549-f476-7f91-8569-f42df1c0c965",
+      "name": "read_artifact",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:22:20.666032+00:00",
+      "end_time": "2026-09-03T03:22:20.964739+00:00",
+      "latency_seconds": 0.298707,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06549-f478-7291-b438-74d410ca9e37",
+      "parent_run_id": "01a06549-cbe8-7900-98c2-cf2812e65990",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:22:20.664759+00:00",
+      "end_time": "2026-09-03T03:22:20.969598+00:00",
+      "latency_seconds": 0.304839,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:6",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06549-f477-74f2-8340-c7ee4f21a2de",
+      "parent_run_id": "01a06549-f473-7bf0-9fc9-a3e7f5c90e46",
+      "name": "read_artifact",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:22:20.663494+00:00",
+      "end_time": "2026-09-03T03:22:20.962424+00:00",
+      "latency_seconds": 0.29893,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06549-f476-7f91-8569-f42df1c0c965",
+      "parent_run_id": "01a06549-cbe8-7900-98c2-cf2812e65990",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:22:20.662514+00:00",
+      "end_time": "2026-09-03T03:22:20.969211+00:00",
+      "latency_seconds": 0.306697,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:6",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06549-f475-7a60-8827-fd5dfd6442e3",
+      "parent_run_id": "01a06549-f472-7e32-986a-ab73e54849c1",
+      "name": "read_artifact",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:22:20.661196+00:00",
+      "end_time": "2026-09-03T03:22:20.991431+00:00",
+      "latency_seconds": 0.330235,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06549-f473-7bf0-9fc9-a3e7f5c90e46",
+      "parent_run_id": "01a06549-cbe8-7900-98c2-cf2812e65990",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:22:20.659749+00:00",
+      "end_time": "2026-09-03T03:22:20.967753+00:00",
+      "latency_seconds": 0.308004,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:6",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06549-f472-7e32-986a-ab73e54849c1",
+      "parent_run_id": "01a06549-cbe8-7900-98c2-cf2812e65990",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:22:20.658699+00:00",
+      "end_time": "2026-09-03T03:22:20.992350+00:00",
+      "latency_seconds": 0.333651,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:6",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06549-f470-7020-8df4-eaec828b13cf",
+      "parent_run_id": "01a06549-f46e-7803-8dbe-30588717b512",
+      "name": "read_artifact",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:22:20.656606+00:00",
+      "end_time": "2026-09-03T03:22:20.961653+00:00",
+      "latency_seconds": 0.305047,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06549-f46e-7803-8dbe-30588717b512",
+      "parent_run_id": "01a06549-cbe8-7900-98c2-cf2812e65990",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:22:20.654664+00:00",
+      "end_time": "2026-09-03T03:22:20.966881+00:00",
+      "latency_seconds": 0.312217,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:6",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06549-dd16-7fa1-9724-36d3b7f8fb3b",
+      "parent_run_id": "01a06549-dd08-7eb1-bc00-d7b20a6406a9",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:22:14.678337+00:00",
+      "end_time": "2026-09-03T03:22:20.650359+00:00",
+      "latency_seconds": 5.972022,
+      "prompt_tokens": 5521,
+      "completion_tokens": 1034,
+      "total_tokens": 6555,
+      "total_cost": 0.0042413,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06549-dd08-7eb1-bc00-d7b20a6406a9",
+      "parent_run_id": "01a06549-cbe8-7900-98c2-cf2812e65990",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:22:14.664142+00:00",
+      "end_time": "2026-09-03T03:22:20.652323+00:00",
+      "latency_seconds": 5.988181,
+      "prompt_tokens": 5521,
+      "completion_tokens": 1034,
+      "total_tokens": 6555,
+      "total_cost": 0.0042413,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:5",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06549-db93-7b42-a26b-38aeb22d492e",
+      "parent_run_id": "01a06549-db92-7ca2-9281-7238c5d455e2",
+      "name": "get_context_index",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:22:14.291827+00:00",
+      "end_time": "2026-09-03T03:22:14.660733+00:00",
+      "latency_seconds": 0.368906,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06549-db92-7ca2-9281-7238c5d455e2",
+      "parent_run_id": "01a06549-cbe8-7900-98c2-cf2812e65990",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:22:14.290216+00:00",
+      "end_time": "2026-09-03T03:22:14.662643+00:00",
+      "latency_seconds": 0.372427,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:4",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06549-d507-7781-ba86-499de9c27f96",
+      "parent_run_id": "01a06549-d4fe-7151-9659-9dfff2645794",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:22:12.615603+00:00",
+      "end_time": "2026-09-03T03:22:14.287400+00:00",
+      "latency_seconds": 1.671797,
+      "prompt_tokens": 2036,
+      "completion_tokens": 262,
+      "total_tokens": 2298,
+      "total_cost": 0.0012658,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06549-d4fe-7151-9659-9dfff2645794",
+      "parent_run_id": "01a06549-cbe8-7900-98c2-cf2812e65990",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:22:12.606798+00:00",
+      "end_time": "2026-09-03T03:22:14.289080+00:00",
+      "latency_seconds": 1.682282,
+      "prompt_tokens": 2036,
+      "completion_tokens": 262,
+      "total_tokens": 2298,
+      "total_cost": 0.0012658,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "graph:step:3"
+      ]
+    },
+    {
+      "run_id": "01a06549-d4fb-7f40-b1ca-265f48728862",
+      "parent_run_id": "01a06549-d4fa-7ee3-a5fc-958ea79623ea",
+      "name": "gather_thoughts",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:22:12.603866+00:00",
+      "end_time": "2026-09-03T03:22:12.605270+00:00",
+      "latency_seconds": 0.001404,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06549-d4fa-7ee3-a5fc-958ea79623ea",
+      "parent_run_id": "01a06549-cbe8-7900-98c2-cf2812e65990",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:22:12.602265+00:00",
+      "end_time": "2026-09-03T03:22:12.606158+00:00",
+      "latency_seconds": 0.003893,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:2",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06549-cbeb-7cf0-800a-53609c18dab9",
+      "parent_run_id": "01a06549-cbe8-7900-98c2-cf3052ee5a19",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:22:10.283229+00:00",
+      "end_time": "2026-09-03T03:22:12.599135+00:00",
+      "latency_seconds": 2.315906,
+      "prompt_tokens": 1418,
+      "completion_tokens": 425,
+      "total_tokens": 1843,
+      "total_cost": 0.0014879,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06549-cbe8-7900-98c2-cf3052ee5a19",
+      "parent_run_id": "01a06549-cbe8-7900-98c2-cf2812e65990",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:22:10.280682+00:00",
+      "end_time": "2026-09-03T03:22:12.600866+00:00",
+      "latency_seconds": 2.320184,
+      "prompt_tokens": 1418,
+      "completion_tokens": 425,
+      "total_tokens": 1843,
+      "total_cost": 0.0014879,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "graph:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06549-cbe8-7900-98c2-cf2812e65990",
+      "parent_run_id": "01a06549-caa5-79d3-9314-7516be7015f8",
+      "name": "LangGraph",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:22:10.280236+00:00",
+      "end_time": "2026-09-03T03:22:37.783364+00:00",
+      "latency_seconds": 27.503128,
+      "prompt_tokens": 21119,
+      "completion_tokens": 5562,
+      "total_tokens": 26681,
+      "total_cost": 0.0202407,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06549-caa5-79d3-9314-7516be7015f8",
+      "parent_run_id": "01a06543-92e3-74e2-9279-0bfe69cc1614",
+      "name": "synthesizer",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:22:09.957452+00:00",
+      "end_time": "2026-09-03T03:22:37.791011+00:00",
+      "latency_seconds": 27.833559,
+      "prompt_tokens": 21119,
+      "completion_tokens": 5562,
+      "total_tokens": 26681,
+      "total_cost": 0.0202407,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:5",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06549-caa4-7f62-aea4-dcabb9590ed9",
+      "parent_run_id": "01a06549-778c-77c3-b643-edfc737c90b6",
+      "name": "check_sufficient",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:22:09.956200+00:00",
+      "end_time": "2026-09-03T03:22:09.956743+00:00",
+      "latency_seconds": 0.000543,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "seq:step:3",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06549-b217-7dc0-907a-6f83cbda532f",
+      "parent_run_id": "01a06549-b209-7843-bded-7a20e4d391e2",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:22:03.671368+00:00",
+      "end_time": "2026-09-03T03:22:09.948190+00:00",
+      "latency_seconds": 6.276822,
+      "prompt_tokens": 2491,
+      "completion_tokens": 1487,
+      "total_tokens": 3978,
+      "total_cost": 0.0044648,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06549-b209-7843-bded-7a20e4d391e2",
+      "parent_run_id": "01a06549-78cc-7ec3-b5cf-1d8865f6cce9",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:22:03.657362+00:00",
+      "end_time": "2026-09-03T03:22:09.949459+00:00",
+      "latency_seconds": 6.292097,
+      "prompt_tokens": 2491,
+      "completion_tokens": 1487,
+      "total_tokens": 3978,
+      "total_cost": 0.0044648,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "graph:step:3"
+      ]
+    },
+    {
+      "run_id": "01a06549-81ae-7613-a3fb-96963c3427cb",
+      "parent_run_id": "01a06549-81ad-7e41-8747-d32a869fb0bf",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:21:51.278921+00:00",
+      "end_time": "2026-09-03T03:22:03.653774+00:00",
+      "latency_seconds": 12.374853,
+      "prompt_tokens": 561,
+      "completion_tokens": 2814,
+      "total_tokens": 3375,
+      "total_cost": 0.0072033,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06549-81ad-7e41-8747-d32a869fb0bf",
+      "parent_run_id": "01a06549-81ab-7da0-afd3-24e625fd7f90",
+      "name": "reflect",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:21:51.277730+00:00",
+      "end_time": "2026-09-03T03:22:03.654925+00:00",
+      "latency_seconds": 12.377195,
+      "prompt_tokens": 561,
+      "completion_tokens": 2814,
+      "total_tokens": 3375,
+      "total_cost": 0.0072033,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06549-81ab-7da0-afd3-24e625fd7f90",
+      "parent_run_id": "01a06549-78cc-7ec3-b5cf-1d8865f6cce9",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:21:51.275879+00:00",
+      "end_time": "2026-09-03T03:22:03.656224+00:00",
+      "latency_seconds": 12.380345,
+      "prompt_tokens": 561,
+      "completion_tokens": 2814,
+      "total_tokens": 3375,
+      "total_cost": 0.0072033,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:2",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06549-78d0-7952-9621-9287cc5aea31",
+      "parent_run_id": "01a06549-78cc-7ec3-b5cf-1d9de08ac3cc",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:21:49.008052+00:00",
+      "end_time": "2026-09-03T03:21:51.273398+00:00",
+      "latency_seconds": 2.265346,
+      "prompt_tokens": 1556,
+      "completion_tokens": 434,
+      "total_tokens": 1990,
+      "total_cost": 0.0015518,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06549-78cc-7ec3-b5cf-1d9de08ac3cc",
+      "parent_run_id": "01a06549-78cc-7ec3-b5cf-1d8865f6cce9",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:21:49.004558+00:00",
+      "end_time": "2026-09-03T03:21:51.274492+00:00",
+      "latency_seconds": 2.269934,
+      "prompt_tokens": 1556,
+      "completion_tokens": 434,
+      "total_tokens": 1990,
+      "total_cost": 0.0015518,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "graph:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06549-78cc-7ec3-b5cf-1d8865f6cce9",
+      "parent_run_id": "01a06549-778c-77c3-b643-edfc737c90b6",
+      "name": "LangGraph",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:21:49.004033+00:00",
+      "end_time": "2026-09-03T03:22:09.950559+00:00",
+      "latency_seconds": 20.946526,
+      "prompt_tokens": 4608,
+      "completion_tokens": 4735,
+      "total_tokens": 9343,
+      "total_cost": 0.0132199,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06549-778c-77c3-b643-edfc737c90b6",
+      "parent_run_id": "01a06543-92e3-74e2-9279-0bfe69cc1614",
+      "name": "orchestrator",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:21:48.684274+00:00",
+      "end_time": "2026-09-03T03:22:09.956917+00:00",
+      "latency_seconds": 21.272643,
+      "prompt_tokens": 4608,
+      "completion_tokens": 4735,
+      "total_tokens": 9343,
+      "total_cost": 0.0132199,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:4",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06549-5c2b-76b3-85dc-75c3ff59ba94",
+      "parent_run_id": "01a06549-5c19-7e20-a9bd-19d66615bdec",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:21:41.675117+00:00",
+      "end_time": "2026-09-03T03:21:48.678758+00:00",
+      "latency_seconds": 7.003641,
+      "prompt_tokens": 8036,
+      "completion_tokens": 1470,
+      "total_tokens": 9506,
+      "total_cost": 0.0060858,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06549-5c19-7e20-a9bd-19d66615bdec",
+      "parent_run_id": "01a06543-a564-7352-855b-6354212cee14",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:21:41.657788+00:00",
+      "end_time": "2026-09-03T03:21:48.680504+00:00",
+      "latency_seconds": 7.022716,
+      "prompt_tokens": 8036,
+      "completion_tokens": 1470,
+      "total_tokens": 9506,
+      "total_cost": 0.0060858,
+      "tags": [
+        "graph:step:21",
+        "benchmark",
+        "glp1_market",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06549-3b3e-7ca1-b8a9-f0af9bcd2b53",
+      "parent_run_id": "01a06549-3b3d-7943-b8ef-d2c598392359",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:21:33.246519+00:00",
+      "end_time": "2026-09-03T03:21:41.653570+00:00",
+      "latency_seconds": 8.407051,
+      "prompt_tokens": 756,
+      "completion_tokens": 1767,
+      "total_tokens": 2523,
+      "total_cost": 0.0046443,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06549-3b3d-7943-b8ef-d2c598392359",
+      "parent_run_id": "01a06549-3b3c-77a0-bbf3-fdd7796ab848",
+      "name": "think",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:21:33.245384+00:00",
+      "end_time": "2026-09-03T03:21:41.654778+00:00",
+      "latency_seconds": 8.409394,
+      "prompt_tokens": 756,
+      "completion_tokens": 1767,
+      "total_tokens": 2523,
+      "total_cost": 0.0046443,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06549-3b3c-77a0-bbf3-fdd7796ab848",
+      "parent_run_id": "01a06549-3b3a-7ce3-b6eb-8e6baec86ffe",
+      "name": "handle_tool_errors.wrap_tool_call",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:21:33.244278+00:00",
+      "end_time": "2026-09-03T03:21:41.655119+00:00",
+      "latency_seconds": 8.410841,
+      "prompt_tokens": 756,
+      "completion_tokens": 1767,
+      "total_tokens": 2523,
+      "total_cost": 0.0046443,
+      "tags": []
+    },
+    {
+      "run_id": "01a06549-3b3a-7ce3-b6eb-8e6baec86ffe",
+      "parent_run_id": "01a06543-a564-7352-855b-6354212cee14",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:21:33.242490+00:00",
+      "end_time": "2026-09-03T03:21:41.656188+00:00",
+      "latency_seconds": 8.413698,
+      "prompt_tokens": 756,
+      "completion_tokens": 1767,
+      "total_tokens": 2523,
+      "total_cost": 0.0046443,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:20",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06549-2d61-7d82-bd31-63f249694dda",
+      "parent_run_id": "01a06549-2d50-7cc1-8ac8-646b10a28a1d",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:21:29.697203+00:00",
+      "end_time": "2026-09-03T03:21:33.238939+00:00",
+      "latency_seconds": 3.541736,
+      "prompt_tokens": 7592,
+      "completion_tokens": 618,
+      "total_tokens": 8210,
+      "total_cost": 0.00232923,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06549-2d50-7cc1-8ac8-646b10a28a1d",
+      "parent_run_id": "01a06543-a564-7352-855b-6354212cee14",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:21:29.680065+00:00",
+      "end_time": "2026-09-03T03:21:33.240911+00:00",
+      "latency_seconds": 3.560846,
+      "prompt_tokens": 7592,
+      "completion_tokens": 618,
+      "total_tokens": 8210,
+      "total_cost": 0.00232923,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "graph:step:19"
+      ]
+    },
+    {
+      "run_id": "01a06549-0664-79e3-9314-6d78b05d0345",
+      "parent_run_id": "01a06549-0531-7ce2-a182-5e29274b1e92",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:21:19.716156+00:00",
+      "end_time": "2026-09-03T03:21:29.047566+00:00",
+      "latency_seconds": 9.33141,
+      "prompt_tokens": 839,
+      "completion_tokens": 2195,
+      "total_tokens": 3034,
+      "total_cost": 0.0057392,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06549-0531-7ce2-a182-5e29274b1e92",
+      "parent_run_id": "01a06549-0530-7660-82ce-51100920dda1",
+      "name": "summarize_context",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:21:19.409581+00:00",
+      "end_time": "2026-09-03T03:21:29.676638+00:00",
+      "latency_seconds": 10.267057,
+      "prompt_tokens": 839,
+      "completion_tokens": 2195,
+      "total_tokens": 3034,
+      "total_cost": 0.0057392,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06549-0530-7660-82ce-51100920dda1",
+      "parent_run_id": "01a06549-052e-77e0-bf06-fab84c580ed7",
+      "name": "handle_tool_errors.wrap_tool_call",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:21:19.408341+00:00",
+      "end_time": "2026-09-03T03:21:29.677223+00:00",
+      "latency_seconds": 10.268882,
+      "prompt_tokens": 839,
+      "completion_tokens": 2195,
+      "total_tokens": 3034,
+      "total_cost": 0.0057392,
+      "tags": []
+    },
+    {
+      "run_id": "01a06549-052e-77e0-bf06-fab84c580ed7",
+      "parent_run_id": "01a06543-a564-7352-855b-6354212cee14",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:21:19.406124+00:00",
+      "end_time": "2026-09-03T03:21:29.678287+00:00",
+      "latency_seconds": 10.272163,
+      "prompt_tokens": 839,
+      "completion_tokens": 2195,
+      "total_tokens": 3034,
+      "total_cost": 0.0057392,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:18",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06549-00c5-7391-ae4b-58170a37c402",
+      "parent_run_id": "01a06549-00b2-7911-aa80-89b259a9ccb5",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:21:18.277126+00:00",
+      "end_time": "2026-09-03T03:21:19.403287+00:00",
+      "latency_seconds": 1.126161,
+      "prompt_tokens": 7108,
+      "completion_tokens": 113,
+      "total_tokens": 7221,
+      "total_cost": 0.00114131,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06549-00b2-7911-aa80-89b259a9ccb5",
+      "parent_run_id": "01a06543-a564-7352-855b-6354212cee14",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:21:18.258715+00:00",
+      "end_time": "2026-09-03T03:21:19.404673+00:00",
+      "latency_seconds": 1.145958,
+      "prompt_tokens": 7108,
+      "completion_tokens": 113,
+      "total_tokens": 7221,
+      "total_cost": 0.00114131,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "graph:step:17"
+      ]
+    },
+    {
+      "run_id": "01a06548-fd1b-7f43-9697-3ee15ea2fe30",
+      "parent_run_id": "01a06548-fd1b-7eb3-873b-29b85505c664",
+      "name": "store_context",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:21:17.339958+00:00",
+      "end_time": "2026-09-03T03:21:18.256334+00:00",
+      "latency_seconds": 0.916376,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06548-fd1b-7eb3-873b-29b85505c664",
+      "parent_run_id": "01a06548-fd1a-7ee1-8527-ff9817ca622d",
+      "name": "handle_tool_errors.wrap_tool_call",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:21:17.339439+00:00",
+      "end_time": "2026-09-03T03:21:18.256867+00:00",
+      "latency_seconds": 0.917428,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": []
+    },
+    {
+      "run_id": "01a06548-fd1a-7ee1-8527-ff9817ca622d",
+      "parent_run_id": "01a06543-a564-7352-855b-6354212cee14",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:21:17.338719+00:00",
+      "end_time": "2026-09-03T03:21:18.257694+00:00",
+      "latency_seconds": 0.918975,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:16",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06548-e7a7-7872-892f-d4a6da53a9e3",
+      "parent_run_id": "01a06548-e794-7c53-b963-e2b74632847e",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:21:11.847926+00:00",
+      "end_time": "2026-09-03T03:21:17.337534+00:00",
+      "latency_seconds": 5.489608,
+      "prompt_tokens": 6162,
+      "completion_tokens": 1293,
+      "total_tokens": 7455,
+      "total_cost": 0.00378348,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06548-e794-7c53-b963-e2b74632847e",
+      "parent_run_id": "01a06543-a564-7352-855b-6354212cee14",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:21:11.829026+00:00",
+      "end_time": "2026-09-03T03:21:17.338147+00:00",
+      "latency_seconds": 5.509121,
+      "prompt_tokens": 6162,
+      "completion_tokens": 1293,
+      "total_tokens": 7455,
+      "total_cost": 0.00378348,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "graph:step:15"
+      ]
+    },
+    {
+      "run_id": "01a06548-df18-74a2-885d-21d5aaa355a3",
+      "parent_run_id": "01a06548-df17-71e0-ae75-7cd83b7804ff",
+      "name": "tavily_search",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:21:09.656917+00:00",
+      "end_time": "2026-09-03T03:21:11.825061+00:00",
+      "latency_seconds": 2.168144,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06548-df17-71e0-ae75-7cd83b7804ff",
+      "parent_run_id": "01a06548-df15-7983-8633-c2d2ace37953",
+      "name": "handle_tool_errors.wrap_tool_call",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:21:09.655470+00:00",
+      "end_time": "2026-09-03T03:21:11.825850+00:00",
+      "latency_seconds": 2.17038,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": []
+    },
+    {
+      "run_id": "01a06548-df15-7983-8633-c2d2ace37953",
+      "parent_run_id": "01a06543-a564-7352-855b-6354212cee14",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:21:09.653422+00:00",
+      "end_time": "2026-09-03T03:21:11.827386+00:00",
+      "latency_seconds": 2.173964,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:14",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06548-d9d1-76c2-b1cb-c1733e3b3949",
+      "parent_run_id": "01a06548-d9c0-7872-9d47-5ddc4cc453b3",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:21:08.305843+00:00",
+      "end_time": "2026-09-03T03:21:09.649840+00:00",
+      "latency_seconds": 1.343997,
+      "prompt_tokens": 5294,
+      "completion_tokens": 141,
+      "total_tokens": 5435,
+      "total_cost": 0.0013035,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06548-d9c0-7872-9d47-5ddc4cc453b3",
+      "parent_run_id": "01a06543-a564-7352-855b-6354212cee14",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:21:08.288042+00:00",
+      "end_time": "2026-09-03T03:21:09.651764+00:00",
+      "latency_seconds": 1.363722,
+      "prompt_tokens": 5294,
+      "completion_tokens": 141,
+      "total_tokens": 5435,
+      "total_cost": 0.0013035,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:13",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06548-b93e-7263-a397-98eeab807838",
+      "parent_run_id": "01a06548-b871-7482-a656-e6700e62d416",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:20:59.967013+00:00",
+      "end_time": "2026-09-03T03:21:07.693766+00:00",
+      "latency_seconds": 7.726753,
+      "prompt_tokens": 719,
+      "completion_tokens": 1697,
+      "total_tokens": 2416,
+      "total_cost": 0.0044582,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06548-b871-7482-a656-e6700e62d416",
+      "parent_run_id": "01a06548-b870-74a3-831f-4c442fe5c6a1",
+      "name": "summarize_context",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:20:59.761513+00:00",
+      "end_time": "2026-09-03T03:21:08.285111+00:00",
+      "latency_seconds": 8.523598,
+      "prompt_tokens": 719,
+      "completion_tokens": 1697,
+      "total_tokens": 2416,
+      "total_cost": 0.0044582,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06548-b870-74a3-831f-4c442fe5c6a1",
+      "parent_run_id": "01a06548-b86e-7263-a1ed-f2dc1eafff1b",
+      "name": "handle_tool_errors.wrap_tool_call",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:20:59.760504+00:00",
+      "end_time": "2026-09-03T03:21:08.285808+00:00",
+      "latency_seconds": 8.525304,
+      "prompt_tokens": 719,
+      "completion_tokens": 1697,
+      "total_tokens": 2416,
+      "total_cost": 0.0044582,
+      "tags": []
+    },
+    {
+      "run_id": "01a06548-b86e-7263-a1ed-f2dc1eafff1b",
+      "parent_run_id": "01a06543-a564-7352-855b-6354212cee14",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:20:59.758909+00:00",
+      "end_time": "2026-09-03T03:21:08.286786+00:00",
+      "latency_seconds": 8.527877,
+      "prompt_tokens": 719,
+      "completion_tokens": 1697,
+      "total_tokens": 2416,
+      "total_cost": 0.0044582,
+      "tags": [
+        "graph:step:12",
+        "benchmark",
+        "glp1_market",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06548-b491-7542-b74a-690dca2cde4e",
+      "parent_run_id": "01a06548-b47f-7390-b4bc-4811de742ed5",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:20:58.769861+00:00",
+      "end_time": "2026-09-03T03:20:59.756598+00:00",
+      "latency_seconds": 0.986737,
+      "prompt_tokens": 4956,
+      "completion_tokens": 104,
+      "total_tokens": 5060,
+      "total_cost": 0.0017468,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06548-b47f-7390-b4bc-4811de742ed5",
+      "parent_run_id": "01a06543-a564-7352-855b-6354212cee14",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:20:58.751954+00:00",
+      "end_time": "2026-09-03T03:20:59.757979+00:00",
+      "latency_seconds": 1.006025,
+      "prompt_tokens": 4956,
+      "completion_tokens": 104,
+      "total_tokens": 5060,
+      "total_cost": 0.0017468,
+      "tags": [
+        "graph:step:11",
+        "benchmark",
+        "glp1_market",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06548-b0ae-7563-9aa2-af419ad6c2cc",
+      "parent_run_id": "01a06548-b0ae-7201-8c5b-e1ab315d67c0",
+      "name": "store_context",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:20:57.774918+00:00",
+      "end_time": "2026-09-03T03:20:58.749826+00:00",
+      "latency_seconds": 0.974908,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06548-b0ae-7201-8c5b-e1ab315d67c0",
+      "parent_run_id": "01a06548-b0ac-7043-9315-952b14c5901b",
+      "name": "handle_tool_errors.wrap_tool_call",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:20:57.774123+00:00",
+      "end_time": "2026-09-03T03:20:58.750215+00:00",
+      "latency_seconds": 0.976092,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": []
+    },
+    {
+      "run_id": "01a06548-b0ac-7043-9315-952b14c5901b",
+      "parent_run_id": "01a06543-a564-7352-855b-6354212cee14",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:20:57.772763+00:00",
+      "end_time": "2026-09-03T03:20:58.751146+00:00",
+      "latency_seconds": 0.978383,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "graph:step:10"
+      ]
+    },
+    {
+      "run_id": "01a06548-9cd9-7c90-aa0c-64f8af9852b9",
+      "parent_run_id": "01a06548-9cc8-7fa0-98c7-d0e9712882a5",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:20:52.697257+00:00",
+      "end_time": "2026-09-03T03:20:57.770573+00:00",
+      "latency_seconds": 5.073316,
+      "prompt_tokens": 4142,
+      "completion_tokens": 1068,
+      "total_tokens": 5210,
+      "total_cost": 0.00305022,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06548-9cc8-7fa0-98c7-d0e9712882a5",
+      "parent_run_id": "01a06543-a564-7352-855b-6354212cee14",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:20:52.680627+00:00",
+      "end_time": "2026-09-03T03:20:57.771846+00:00",
+      "latency_seconds": 5.091219,
+      "prompt_tokens": 4142,
+      "completion_tokens": 1068,
+      "total_tokens": 5210,
+      "total_cost": 0.00305022,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:9",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06548-9164-7992-8c5c-a53405f32f33",
+      "parent_run_id": "01a06548-9163-7601-807c-5b3c457caeb3",
+      "name": "tavily_search",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:20:49.764775+00:00",
+      "end_time": "2026-09-03T03:20:52.676932+00:00",
+      "latency_seconds": 2.912157,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06548-9163-7601-807c-5b3c457caeb3",
+      "parent_run_id": "01a06548-9161-7552-ac21-0a19a65edbd5",
+      "name": "handle_tool_errors.wrap_tool_call",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:20:49.763632+00:00",
+      "end_time": "2026-09-03T03:20:52.677782+00:00",
+      "latency_seconds": 2.91415,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": []
+    },
+    {
+      "run_id": "01a06548-9161-7552-ac21-0a19a65edbd5",
+      "parent_run_id": "01a06543-a564-7352-855b-6354212cee14",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:20:49.761926+00:00",
+      "end_time": "2026-09-03T03:20:52.679101+00:00",
+      "latency_seconds": 2.917175,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:8",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06548-8a4c-7880-8617-fc22e3b8c425",
+      "parent_run_id": "01a06548-8a47-7a10-be53-dbad32be43b6",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:20:47.948669+00:00",
+      "end_time": "2026-09-03T03:20:49.759565+00:00",
+      "latency_seconds": 1.810896,
+      "prompt_tokens": 3396,
+      "completion_tokens": 184,
+      "total_tokens": 3580,
+      "total_cost": 0.0014788,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06548-8a47-7a10-be53-dbad32be43b6",
+      "parent_run_id": "01a06543-a564-7352-855b-6354212cee14",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:20:47.943344+00:00",
+      "end_time": "2026-09-03T03:20:49.760905+00:00",
+      "latency_seconds": 1.817561,
+      "prompt_tokens": 3396,
+      "completion_tokens": 184,
+      "total_tokens": 3580,
+      "total_cost": 0.0014788,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:7",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06547-6395-70f3-80b0-343deb35f251",
+      "parent_run_id": "01a06547-6394-72c3-b5a6-d7279e20ddc7",
+      "name": "arxiv_search",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:19:32.501402+00:00",
+      "end_time": "2026-09-03T03:20:47.942714+00:00",
+      "latency_seconds": 75.441312,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06547-6394-72c3-b5a6-d7279e20ddc7",
+      "parent_run_id": "01a06547-6392-71c0-a5b0-c3231a6450a0",
+      "name": "handle_tool_errors.wrap_tool_call",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:19:32.500251+00:00",
+      "end_time": "2026-09-03T03:20:47.942878+00:00",
+      "latency_seconds": 75.442627,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": []
+    },
+    {
+      "run_id": "01a06547-6392-71c0-a5b0-c3231a6450a0",
+      "parent_run_id": "01a06543-a564-7352-855b-6354212cee14",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:19:32.498792+00:00",
+      "end_time": "2026-09-03T03:20:47.943102+00:00",
+      "latency_seconds": 75.44431,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:6",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06547-6025-7190-87f8-2e6c53655084",
+      "parent_run_id": "01a06547-6015-7393-81d6-aecb0f107f50",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:19:31.621388+00:00",
+      "end_time": "2026-09-03T03:19:32.496520+00:00",
+      "latency_seconds": 0.875132,
+      "prompt_tokens": 2870,
+      "completion_tokens": 108,
+      "total_tokens": 2978,
+      "total_cost": 0.00071115,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06547-6015-7393-81d6-aecb0f107f50",
+      "parent_run_id": "01a06543-a564-7352-855b-6354212cee14",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:19:31.605471+00:00",
+      "end_time": "2026-09-03T03:19:32.497446+00:00",
+      "latency_seconds": 0.891975,
+      "prompt_tokens": 2870,
+      "completion_tokens": 108,
+      "total_tokens": 2978,
+      "total_cost": 0.00071115,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:5",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06547-318b-7321-9bb1-c4f1a4103c3b",
+      "parent_run_id": "01a06547-3178-7023-8076-9aa5110349d5",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:19:19.691667+00:00",
+      "end_time": "2026-09-03T03:19:27.086042+00:00",
+      "latency_seconds": 7.394375,
+      "prompt_tokens": 12658,
+      "completion_tokens": 1557,
+      "total_tokens": 14215,
+      "total_cost": 0.00510438,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06547-3178-7023-8076-9aa5110349d5",
+      "parent_run_id": "01a06543-a568-7200-a603-d4b9d369d659",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:19:19.672720+00:00",
+      "end_time": "2026-09-03T03:19:27.087495+00:00",
+      "latency_seconds": 7.414775,
+      "prompt_tokens": 12658,
+      "completion_tokens": 1557,
+      "total_tokens": 14215,
+      "total_cost": 0.00510438,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:23",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06547-0d6e-77c2-87a9-1f704a7b2e58",
+      "parent_run_id": "01a06547-0d6d-7a93-a397-8ffc67260816",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:19:10.446862+00:00",
+      "end_time": "2026-09-03T03:19:19.667834+00:00",
+      "latency_seconds": 9.220972,
+      "prompt_tokens": 3152,
+      "completion_tokens": 1675,
+      "total_tokens": 4827,
+      "total_cost": 0.0051331,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06547-0d6d-7a93-a397-8ffc67260816",
+      "parent_run_id": "01a06547-0d6b-7050-bb41-9a677b289b7c",
+      "name": "think",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:19:10.445343+00:00",
+      "end_time": "2026-09-03T03:19:19.668958+00:00",
+      "latency_seconds": 9.223615,
+      "prompt_tokens": 3152,
+      "completion_tokens": 1675,
+      "total_tokens": 4827,
+      "total_cost": 0.0051331,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06547-0d6b-7050-bb41-9a677b289b7c",
+      "parent_run_id": "01a06547-0d69-7031-8afb-91fa3e06ba05",
+      "name": "handle_tool_errors.wrap_tool_call",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:19:10.443800+00:00",
+      "end_time": "2026-09-03T03:19:19.669412+00:00",
+      "latency_seconds": 9.225612,
+      "prompt_tokens": 3152,
+      "completion_tokens": 1675,
+      "total_tokens": 4827,
+      "total_cost": 0.0051331,
+      "tags": []
+    },
+    {
+      "run_id": "01a06547-0d69-7031-8afb-91fa3e06ba05",
+      "parent_run_id": "01a06543-a568-7200-a603-d4b9d369d659",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:19:10.441539+00:00",
+      "end_time": "2026-09-03T03:19:19.670760+00:00",
+      "latency_seconds": 9.229221,
+      "prompt_tokens": 3152,
+      "completion_tokens": 1675,
+      "total_tokens": 4827,
+      "total_cost": 0.0051331,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "graph:step:22"
+      ]
+    },
+    {
+      "run_id": "01a06546-e004-7990-bc75-b1f0a6da6731",
+      "parent_run_id": "01a06546-dff1-7c63-9629-8bf0756fff60",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:18:58.820152+00:00",
+      "end_time": "2026-09-03T03:19:10.437507+00:00",
+      "latency_seconds": 11.617355,
+      "prompt_tokens": 9805,
+      "completion_tokens": 3069,
+      "total_tokens": 12874,
+      "total_cost": 0.00875073,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06546-dff1-7c63-9629-8bf0756fff60",
+      "parent_run_id": "01a06543-a568-7200-a603-d4b9d369d659",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:18:58.801527+00:00",
+      "end_time": "2026-09-03T03:19:10.439529+00:00",
+      "latency_seconds": 11.638002,
+      "prompt_tokens": 9805,
+      "completion_tokens": 3069,
+      "total_tokens": 12874,
+      "total_cost": 0.00875073,
+      "tags": [
+        "graph:step:21",
+        "benchmark",
+        "glp1_market",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06546-df1d-7663-b721-ce1ff47c241b",
+      "parent_run_id": "01a06546-df1c-71e1-8907-2ec58d3f0d92",
+      "name": "get_context_index",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:18:58.589259+00:00",
+      "end_time": "2026-09-03T03:18:58.797964+00:00",
+      "latency_seconds": 0.208705,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06546-df1c-71e1-8907-2ec58d3f0d92",
+      "parent_run_id": "01a06546-df19-7fa2-93ec-0f13581d8f02",
+      "name": "handle_tool_errors.wrap_tool_call",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:18:58.588012+00:00",
+      "end_time": "2026-09-03T03:18:58.798644+00:00",
+      "latency_seconds": 0.210632,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": []
+    },
+    {
+      "run_id": "01a06546-df19-7fa2-93ec-0f13581d8f02",
+      "parent_run_id": "01a06543-a568-7200-a603-d4b9d369d659",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:18:58.585704+00:00",
+      "end_time": "2026-09-03T03:18:58.799915+00:00",
+      "latency_seconds": 0.214211,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:20",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06546-d3c8-74a0-8699-310de9d857b7",
+      "parent_run_id": "01a06546-d3b2-7f83-a6ab-4294622a48fd",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:18:55.688553+00:00",
+      "end_time": "2026-09-03T03:18:58.582418+00:00",
+      "latency_seconds": 2.893865,
+      "prompt_tokens": 7215,
+      "completion_tokens": 163,
+      "total_tokens": 7378,
+      "total_cost": 0.00078028,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06546-d3b2-7f83-a6ab-4294622a48fd",
+      "parent_run_id": "01a06543-a568-7200-a603-d4b9d369d659",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:18:55.666702+00:00",
+      "end_time": "2026-09-03T03:18:58.584132+00:00",
+      "latency_seconds": 2.91743,
+      "prompt_tokens": 7215,
+      "completion_tokens": 163,
+      "total_tokens": 7378,
+      "total_cost": 0.00078028,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "graph:step:19"
+      ]
+    },
+    {
+      "run_id": "01a06546-ae61-7793-9c49-219d23a02ff5",
+      "parent_run_id": "01a06546-ad1b-7c62-8179-45f82ead98da",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:18:46.113580+00:00",
+      "end_time": "2026-09-03T03:18:55.115328+00:00",
+      "latency_seconds": 9.001748,
+      "prompt_tokens": 730,
+      "completion_tokens": 2078,
+      "total_tokens": 2808,
+      "total_cost": 0.005414,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06546-ad1b-7c62-8179-45f82ead98da",
+      "parent_run_id": "01a06546-ad1a-76a2-9405-6eea721aa59a",
+      "name": "summarize_context",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:18:45.787446+00:00",
+      "end_time": "2026-09-03T03:18:55.663520+00:00",
+      "latency_seconds": 9.876074,
+      "prompt_tokens": 730,
+      "completion_tokens": 2078,
+      "total_tokens": 2808,
+      "total_cost": 0.005414,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06546-ad1a-76a2-9405-6eea721aa59a",
+      "parent_run_id": "01a06546-ad18-70f1-a845-d686a8892914",
+      "name": "handle_tool_errors.wrap_tool_call",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:18:45.786308+00:00",
+      "end_time": "2026-09-03T03:18:55.664259+00:00",
+      "latency_seconds": 9.877951,
+      "prompt_tokens": 730,
+      "completion_tokens": 2078,
+      "total_tokens": 2808,
+      "total_cost": 0.005414,
+      "tags": []
+    },
+    {
+      "run_id": "01a06546-ad18-70f1-a845-d686a8892914",
+      "parent_run_id": "01a06543-a568-7200-a603-d4b9d369d659",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:18:45.784292+00:00",
+      "end_time": "2026-09-03T03:18:55.665485+00:00",
+      "latency_seconds": 9.881193,
+      "prompt_tokens": 730,
+      "completion_tokens": 2078,
+      "total_tokens": 2808,
+      "total_cost": 0.005414,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:18",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06546-a95d-7833-9684-89548d165d9c",
+      "parent_run_id": "01a06546-a949-7a62-b53d-551bba2c17ac",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:18:44.829790+00:00",
+      "end_time": "2026-09-03T03:18:45.781982+00:00",
+      "latency_seconds": 0.952192,
+      "prompt_tokens": 6860,
+      "completion_tokens": 47,
+      "total_tokens": 6907,
+      "total_cost": 0.0021755,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06546-a949-7a62-b53d-551bba2c17ac",
+      "parent_run_id": "01a06543-a568-7200-a603-d4b9d369d659",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:18:44.809325+00:00",
+      "end_time": "2026-09-03T03:18:45.783155+00:00",
+      "latency_seconds": 0.97383,
+      "prompt_tokens": 6860,
+      "completion_tokens": 47,
+      "total_tokens": 6907,
+      "total_cost": 0.0021755,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "graph:step:17"
+      ]
+    },
+    {
+      "run_id": "01a06546-a5ec-7613-9a99-4137d00c086f",
+      "parent_run_id": "01a06546-a5eb-7e42-a33b-560dbbc9693d",
+      "name": "store_context",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:18:43.948781+00:00",
+      "end_time": "2026-09-03T03:18:44.807591+00:00",
+      "latency_seconds": 0.85881,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06546-a5eb-7e42-a33b-560dbbc9693d",
+      "parent_run_id": "01a06546-a5ea-78b1-8281-3721857151d4",
+      "name": "handle_tool_errors.wrap_tool_call",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:18:43.947980+00:00",
+      "end_time": "2026-09-03T03:18:44.807947+00:00",
+      "latency_seconds": 0.859967,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": []
+    },
+    {
+      "run_id": "01a06546-a5ea-78b1-8281-3721857151d4",
+      "parent_run_id": "01a06543-a568-7200-a603-d4b9d369d659",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:18:43.946607+00:00",
+      "end_time": "2026-09-03T03:18:44.808475+00:00",
+      "latency_seconds": 0.861868,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:16",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06546-96e3-7db0-a84f-455b245f21ad",
+      "parent_run_id": "01a06546-96d1-7a50-8337-2f4a3878bae0",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:18:40.099465+00:00",
+      "end_time": "2026-09-03T03:18:43.943653+00:00",
+      "latency_seconds": 3.844188,
+      "prompt_tokens": 6032,
+      "completion_tokens": 837,
+      "total_tokens": 6869,
+      "total_cost": 0.00258531,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06546-96d1-7a50-8337-2f4a3878bae0",
+      "parent_run_id": "01a06543-a568-7200-a603-d4b9d369d659",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:18:40.081264+00:00",
+      "end_time": "2026-09-03T03:18:43.945611+00:00",
+      "latency_seconds": 3.864347,
+      "prompt_tokens": 6032,
+      "completion_tokens": 837,
+      "total_tokens": 6869,
+      "total_cost": 0.00258531,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "graph:step:15"
+      ]
+    },
+    {
+      "run_id": "01a06546-8e6f-79a1-ae3a-51b89a2b59bc",
+      "parent_run_id": "01a06546-8e6f-7ab2-b666-39f03c77cfa1",
+      "name": "tavily_search",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:18:37.935984+00:00",
+      "end_time": "2026-09-03T03:18:40.077008+00:00",
+      "latency_seconds": 2.141024,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06546-8e6f-7ab2-b666-39f03c77cfa1",
+      "parent_run_id": "01a06546-8e6d-7851-8014-db74ca7ae2b0",
+      "name": "handle_tool_errors.wrap_tool_call",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:18:37.935168+00:00",
+      "end_time": "2026-09-03T03:18:40.077571+00:00",
+      "latency_seconds": 2.142403,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": []
+    },
+    {
+      "run_id": "01a06546-8e6d-7851-8014-db74ca7ae2b0",
+      "parent_run_id": "01a06543-a568-7200-a603-d4b9d369d659",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:18:37.933428+00:00",
+      "end_time": "2026-09-03T03:18:40.078615+00:00",
+      "latency_seconds": 2.145187,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:14",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06546-8727-7a53-a9dc-98ac96c705a3",
+      "parent_run_id": "01a06546-8717-76c0-9506-c18a7612f223",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:18:36.071847+00:00",
+      "end_time": "2026-09-03T03:18:37.930079+00:00",
+      "latency_seconds": 1.858232,
+      "prompt_tokens": 5277,
+      "completion_tokens": 236,
+      "total_tokens": 5513,
+      "total_cost": 0.00107285,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06546-8717-76c0-9506-c18a7612f223",
+      "parent_run_id": "01a06543-a568-7200-a603-d4b9d369d659",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:18:36.055050+00:00",
+      "end_time": "2026-09-03T03:18:37.932048+00:00",
+      "latency_seconds": 1.876998,
+      "prompt_tokens": 5277,
+      "completion_tokens": 236,
+      "total_tokens": 5513,
+      "total_cost": 0.00107285,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:13",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06546-5755-7bf1-aeef-544d80b679e1",
+      "parent_run_id": "01a06546-566a-7e90-a3a2-3924f856cb31",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:18:23.829951+00:00",
+      "end_time": "2026-09-03T03:18:35.519861+00:00",
+      "latency_seconds": 11.68991,
+      "prompt_tokens": 828,
+      "completion_tokens": 2592,
+      "total_tokens": 3420,
+      "total_cost": 0.0067284,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06546-566a-7e90-a3a2-3924f856cb31",
+      "parent_run_id": "01a06546-566a-7a33-a28d-16b03e109cfe",
+      "name": "summarize_context",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:18:23.594652+00:00",
+      "end_time": "2026-09-03T03:18:36.052563+00:00",
+      "latency_seconds": 12.457911,
+      "prompt_tokens": 828,
+      "completion_tokens": 2592,
+      "total_tokens": 3420,
+      "total_cost": 0.0067284,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06546-566a-7a33-a28d-16b03e109cfe",
+      "parent_run_id": "01a06546-5669-7e52-b5d3-554e5a0fc2f5",
+      "name": "handle_tool_errors.wrap_tool_call",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:18:23.594152+00:00",
+      "end_time": "2026-09-03T03:18:36.053171+00:00",
+      "latency_seconds": 12.459019,
+      "prompt_tokens": 828,
+      "completion_tokens": 2592,
+      "total_tokens": 3420,
+      "total_cost": 0.0067284,
+      "tags": []
+    },
+    {
+      "run_id": "01a06546-5669-7e52-b5d3-554e5a0fc2f5",
+      "parent_run_id": "01a06543-a568-7200-a603-d4b9d369d659",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:18:23.593320+00:00",
+      "end_time": "2026-09-03T03:18:36.053997+00:00",
+      "latency_seconds": 12.460677,
+      "prompt_tokens": 828,
+      "completion_tokens": 2592,
+      "total_tokens": 3420,
+      "total_cost": 0.0067284,
+      "tags": [
+        "graph:step:12",
+        "benchmark",
+        "glp1_market",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06546-538b-7c31-a5e4-e399960c1846",
+      "parent_run_id": "01a06546-5375-7640-be5f-688e8b7da10b",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:18:22.859193+00:00",
+      "end_time": "2026-09-03T03:18:23.592129+00:00",
+      "latency_seconds": 0.732936,
+      "prompt_tokens": 4796,
+      "completion_tokens": 49,
+      "total_tokens": 4845,
+      "total_cost": 0.00069379,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06546-5375-7640-be5f-688e8b7da10b",
+      "parent_run_id": "01a06543-a568-7200-a603-d4b9d369d659",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:18:22.837209+00:00",
+      "end_time": "2026-09-03T03:18:23.592777+00:00",
+      "latency_seconds": 0.755568,
+      "prompt_tokens": 4796,
+      "completion_tokens": 49,
+      "total_tokens": 4845,
+      "total_cost": 0.00069379,
+      "tags": [
+        "graph:step:11",
+        "benchmark",
+        "glp1_market",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06546-4fd2-7eb0-971b-c2efa8fbfd00",
+      "parent_run_id": "01a06546-4fd1-7a21-86c0-c88d3da0e989",
+      "name": "store_context",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:18:21.906839+00:00",
+      "end_time": "2026-09-03T03:18:22.833645+00:00",
+      "latency_seconds": 0.926806,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06546-4fd1-7a21-86c0-c88d3da0e989",
+      "parent_run_id": "01a06546-4fcf-7590-a128-e58666a72127",
+      "name": "handle_tool_errors.wrap_tool_call",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:18:21.905620+00:00",
+      "end_time": "2026-09-03T03:18:22.834454+00:00",
+      "latency_seconds": 0.928834,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": []
+    },
+    {
+      "run_id": "01a06546-4fcf-7590-a128-e58666a72127",
+      "parent_run_id": "01a06543-a568-7200-a603-d4b9d369d659",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:18:21.903863+00:00",
+      "end_time": "2026-09-03T03:18:22.835674+00:00",
+      "latency_seconds": 0.931811,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "graph:step:10"
+      ]
+    },
+    {
+      "run_id": "01a06546-3f7f-77b1-a538-83bfba451806",
+      "parent_run_id": "01a06546-3f6c-7273-b008-2eb629761dfd",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:18:17.727842+00:00",
+      "end_time": "2026-09-03T03:18:21.901050+00:00",
+      "latency_seconds": 4.173208,
+      "prompt_tokens": 3870,
+      "completion_tokens": 932,
+      "total_tokens": 4802,
+      "total_cost": 0.00286136,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06546-3f6c-7273-b008-2eb629761dfd",
+      "parent_run_id": "01a06543-a568-7200-a603-d4b9d369d659",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:18:17.708521+00:00",
+      "end_time": "2026-09-03T03:18:21.902682+00:00",
+      "latency_seconds": 4.194161,
+      "prompt_tokens": 3870,
+      "completion_tokens": 932,
+      "total_tokens": 4802,
+      "total_cost": 0.00286136,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:9",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06546-2a35-76d1-8f94-03a5d9cbd365",
+      "parent_run_id": "01a06546-2a33-78e2-8990-de6f28005547",
+      "name": "tavily_search",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:18:12.277046+00:00",
+      "end_time": "2026-09-03T03:18:17.704471+00:00",
+      "latency_seconds": 5.427425,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06546-2a33-78e2-8990-de6f28005547",
+      "parent_run_id": "01a06546-2a31-7f63-bde1-3144f3283987",
+      "name": "handle_tool_errors.wrap_tool_call",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:18:12.275524+00:00",
+      "end_time": "2026-09-03T03:18:17.705436+00:00",
+      "latency_seconds": 5.429912,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": []
+    },
+    {
+      "run_id": "01a06546-2a31-7f63-bde1-3144f3283987",
+      "parent_run_id": "01a06543-a568-7200-a603-d4b9d369d659",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:18:12.273474+00:00",
+      "end_time": "2026-09-03T03:18:17.706917+00:00",
+      "latency_seconds": 5.433443,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:8",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06546-24dd-7fd1-808b-f448b2322ba5",
+      "parent_run_id": "01a06546-24cd-7000-87b7-cd2cd1203156",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:18:10.909073+00:00",
+      "end_time": "2026-09-03T03:18:12.270710+00:00",
+      "latency_seconds": 1.361637,
+      "prompt_tokens": 3014,
+      "completion_tokens": 155,
+      "total_tokens": 3169,
+      "total_cost": 0.0012917,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06546-24cd-7000-87b7-cd2cd1203156",
+      "parent_run_id": "01a06543-a568-7200-a603-d4b9d369d659",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:18:10.893721+00:00",
+      "end_time": "2026-09-03T03:18:12.272105+00:00",
+      "latency_seconds": 1.378384,
+      "prompt_tokens": 3014,
+      "completion_tokens": 155,
+      "total_tokens": 3169,
+      "total_cost": 0.0012917,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:7",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06545-0ee5-78e2-94e6-ac3d50289869",
+      "parent_run_id": "01a06545-0ee4-7a32-adcd-2ffad05788d4",
+      "name": "arxiv_search",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:16:59.749586+00:00",
+      "end_time": "2026-09-03T03:18:10.889420+00:00",
+      "latency_seconds": 71.139834,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06545-0ee4-7a32-adcd-2ffad05788d4",
+      "parent_run_id": "01a06545-0ee3-74f0-9629-0b8cf73850ed",
+      "name": "handle_tool_errors.wrap_tool_call",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:16:59.748762+00:00",
+      "end_time": "2026-09-03T03:18:10.891995+00:00",
+      "latency_seconds": 71.143233,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": []
+    },
+    {
+      "run_id": "01a06545-0ee3-74f0-9629-0b8cf73850ed",
+      "parent_run_id": "01a06543-a568-7200-a603-d4b9d369d659",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:16:59.747070+00:00",
+      "end_time": "2026-09-03T03:18:10.892878+00:00",
+      "latency_seconds": 71.145808,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:6",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06545-0a72-7d90-b4b7-4550914a0316",
+      "parent_run_id": "01a06545-0a60-75a2-b094-03ef8c79e119",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:16:58.610038+00:00",
+      "end_time": "2026-09-03T03:16:59.744851+00:00",
+      "latency_seconds": 1.134813,
+      "prompt_tokens": 2882,
+      "completion_tokens": 135,
+      "total_tokens": 3017,
+      "total_cost": 0.0012021,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06545-0a60-75a2-b094-03ef8c79e119",
+      "parent_run_id": "01a06543-a568-7200-a603-d4b9d369d659",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:16:58.592860+00:00",
+      "end_time": "2026-09-03T03:16:59.746103+00:00",
+      "latency_seconds": 1.153243,
+      "prompt_tokens": 2882,
+      "completion_tokens": 135,
+      "total_tokens": 3017,
+      "total_cost": 0.0012021,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:5",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06544-7a13-77f1-ace5-7623faf985b7",
+      "parent_run_id": "01a06544-7a01-75c2-a58d-cf56bd8e5ccd",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:16:21.651696+00:00",
+      "end_time": "2026-09-03T03:16:31.026734+00:00",
+      "latency_seconds": 9.375038,
+      "prompt_tokens": 10672,
+      "completion_tokens": 0,
+      "total_tokens": 10672,
+      "total_cost": 0.0032016,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06544-7a01-75c2-a58d-cf56bd8e5ccd",
+      "parent_run_id": "01a06543-a57f-72c2-8dca-4959df90652a",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:16:21.634023+00:00",
+      "end_time": "2026-09-03T03:16:31.028698+00:00",
+      "latency_seconds": 9.394675,
+      "prompt_tokens": 10672,
+      "completion_tokens": 0,
+      "total_tokens": 10672,
+      "total_cost": 0.0032016,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "graph:step:19"
+      ]
+    },
+    {
+      "run_id": "01a06544-793c-7661-8c2f-cd67f881c08f",
+      "parent_run_id": "01a06544-793a-7942-894f-3b1523858230",
+      "name": "get_context_index",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:16:21.436171+00:00",
+      "end_time": "2026-09-03T03:16:21.630420+00:00",
+      "latency_seconds": 0.194249,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06544-793a-7942-894f-3b1523858230",
+      "parent_run_id": "01a06543-a57f-72c2-8dca-4959df90652a",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:16:21.434132+00:00",
+      "end_time": "2026-09-03T03:16:21.632253+00:00",
+      "latency_seconds": 0.198121,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:18",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06544-5b55-78d2-877c-13a04818a256",
+      "parent_run_id": "01a06544-5b44-7692-bf18-4f0fdb8ce831",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:16:13.781367+00:00",
+      "end_time": "2026-09-03T03:16:20.591742+00:00",
+      "latency_seconds": 6.810375,
+      "prompt_tokens": 6662,
+      "completion_tokens": 1324,
+      "total_tokens": 7986,
+      "total_cost": 0.00362191,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06544-5b44-7692-bf18-4f0fdb8ce831",
+      "parent_run_id": "01a06543-a58b-72f2-8dfd-4095bc6bdeda",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:16:13.764809+00:00",
+      "end_time": "2026-09-03T03:16:20.593720+00:00",
+      "latency_seconds": 6.828911,
+      "prompt_tokens": 6662,
+      "completion_tokens": 1324,
+      "total_tokens": 7986,
+      "total_cost": 0.00362191,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "graph:step:17"
+      ]
+    },
+    {
+      "run_id": "01a06544-5363-7e52-ae52-9fb59b488376",
+      "parent_run_id": "01a06544-535d-7982-aba4-5a9ec72638c3",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:16:11.747257+00:00",
+      "end_time": "2026-09-03T03:16:21.430446+00:00",
+      "latency_seconds": 9.683189,
+      "prompt_tokens": 8998,
+      "completion_tokens": 2061,
+      "total_tokens": 11059,
+      "total_cost": 0.00564546,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06544-535d-7982-aba4-5a9ec72638c3",
+      "parent_run_id": "01a06543-a57f-72c2-8dca-4959df90652a",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:16:11.741525+00:00",
+      "end_time": "2026-09-03T03:16:21.432311+00:00",
+      "latency_seconds": 9.690786,
+      "prompt_tokens": 8998,
+      "completion_tokens": 2061,
+      "total_tokens": 11059,
+      "total_cost": 0.00564546,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "graph:step:17"
+      ]
+    },
+    {
+      "run_id": "01a06544-505d-7552-a6cb-39eec086f8a4",
+      "parent_run_id": "01a06544-505c-7452-83c2-366ce92ddbea",
+      "name": "web_scraper",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:16:10.973750+00:00",
+      "end_time": "2026-09-03T03:16:11.740614+00:00",
+      "latency_seconds": 0.766864,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06544-505c-7452-83c2-366ce92ddbea",
+      "parent_run_id": "01a06543-a57f-72c2-8dca-4959df90652a",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:16:10.972763+00:00",
+      "end_time": "2026-09-03T03:16:11.741095+00:00",
+      "latency_seconds": 0.768332,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:16",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06544-4d15-7812-8b12-4476b4cd3f8a",
+      "parent_run_id": "01a06544-4c31-72f3-a29d-4c0be08c690a",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:16:10.133490+00:00",
+      "end_time": "2026-09-03T03:16:13.236206+00:00",
+      "latency_seconds": 3.102716,
+      "prompt_tokens": 591,
+      "completion_tokens": 547,
+      "total_tokens": 1138,
+      "total_cost": 0.0015448,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06544-4c31-72f3-a29d-4c0be08c690a",
+      "parent_run_id": "01a06544-4c30-7b63-86e9-251f6d5c3564",
+      "name": "summarize_context",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:16:09.905554+00:00",
+      "end_time": "2026-09-03T03:16:13.762005+00:00",
+      "latency_seconds": 3.856451,
+      "prompt_tokens": 591,
+      "completion_tokens": 547,
+      "total_tokens": 1138,
+      "total_cost": 0.0015448,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06544-4c30-7b63-86e9-251f6d5c3564",
+      "parent_run_id": "01a06543-a58b-72f2-8dfd-4095bc6bdeda",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:16:09.904033+00:00",
+      "end_time": "2026-09-03T03:16:13.763321+00:00",
+      "latency_seconds": 3.859288,
+      "prompt_tokens": 591,
+      "completion_tokens": 547,
+      "total_tokens": 1138,
+      "total_cost": 0.0015448,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:16",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06544-4b26-7503-b2fa-10a85711ec78",
+      "parent_run_id": "01a06544-4b15-7672-9e18-bf23a85cbe67",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:16:09.638084+00:00",
+      "end_time": "2026-09-03T03:16:10.971124+00:00",
+      "latency_seconds": 1.33304,
+      "prompt_tokens": 8928,
+      "completion_tokens": 99,
+      "total_tokens": 9027,
+      "total_cost": 0.00070353,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06544-4b15-7672-9e18-bf23a85cbe67",
+      "parent_run_id": "01a06543-a57f-72c2-8dca-4959df90652a",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:16:09.621871+00:00",
+      "end_time": "2026-09-03T03:16:10.972035+00:00",
+      "latency_seconds": 1.350164,
+      "prompt_tokens": 8928,
+      "completion_tokens": 99,
+      "total_tokens": 9027,
+      "total_cost": 0.00070353,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "graph:step:15"
+      ]
+    },
+    {
+      "run_id": "01a06544-48ff-7ff0-9cb6-36c914672224",
+      "parent_run_id": "01a06544-485f-7602-8dc8-42ee7f372283",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:16:09.087804+00:00",
+      "end_time": "2026-09-03T03:16:09.901427+00:00",
+      "latency_seconds": 0.813623,
+      "prompt_tokens": 6474,
+      "completion_tokens": 25,
+      "total_tokens": 6499,
+      "total_cost": 0.00056182,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06544-485f-7602-8dc8-42ee7f372283",
+      "parent_run_id": "01a06543-a58b-72f2-8dfd-4095bc6bdeda",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:16:08.927172+00:00",
+      "end_time": "2026-09-03T03:16:09.902965+00:00",
+      "latency_seconds": 0.975793,
+      "prompt_tokens": 6474,
+      "completion_tokens": 25,
+      "total_tokens": 6499,
+      "total_cost": 0.00056182,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "graph:step:15"
+      ]
+    },
+    {
+      "run_id": "01a06544-44e4-7ba0-a185-41d3ee4e38c9",
+      "parent_run_id": "01a06544-44e2-79f3-8960-6f62b98178cb",
+      "name": "store_context",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:16:08.036336+00:00",
+      "end_time": "2026-09-03T03:16:08.925058+00:00",
+      "latency_seconds": 0.888722,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06544-44e2-79f3-8960-6f62b98178cb",
+      "parent_run_id": "01a06543-a58b-72f2-8dfd-4095bc6bdeda",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:16:08.034841+00:00",
+      "end_time": "2026-09-03T03:16:08.926288+00:00",
+      "latency_seconds": 0.891447,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:14",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06544-3577-7873-baa3-4a951c4adac7",
+      "parent_run_id": "01a06544-3566-7c50-8a9b-bef8f1a64a38",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:16:04.087095+00:00",
+      "end_time": "2026-09-03T03:16:08.032106+00:00",
+      "latency_seconds": 3.945011,
+      "prompt_tokens": 5822,
+      "completion_tokens": 815,
+      "total_tokens": 6637,
+      "total_cost": 0.00255641,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06544-3566-7c50-8a9b-bef8f1a64a38",
+      "parent_run_id": "01a06543-a58b-72f2-8dfd-4095bc6bdeda",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:16:04.070055+00:00",
+      "end_time": "2026-09-03T03:16:08.033851+00:00",
+      "latency_seconds": 3.963796,
+      "prompt_tokens": 5822,
+      "completion_tokens": 815,
+      "total_tokens": 6637,
+      "total_cost": 0.00255641,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:13",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06544-261c-7f40-a8af-4114e153621c",
+      "parent_run_id": "01a06544-261a-7d11-9556-a7b0120e8901",
+      "name": "tavily_search",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:16:00.156211+00:00",
+      "end_time": "2026-09-03T03:16:04.068469+00:00",
+      "latency_seconds": 3.912258,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06544-261a-7d11-9556-a7b0120e8901",
+      "parent_run_id": "01a06543-a58b-72f2-8dfd-4095bc6bdeda",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:16:00.154369+00:00",
+      "end_time": "2026-09-03T03:16:04.069075+00:00",
+      "latency_seconds": 3.914706,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "graph:step:12",
+        "benchmark",
+        "glp1_market",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06544-202a-74d0-a644-bc37f5239dba",
+      "parent_run_id": "01a06544-2016-7140-a639-92bde7562eaf",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:15:58.634261+00:00",
+      "end_time": "2026-09-03T03:16:00.151461+00:00",
+      "latency_seconds": 1.5172,
+      "prompt_tokens": 5242,
+      "completion_tokens": 215,
+      "total_tokens": 5457,
+      "total_cost": 0.00110759,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06544-2016-7140-a639-92bde7562eaf",
+      "parent_run_id": "01a06543-a58b-72f2-8dfd-4095bc6bdeda",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:58.614680+00:00",
+      "end_time": "2026-09-03T03:16:00.152988+00:00",
+      "latency_seconds": 1.538308,
+      "prompt_tokens": 5242,
+      "completion_tokens": 215,
+      "total_tokens": 5457,
+      "total_cost": 0.00110759,
+      "tags": [
+        "graph:step:11",
+        "benchmark",
+        "glp1_market",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06544-1f4e-7ab2-b888-1a87d5bccaf5",
+      "parent_run_id": "01a06544-1f4c-7b71-86f7-8b8dda333c55",
+      "name": "get_context_index",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:15:58.414246+00:00",
+      "end_time": "2026-09-03T03:15:58.611160+00:00",
+      "latency_seconds": 0.196914,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06544-1f4c-7b71-86f7-8b8dda333c55",
+      "parent_run_id": "01a06543-a58b-72f2-8dfd-4095bc6bdeda",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:58.412658+00:00",
+      "end_time": "2026-09-03T03:15:58.612935+00:00",
+      "latency_seconds": 0.200277,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "graph:step:10"
+      ]
+    },
+    {
+      "run_id": "01a06544-1c9b-7243-8421-2abacf72cf9c",
+      "parent_run_id": "01a06544-1bc1-79e3-b572-37e97ab11764",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:15:57.723922+00:00",
+      "end_time": "2026-09-03T03:16:09.093422+00:00",
+      "latency_seconds": 11.3695,
+      "prompt_tokens": 1763,
+      "completion_tokens": 2437,
+      "total_tokens": 4200,
+      "total_cost": 0.0066214,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06544-1bc1-79e3-b572-37e97ab11764",
+      "parent_run_id": "01a06544-1bc0-7682-8660-524a62d0df67",
+      "name": "summarize_context",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:15:57.505953+00:00",
+      "end_time": "2026-09-03T03:16:09.619437+00:00",
+      "latency_seconds": 12.113484,
+      "prompt_tokens": 1763,
+      "completion_tokens": 2437,
+      "total_tokens": 4200,
+      "total_cost": 0.0066214,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06544-1bc0-7682-8660-524a62d0df67",
+      "parent_run_id": "01a06543-a57f-72c2-8dca-4959df90652a",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:57.504641+00:00",
+      "end_time": "2026-09-03T03:16:09.620421+00:00",
+      "latency_seconds": 12.11578,
+      "prompt_tokens": 1763,
+      "completion_tokens": 2437,
+      "total_tokens": 4200,
+      "total_cost": 0.0066214,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:14",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06544-18df-7aa3-ad4b-44d9dfeadeac",
+      "parent_run_id": "01a06544-18cb-7441-81e4-4d4c69d1cba6",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:15:56.767091+00:00",
+      "end_time": "2026-09-03T03:15:57.501904+00:00",
+      "latency_seconds": 0.734813,
+      "prompt_tokens": 8204,
+      "completion_tokens": 32,
+      "total_tokens": 8236,
+      "total_cost": 0.00082427,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06544-18cb-7441-81e4-4d4c69d1cba6",
+      "parent_run_id": "01a06543-a57f-72c2-8dca-4959df90652a",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:56.747755+00:00",
+      "end_time": "2026-09-03T03:15:57.503376+00:00",
+      "latency_seconds": 0.755621,
+      "prompt_tokens": 8204,
+      "completion_tokens": 32,
+      "total_tokens": 8236,
+      "total_cost": 0.00082427,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:13",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06544-1517-7db1-ad70-e88ad4452595",
+      "parent_run_id": "01a06544-1515-7a42-a3e6-f88e882a478e",
+      "name": "store_context",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:15:55.799400+00:00",
+      "end_time": "2026-09-03T03:15:56.745428+00:00",
+      "latency_seconds": 0.946028,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06544-1515-7a42-a3e6-f88e882a478e",
+      "parent_run_id": "01a06543-a57f-72c2-8dca-4959df90652a",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:55.797362+00:00",
+      "end_time": "2026-09-03T03:15:56.746345+00:00",
+      "latency_seconds": 0.948983,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "graph:step:12",
+        "benchmark",
+        "glp1_market",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06544-0a39-7002-9f6d-ad0e5a629a15",
+      "parent_run_id": "01a06544-0a26-76b3-8ef2-f3df61a13cbb",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:15:53.017163+00:00",
+      "end_time": "2026-09-03T03:15:58.410436+00:00",
+      "latency_seconds": 5.393273,
+      "prompt_tokens": 4477,
+      "completion_tokens": 1091,
+      "total_tokens": 5568,
+      "total_cost": 0.00308159,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06544-0a26-76b3-8ef2-f3df61a13cbb",
+      "parent_run_id": "01a06543-a58b-72f2-8dfd-4095bc6bdeda",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:52.998330+00:00",
+      "end_time": "2026-09-03T03:15:58.411365+00:00",
+      "latency_seconds": 5.413035,
+      "prompt_tokens": 4477,
+      "completion_tokens": 1091,
+      "total_tokens": 5568,
+      "total_cost": 0.00308159,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:9",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06544-0471-76f3-9840-ca5fb5ea1839",
+      "parent_run_id": "01a06544-045c-7201-9bf7-3b2f7cc3812e",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:15:51.537044+00:00",
+      "end_time": "2026-09-03T03:15:55.380902+00:00",
+      "latency_seconds": 3.843858,
+      "prompt_tokens": 5562,
+      "completion_tokens": 763,
+      "total_tokens": 6325,
+      "total_cost": 0.00233437,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06544-045c-7201-9bf7-3b2f7cc3812e",
+      "parent_run_id": "01a06543-a588-7350-8c77-6a2f09e724dd",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:51.516937+00:00",
+      "end_time": "2026-09-03T03:15:55.382107+00:00",
+      "latency_seconds": 3.86517,
+      "prompt_tokens": 5562,
+      "completion_tokens": 763,
+      "total_tokens": 6325,
+      "total_cost": 0.00233437,
+      "tags": [
+        "graph:step:11",
+        "benchmark",
+        "glp1_market",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06544-0111-7833-a2b6-092184a3c69a",
+      "parent_run_id": "01a06544-0110-7f02-8845-110615818f27",
+      "name": "code_executor",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:15:50.673669+00:00",
+      "end_time": "2026-09-03T03:15:51.514827+00:00",
+      "latency_seconds": 0.841158,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06544-0110-7f02-8845-110615818f27",
+      "parent_run_id": "01a06543-a588-7350-8c77-6a2f09e724dd",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:50.672722+00:00",
+      "end_time": "2026-09-03T03:15:51.515985+00:00",
+      "latency_seconds": 0.843263,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "graph:step:10"
+      ]
+    },
+    {
+      "run_id": "01a06543-f706-7600-824c-83b3f58cf0b3",
+      "parent_run_id": "01a06543-f6fe-7db3-a621-f38024888f74",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:15:48.102744+00:00",
+      "end_time": "2026-09-03T03:15:55.795915+00:00",
+      "latency_seconds": 7.693171,
+      "prompt_tokens": 6362,
+      "completion_tokens": 1807,
+      "total_tokens": 8169,
+      "total_cost": 0.0064261,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-f6fe-7db3-a621-f38024888f74",
+      "parent_run_id": "01a06543-a57f-72c2-8dca-4959df90652a",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:48.094925+00:00",
+      "end_time": "2026-09-03T03:15:55.796540+00:00",
+      "latency_seconds": 7.701615,
+      "prompt_tokens": 6362,
+      "completion_tokens": 1807,
+      "total_tokens": 8169,
+      "total_cost": 0.0064261,
+      "tags": [
+        "graph:step:11",
+        "benchmark",
+        "glp1_market",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06543-f501-7072-9d65-757e09882756",
+      "parent_run_id": "01a06543-f500-7fc0-b7f0-142c7674f7e8",
+      "name": "web_scraper",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:15:47.585678+00:00",
+      "end_time": "2026-09-03T03:15:48.093826+00:00",
+      "latency_seconds": 0.508148,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-f500-7fc0-b7f0-142c7674f7e8",
+      "parent_run_id": "01a06543-a57f-72c2-8dca-4959df90652a",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:47.584630+00:00",
+      "end_time": "2026-09-03T03:15:48.094402+00:00",
+      "latency_seconds": 0.509772,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "graph:step:10"
+      ]
+    },
+    {
+      "run_id": "01a06543-f094-7182-8edc-6d477f4bd0de",
+      "parent_run_id": "01a06543-efcc-72d0-9468-dbc6dbcad3df",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:15:46.452152+00:00",
+      "end_time": "2026-09-03T03:15:52.382412+00:00",
+      "latency_seconds": 5.93026,
+      "prompt_tokens": 868,
+      "completion_tokens": 1348,
+      "total_tokens": 2216,
+      "total_cost": 0.0036304,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06543-efcc-72d0-9468-dbc6dbcad3df",
+      "parent_run_id": "01a06543-efca-7c83-bdb1-38b89f5575b4",
+      "name": "summarize_context",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:15:46.252790+00:00",
+      "end_time": "2026-09-03T03:15:52.996984+00:00",
+      "latency_seconds": 6.744194,
+      "prompt_tokens": 868,
+      "completion_tokens": 1348,
+      "total_tokens": 2216,
+      "total_cost": 0.0036304,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-efca-7c83-bdb1-38b89f5575b4",
+      "parent_run_id": "01a06543-a58b-72f2-8dfd-4095bc6bdeda",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:46.250893+00:00",
+      "end_time": "2026-09-03T03:15:52.997579+00:00",
+      "latency_seconds": 6.746686,
+      "prompt_tokens": 868,
+      "completion_tokens": 1348,
+      "total_tokens": 2216,
+      "total_cost": 0.0036304,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:8",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06543-ee71-7e70-a2aa-3ba9e7f3f962",
+      "parent_run_id": "01a06543-ee62-7913-9af9-842920cc5c3f",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:15:45.905142+00:00",
+      "end_time": "2026-09-03T03:15:47.582636+00:00",
+      "latency_seconds": 1.677494,
+      "prompt_tokens": 4552,
+      "completion_tokens": 204,
+      "total_tokens": 4756,
+      "total_cost": 0.0018756,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-ee62-7913-9af9-842920cc5c3f",
+      "parent_run_id": "01a06543-a57f-72c2-8dca-4959df90652a",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:45.890694+00:00",
+      "end_time": "2026-09-03T03:15:47.583974+00:00",
+      "latency_seconds": 1.69328,
+      "prompt_tokens": 4552,
+      "completion_tokens": 204,
+      "total_tokens": 4756,
+      "total_cost": 0.0018756,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:9",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06543-ec4c-75e3-86b5-7f9bea5dcfa6",
+      "parent_run_id": "01a06543-ec39-7102-98f4-f50d13f68f02",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:15:45.356705+00:00",
+      "end_time": "2026-09-03T03:15:50.670836+00:00",
+      "latency_seconds": 5.314131,
+      "prompt_tokens": 4881,
+      "completion_tokens": 1003,
+      "total_tokens": 5884,
+      "total_cost": 0.00314155,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-ec39-7102-98f4-f50d13f68f02",
+      "parent_run_id": "01a06543-a588-7350-8c77-6a2f09e724dd",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:45.337166+00:00",
+      "end_time": "2026-09-03T03:15:50.671829+00:00",
+      "latency_seconds": 5.334663,
+      "prompt_tokens": 4881,
+      "completion_tokens": 1003,
+      "total_tokens": 5884,
+      "total_cost": 0.00314155,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:9",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06543-e982-7d33-a55c-2552f2d76edd",
+      "parent_run_id": "01a06543-e972-7de3-a461-9ba2416a2b0e",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:15:44.642041+00:00",
+      "end_time": "2026-09-03T03:15:47.767430+00:00",
+      "latency_seconds": 3.125389,
+      "prompt_tokens": 4616,
+      "completion_tokens": 516,
+      "total_tokens": 5132,
+      "total_cost": 0.00206082,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-e972-7de3-a461-9ba2416a2b0e",
+      "parent_run_id": "01a06543-a59d-7d91-90d2-994d143eca46",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:44.626320+00:00",
+      "end_time": "2026-09-03T03:15:47.768820+00:00",
+      "latency_seconds": 3.1425,
+      "prompt_tokens": 4616,
+      "completion_tokens": 516,
+      "total_tokens": 5132,
+      "total_cost": 0.00206082,
+      "tags": [
+        "graph:step:11",
+        "benchmark",
+        "glp1_market",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06543-e968-7741-99b3-17e23509d937",
+      "parent_run_id": "01a06543-e967-7022-819c-1047800f1d27",
+      "name": "code_executor",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:15:44.616839+00:00",
+      "end_time": "2026-09-03T03:15:45.334904+00:00",
+      "latency_seconds": 0.718065,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-e967-7022-819c-1047800f1d27",
+      "parent_run_id": "01a06543-a588-7350-8c77-6a2f09e724dd",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:44.615348+00:00",
+      "end_time": "2026-09-03T03:15:45.336063+00:00",
+      "latency_seconds": 0.720715,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:8",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06543-e6cd-7190-b160-a66fd45cf9ea",
+      "parent_run_id": "01a06543-e6bb-74a0-9482-15fcecd0c716",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:15:43.949571+00:00",
+      "end_time": "2026-09-03T03:15:46.248315+00:00",
+      "latency_seconds": 2.298744,
+      "prompt_tokens": 4128,
+      "completion_tokens": 24,
+      "total_tokens": 4152,
+      "total_cost": 0.0005613,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-e6bb-74a0-9482-15fcecd0c716",
+      "parent_run_id": "01a06543-a58b-72f2-8dfd-4095bc6bdeda",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:43.931324+00:00",
+      "end_time": "2026-09-03T03:15:46.249587+00:00",
+      "latency_seconds": 2.318263,
+      "prompt_tokens": 4128,
+      "completion_tokens": 24,
+      "total_tokens": 4152,
+      "total_cost": 0.0005613,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:7",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06543-e345-72e2-8b63-b96810c3b371",
+      "parent_run_id": "01a06543-e343-7d40-a3b9-2a1d039b8586",
+      "name": "store_context",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:15:43.045150+00:00",
+      "end_time": "2026-09-03T03:15:43.927945+00:00",
+      "latency_seconds": 0.882795,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-e343-7d40-a3b9-2a1d039b8586",
+      "parent_run_id": "01a06543-a58b-72f2-8dfd-4095bc6bdeda",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:43.043448+00:00",
+      "end_time": "2026-09-03T03:15:43.929744+00:00",
+      "latency_seconds": 0.886296,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:6",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06543-dea5-7881-ad0c-fd9dc7940889",
+      "parent_run_id": "01a06543-dea3-7a12-934d-c235f6dfdcf7",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:15:41.861404+00:00",
+      "end_time": "2026-09-03T03:15:44.624240+00:00",
+      "latency_seconds": 2.762836,
+      "prompt_tokens": 484,
+      "completion_tokens": 445,
+      "total_tokens": 929,
+      "total_cost": 0.0012577,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06543-dea3-7a12-934d-c235f6dfdcf7",
+      "parent_run_id": "01a06543-dea1-7eb2-a5c4-54281e270c56",
+      "name": "think",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:15:41.859708+00:00",
+      "end_time": "2026-09-03T03:15:44.624693+00:00",
+      "latency_seconds": 2.764985,
+      "prompt_tokens": 484,
+      "completion_tokens": 445,
+      "total_tokens": 929,
+      "total_cost": 0.0012577,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-dea1-7eb2-a5c4-54281e270c56",
+      "parent_run_id": "01a06543-a59d-7d91-90d2-994d143eca46",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:41.857570+00:00",
+      "end_time": "2026-09-03T03:15:44.625611+00:00",
+      "latency_seconds": 2.768041,
+      "prompt_tokens": 484,
+      "completion_tokens": 445,
+      "total_tokens": 929,
+      "total_cost": 0.0012577,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "graph:step:10"
+      ]
+    },
+    {
+      "run_id": "01a06543-dba9-7e31-a7ea-527386365000",
+      "parent_run_id": "01a06543-db94-74d2-97a8-d24ca7545e50",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:15:41.097963+00:00",
+      "end_time": "2026-09-03T03:15:44.612624+00:00",
+      "latency_seconds": 3.514661,
+      "prompt_tokens": 3633,
+      "completion_tokens": 734,
+      "total_tokens": 4367,
+      "total_cost": 0.0029249,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-db94-74d2-97a8-d24ca7545e50",
+      "parent_run_id": "01a06543-a588-7350-8c77-6a2f09e724dd",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:41.076477+00:00",
+      "end_time": "2026-09-03T03:15:44.614216+00:00",
+      "latency_seconds": 3.537739,
+      "prompt_tokens": 3633,
+      "completion_tokens": 734,
+      "total_tokens": 4367,
+      "total_cost": 0.0029249,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:7",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06543-d724-76b1-9d62-c544293e4fbf",
+      "parent_run_id": "01a06543-d714-72e0-94e4-dc7a5df23e70",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:15:39.940097+00:00",
+      "end_time": "2026-09-03T03:15:41.853942+00:00",
+      "latency_seconds": 1.913845,
+      "prompt_tokens": 4412,
+      "completion_tokens": 307,
+      "total_tokens": 4719,
+      "total_cost": 0.00188212,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-d714-72e0-94e4-dc7a5df23e70",
+      "parent_run_id": "01a06543-a59d-7d91-90d2-994d143eca46",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:39.924249+00:00",
+      "end_time": "2026-09-03T03:15:41.855804+00:00",
+      "latency_seconds": 1.931555,
+      "prompt_tokens": 4412,
+      "completion_tokens": 307,
+      "total_tokens": 4719,
+      "total_cost": 0.00188212,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:9",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06543-d6f6-7560-b696-2f77270d29b8",
+      "parent_run_id": "01a06543-d6f4-7f63-9745-9d8a4627a1fd",
+      "name": "file_reader",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:15:39.894149+00:00",
+      "end_time": "2026-09-03T03:15:39.921679+00:00",
+      "latency_seconds": 0.02753,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-d6f4-7f63-9745-9d8a4627a1fd",
+      "parent_run_id": "01a06543-a59d-7d91-90d2-994d143eca46",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:39.892848+00:00",
+      "end_time": "2026-09-03T03:15:39.923042+00:00",
+      "latency_seconds": 0.030194,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:8",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06543-d2ee-73f3-bbe9-c5499e2c40c5",
+      "parent_run_id": "01a06543-d2dd-7360-b429-eb5d252ccf41",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:15:38.862385+00:00",
+      "end_time": "2026-09-03T03:15:43.040352+00:00",
+      "latency_seconds": 4.177967,
+      "prompt_tokens": 3200,
+      "completion_tokens": 933,
+      "total_tokens": 4133,
+      "total_cost": 0.0032925,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-d2dd-7360-b429-eb5d252ccf41",
+      "parent_run_id": "01a06543-a58b-72f2-8dfd-4095bc6bdeda",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:38.845497+00:00",
+      "end_time": "2026-09-03T03:15:43.042235+00:00",
+      "latency_seconds": 4.196738,
+      "prompt_tokens": 3200,
+      "completion_tokens": 933,
+      "total_tokens": 4133,
+      "total_cost": 0.0032925,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:5",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06543-d252-7bf3-8094-d5b5735a1daa",
+      "parent_run_id": "01a06543-d16f-7ba0-9a7a-7b0696a64c50",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:15:38.706313+00:00",
+      "end_time": "2026-09-03T03:15:45.324987+00:00",
+      "latency_seconds": 6.618674,
+      "prompt_tokens": 833,
+      "completion_tokens": 1500,
+      "total_tokens": 2333,
+      "total_cost": 0.0039999,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06543-d189-7353-99c6-0ccac798251e",
+      "parent_run_id": "01a06543-d178-7710-806c-a1017315cdd9",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:15:38.505730+00:00",
+      "end_time": "2026-09-03T03:15:39.890568+00:00",
+      "latency_seconds": 1.384838,
+      "prompt_tokens": 4336,
+      "completion_tokens": 184,
+      "total_tokens": 4520,
+      "total_cost": 0.00154696,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-d178-7710-806c-a1017315cdd9",
+      "parent_run_id": "01a06543-a59d-7d91-90d2-994d143eca46",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:38.488229+00:00",
+      "end_time": "2026-09-03T03:15:39.892018+00:00",
+      "latency_seconds": 1.403789,
+      "prompt_tokens": 4336,
+      "completion_tokens": 184,
+      "total_tokens": 4520,
+      "total_cost": 0.00154696,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:7",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06543-d16f-7ba0-9a7a-7b0696a64c50",
+      "parent_run_id": "01a06543-d16d-74b1-9b44-941fc43a0d94",
+      "name": "summarize_context",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:15:38.479097+00:00",
+      "end_time": "2026-09-03T03:15:45.888757+00:00",
+      "latency_seconds": 7.40966,
+      "prompt_tokens": 833,
+      "completion_tokens": 1500,
+      "total_tokens": 2333,
+      "total_cost": 0.0039999,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-d16d-74b1-9b44-941fc43a0d94",
+      "parent_run_id": "01a06543-a57f-72c2-8dca-4959df90652a",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:38.477402+00:00",
+      "end_time": "2026-09-03T03:15:45.889743+00:00",
+      "latency_seconds": 7.412341,
+      "prompt_tokens": 833,
+      "completion_tokens": 1500,
+      "total_tokens": 2333,
+      "total_cost": 0.0039999,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:8",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06543-ce74-72c0-a1a0-3339ef362ade",
+      "parent_run_id": "01a06543-ce60-7992-9847-a29cec74a078",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:15:37.716939+00:00",
+      "end_time": "2026-09-03T03:15:38.473922+00:00",
+      "latency_seconds": 0.756983,
+      "prompt_tokens": 4120,
+      "completion_tokens": 38,
+      "total_tokens": 4158,
+      "total_cost": 0.00110015,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-ce60-7992-9847-a29cec74a078",
+      "parent_run_id": "01a06543-a57f-72c2-8dca-4959df90652a",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:37.697015+00:00",
+      "end_time": "2026-09-03T03:15:38.475882+00:00",
+      "latency_seconds": 0.778867,
+      "prompt_tokens": 4120,
+      "completion_tokens": 38,
+      "total_tokens": 4158,
+      "total_cost": 0.00110015,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:7",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06543-cdb1-7fe0-9fe0-f7e0e266b3f7",
+      "parent_run_id": "01a06543-ccbd-7a13-9853-36a350c0c017",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:15:37.521180+00:00",
+      "end_time": "2026-09-03T03:15:40.491351+00:00",
+      "latency_seconds": 2.970171,
+      "prompt_tokens": 231,
+      "completion_tokens": 529,
+      "total_tokens": 760,
+      "total_cost": 0.0013918,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06543-ccbd-7a13-9853-36a350c0c017",
+      "parent_run_id": "01a06543-ccbb-77a2-98a0-2f7c51763687",
+      "name": "summarize_context",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:15:37.277058+00:00",
+      "end_time": "2026-09-03T03:15:41.073582+00:00",
+      "latency_seconds": 3.796524,
+      "prompt_tokens": 231,
+      "completion_tokens": 529,
+      "total_tokens": 760,
+      "total_cost": 0.0013918,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-ccbb-77a2-98a0-2f7c51763687",
+      "parent_run_id": "01a06543-a588-7350-8c77-6a2f09e724dd",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:37.275411+00:00",
+      "end_time": "2026-09-03T03:15:41.075102+00:00",
+      "latency_seconds": 3.799691,
+      "prompt_tokens": 231,
+      "completion_tokens": 529,
+      "total_tokens": 760,
+      "total_cost": 0.0013918,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:6",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06543-cc3d-7cf2-af35-df0d2675fc4a",
+      "parent_run_id": "01a06543-cc3b-7302-8060-76137e6a9ee3",
+      "name": "code_executor",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:15:37.149579+00:00",
+      "end_time": "2026-09-03T03:15:38.486626+00:00",
+      "latency_seconds": 1.337047,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-cc3b-7302-8060-76137e6a9ee3",
+      "parent_run_id": "01a06543-a59d-7d91-90d2-994d143eca46",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:37.147954+00:00",
+      "end_time": "2026-09-03T03:15:38.487460+00:00",
+      "latency_seconds": 1.339506,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:6",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06543-cb06-73e0-bac1-e7e781717c60",
+      "parent_run_id": "01a06543-cb04-7422-a3cb-3e6d1e1c3135",
+      "name": "store_context",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:15:36.838596+00:00",
+      "end_time": "2026-09-03T03:15:37.694811+00:00",
+      "latency_seconds": 0.856215,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-cb04-7422-a3cb-3e6d1e1c3135",
+      "parent_run_id": "01a06543-a57f-72c2-8dca-4959df90652a",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:36.836955+00:00",
+      "end_time": "2026-09-03T03:15:37.696167+00:00",
+      "latency_seconds": 0.859212,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:6",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06543-c966-7e63-8ec0-08643ee3627b",
+      "parent_run_id": "01a06543-c94f-7043-8150-3345527ee966",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:15:36.422946+00:00",
+      "end_time": "2026-09-03T03:15:37.272661+00:00",
+      "latency_seconds": 0.849715,
+      "prompt_tokens": 3440,
+      "completion_tokens": 64,
+      "total_tokens": 3504,
+      "total_cost": 0.00060583,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-c94f-7043-8150-3345527ee966",
+      "parent_run_id": "01a06543-a588-7350-8c77-6a2f09e724dd",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:36.399387+00:00",
+      "end_time": "2026-09-03T03:15:37.274192+00:00",
+      "latency_seconds": 0.874805,
+      "prompt_tokens": 3440,
+      "completion_tokens": 64,
+      "total_tokens": 3504,
+      "total_cost": 0.00060583,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:5",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06543-c5c7-79e3-99f1-faf0de1da7cf",
+      "parent_run_id": "01a06543-c5c5-7221-bed6-e1ce37175002",
+      "name": "store_context",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:15:35.495912+00:00",
+      "end_time": "2026-09-03T03:15:36.396048+00:00",
+      "latency_seconds": 0.900136,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-c5c5-7221-bed6-e1ce37175002",
+      "parent_run_id": "01a06543-a588-7350-8c77-6a2f09e724dd",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:35.493727+00:00",
+      "end_time": "2026-09-03T03:15:36.397926+00:00",
+      "latency_seconds": 0.904199,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:4",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06543-c3fd-75c0-b834-e673edb51a1c",
+      "parent_run_id": "01a06543-c3fb-7900-96c1-5420c9fccbc8",
+      "name": "tavily_search",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:15:35.037740+00:00",
+      "end_time": "2026-09-03T03:15:38.843551+00:00",
+      "latency_seconds": 3.805811,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-c3fb-7900-96c1-5420c9fccbc8",
+      "parent_run_id": "01a06543-a58b-72f2-8dfd-4095bc6bdeda",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:35.035875+00:00",
+      "end_time": "2026-09-03T03:15:38.844649+00:00",
+      "latency_seconds": 3.808774,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:4",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06543-c083-77c2-8cb4-52fc7a5d5d2b",
+      "parent_run_id": "01a06543-c06c-76c1-bb63-8b5b5ac725eb",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:15:34.147222+00:00",
+      "end_time": "2026-09-03T03:15:37.145486+00:00",
+      "latency_seconds": 2.998264,
+      "prompt_tokens": 3314,
+      "completion_tokens": 720,
+      "total_tokens": 4034,
+      "total_cost": 0.00196476,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-c06c-76c1-bb63-8b5b5ac725eb",
+      "parent_run_id": "01a06543-a59d-7d91-90d2-994d143eca46",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:34.124816+00:00",
+      "end_time": "2026-09-03T03:15:37.146807+00:00",
+      "latency_seconds": 3.021991,
+      "prompt_tokens": 3314,
+      "completion_tokens": 720,
+      "total_tokens": 4034,
+      "total_cost": 0.00196476,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:5",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06543-bb06-7b93-a1f7-fa307c09cda2",
+      "parent_run_id": "01a06543-baf5-7a22-b428-19681f7bdbdf",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:15:32.742338+00:00",
+      "end_time": "2026-09-03T03:15:36.834259+00:00",
+      "latency_seconds": 4.091921,
+      "prompt_tokens": 3197,
+      "completion_tokens": 899,
+      "total_tokens": 4096,
+      "total_cost": 0.00276056,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-baf5-7a22-b428-19681f7bdbdf",
+      "parent_run_id": "01a06543-a57f-72c2-8dca-4959df90652a",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:32.725671+00:00",
+      "end_time": "2026-09-03T03:15:36.835776+00:00",
+      "latency_seconds": 4.110105,
+      "prompt_tokens": 3197,
+      "completion_tokens": 899,
+      "total_tokens": 4096,
+      "total_cost": 0.00276056,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:5",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06543-b795-7f81-a5e4-7ca1ec16f1db",
+      "parent_run_id": "01a06543-b794-76d1-8e3b-a8de46e0832f",
+      "name": "yfinance_data",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:15:31.862020+00:00",
+      "end_time": "2026-09-03T03:15:34.121429+00:00",
+      "latency_seconds": 2.259409,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-b794-76d1-8e3b-a8de46e0832f",
+      "parent_run_id": "01a06543-a59d-7d91-90d2-994d143eca46",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:31.860469+00:00",
+      "end_time": "2026-09-03T03:15:34.123361+00:00",
+      "latency_seconds": 2.262892,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:4",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06543-b6b0-7292-a4d8-efd57225cccd",
+      "parent_run_id": "01a06543-b6af-7bb1-9c5a-45679fefcc45",
+      "name": "arxiv_search",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:15:31.632714+00:00",
+      "end_time": "2026-09-03T03:19:31.599404+00:00",
+      "latency_seconds": 239.96669,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-b6af-7bb1-9c5a-45679fefcc45",
+      "parent_run_id": "01a06543-b6ae-7e82-9288-75a0c1769908",
+      "name": "handle_tool_errors.wrap_tool_call",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:31.631992+00:00",
+      "end_time": "2026-09-03T03:19:31.603245+00:00",
+      "latency_seconds": 239.971253,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": []
+    },
+    {
+      "run_id": "01a06543-b6ae-7e82-9288-75a0c1769908",
+      "parent_run_id": "01a06543-a564-7352-855b-6354212cee14",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:31.630521+00:00",
+      "end_time": "2026-09-03T03:19:31.604405+00:00",
+      "latency_seconds": 239.973884,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:4",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06543-b62e-7631-ab14-967be92b5ff8",
+      "parent_run_id": "01a06543-b62e-7340-9552-1eb046dcb9bb",
+      "name": "arxiv_search",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:15:31.502721+00:00",
+      "end_time": "2026-09-03T03:16:58.586592+00:00",
+      "latency_seconds": 87.083871,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-b62e-7340-9552-1eb046dcb9bb",
+      "parent_run_id": "01a06543-b62c-7c31-a560-0778b212aa72",
+      "name": "handle_tool_errors.wrap_tool_call",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:31.502130+00:00",
+      "end_time": "2026-09-03T03:16:58.590601+00:00",
+      "latency_seconds": 87.088471,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": []
+    },
+    {
+      "run_id": "01a06543-b62c-7c31-a560-0778b212aa72",
+      "parent_run_id": "01a06543-a568-7200-a603-d4b9d369d659",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:31.500881+00:00",
+      "end_time": "2026-09-03T03:16:58.591740+00:00",
+      "latency_seconds": 87.090859,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:4",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06543-b505-7391-9885-7274d04f30df",
+      "parent_run_id": "01a06543-b4f3-7c41-bd08-4994a84ef15e",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:15:31.205035+00:00",
+      "end_time": "2026-09-03T03:15:35.032425+00:00",
+      "latency_seconds": 3.82739,
+      "prompt_tokens": 2346,
+      "completion_tokens": 682,
+      "total_tokens": 3028,
+      "total_cost": 0.00217498,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-b4f3-7c41-bd08-4994a84ef15e",
+      "parent_run_id": "01a06543-a58b-72f2-8dfd-4095bc6bdeda",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:31.187935+00:00",
+      "end_time": "2026-09-03T03:15:35.034331+00:00",
+      "latency_seconds": 3.846396,
+      "prompt_tokens": 2346,
+      "completion_tokens": 682,
+      "total_tokens": 3028,
+      "total_cost": 0.00217498,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "graph:step:3"
+      ]
+    },
+    {
+      "run_id": "01a06543-b427-78b1-ad7b-249c6700e316",
+      "parent_run_id": "01a06543-b425-70c0-a8a3-0856522ada29",
+      "name": "get_context_index",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:15:30.983404+00:00",
+      "end_time": "2026-09-03T03:15:31.184751+00:00",
+      "latency_seconds": 0.201347,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-b425-70c0-a8a3-0856522ada29",
+      "parent_run_id": "01a06543-a58b-72f2-8dfd-4095bc6bdeda",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:30.981992+00:00",
+      "end_time": "2026-09-03T03:15:31.186543+00:00",
+      "latency_seconds": 0.204551,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:2",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06543-b3cd-7411-911e-71484d252488",
+      "parent_run_id": "01a06543-b3b8-7e71-ac1d-0079622ed0b4",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:15:30.893340+00:00",
+      "end_time": "2026-09-03T03:15:31.858153+00:00",
+      "latency_seconds": 0.964813,
+      "prompt_tokens": 3147,
+      "completion_tokens": 95,
+      "total_tokens": 3242,
+      "total_cost": 0.00097262,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-b3b8-7e71-ac1d-0079622ed0b4",
+      "parent_run_id": "01a06543-a59d-7d91-90d2-994d143eca46",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:30.872743+00:00",
+      "end_time": "2026-09-03T03:15:31.859387+00:00",
+      "latency_seconds": 0.986644,
+      "prompt_tokens": 3147,
+      "completion_tokens": 95,
+      "total_tokens": 3242,
+      "total_cost": 0.00097262,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "graph:step:3"
+      ]
+    },
+    {
+      "run_id": "01a06543-b31f-7e30-a346-f983e538eb0f",
+      "parent_run_id": "01a06543-b30b-7b60-b317-fce365ff91e4",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:15:30.719565+00:00",
+      "end_time": "2026-09-03T03:15:31.629018+00:00",
+      "latency_seconds": 0.909453,
+      "prompt_tokens": 2740,
+      "completion_tokens": 91,
+      "total_tokens": 2831,
+      "total_cost": 0.0010495,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-b30b-7b60-b317-fce365ff91e4",
+      "parent_run_id": "01a06543-a564-7352-855b-6354212cee14",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:30.699093+00:00",
+      "end_time": "2026-09-03T03:15:31.629813+00:00",
+      "latency_seconds": 0.93072,
+      "prompt_tokens": 2740,
+      "completion_tokens": 91,
+      "total_tokens": 2831,
+      "total_cost": 0.0010495,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "graph:step:3"
+      ]
+    },
+    {
+      "run_id": "01a06543-b2e7-7b41-ac60-57f628a8049b",
+      "parent_run_id": "01a06543-b2e5-77e0-a5a7-cebc352180a1",
+      "name": "get_context_index",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:15:30.663259+00:00",
+      "end_time": "2026-09-03T03:15:30.870268+00:00",
+      "latency_seconds": 0.207009,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-b2e5-77e0-a5a7-cebc352180a1",
+      "parent_run_id": "01a06543-a59d-7d91-90d2-994d143eca46",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:30.661680+00:00",
+      "end_time": "2026-09-03T03:15:30.871478+00:00",
+      "latency_seconds": 0.209798,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:2",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06543-b282-7db1-8bed-1d72fb7c5f01",
+      "parent_run_id": "01a06543-b26e-7410-aba4-6b6bfc2a1392",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:15:30.562640+00:00",
+      "end_time": "2026-09-03T03:15:31.498772+00:00",
+      "latency_seconds": 0.936132,
+      "prompt_tokens": 2742,
+      "completion_tokens": 89,
+      "total_tokens": 2831,
+      "total_cost": 0.0010451,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-b26e-7410-aba4-6b6bfc2a1392",
+      "parent_run_id": "01a06543-a568-7200-a603-d4b9d369d659",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:30.542608+00:00",
+      "end_time": "2026-09-03T03:15:31.500073+00:00",
+      "latency_seconds": 0.957465,
+      "prompt_tokens": 2742,
+      "completion_tokens": 89,
+      "total_tokens": 2831,
+      "total_cost": 0.0010451,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "graph:step:3"
+      ]
+    },
+    {
+      "run_id": "01a06543-b221-7d10-820d-1deee1082ba8",
+      "parent_run_id": "01a06543-b21c-7043-97b7-b8524856d86c",
+      "name": "tavily_search",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:15:30.465296+00:00",
+      "end_time": "2026-09-03T03:15:32.722365+00:00",
+      "latency_seconds": 2.257069,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-b21f-7613-8875-401f5d29b8f2",
+      "parent_run_id": "01a06543-b21e-7340-b9be-3206da7766c5",
+      "name": "get_context_index",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:15:30.463351+00:00",
+      "end_time": "2026-09-03T03:15:30.697410+00:00",
+      "latency_seconds": 0.234059,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-b21e-7340-b9be-3206da7766c5",
+      "parent_run_id": "01a06543-b21d-7131-8d79-9942c895682a",
+      "name": "handle_tool_errors.wrap_tool_call",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:30.462719+00:00",
+      "end_time": "2026-09-03T03:15:30.697726+00:00",
+      "latency_seconds": 0.235007,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": []
+    },
+    {
+      "run_id": "01a06543-b21d-7131-8d79-9942c895682a",
+      "parent_run_id": "01a06543-a564-7352-855b-6354212cee14",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:30.461410+00:00",
+      "end_time": "2026-09-03T03:15:30.698419+00:00",
+      "latency_seconds": 0.237009,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:2",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06543-b21c-7043-97b7-b8524856d86c",
+      "parent_run_id": "01a06543-a57f-72c2-8dca-4959df90652a",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:30.460416+00:00",
+      "end_time": "2026-09-03T03:15:32.724277+00:00",
+      "latency_seconds": 2.263861,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:4",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06543-b165-7910-bc95-81af6eb64767",
+      "parent_run_id": "01a06543-b164-7693-b4f9-53543dc44736",
+      "name": "get_context_index",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:15:30.277835+00:00",
+      "end_time": "2026-09-03T03:15:30.539029+00:00",
+      "latency_seconds": 0.261194,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-b164-7693-b4f9-53543dc44736",
+      "parent_run_id": "01a06543-b162-7f83-848f-c95cc3935fec",
+      "name": "handle_tool_errors.wrap_tool_call",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:30.276754+00:00",
+      "end_time": "2026-09-03T03:15:30.539828+00:00",
+      "latency_seconds": 0.263074,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": []
+    },
+    {
+      "run_id": "01a06543-b162-7f83-848f-c95cc3935fec",
+      "parent_run_id": "01a06543-a568-7200-a603-d4b9d369d659",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:30.274981+00:00",
+      "end_time": "2026-09-03T03:15:30.541224+00:00",
+      "latency_seconds": 0.266243,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:2",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06543-af5c-7c40-a1fb-139a8309589c",
+      "parent_run_id": "01a06543-af44-7972-b1b0-1c357bf61657",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:15:29.756474+00:00",
+      "end_time": "2026-09-03T03:15:35.490543+00:00",
+      "latency_seconds": 5.734069,
+      "prompt_tokens": 3149,
+      "completion_tokens": 876,
+      "total_tokens": 4025,
+      "total_cost": 0.0031347,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-af44-7972-b1b0-1c357bf61657",
+      "parent_run_id": "01a06543-a588-7350-8c77-6a2f09e724dd",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:29.733005+00:00",
+      "end_time": "2026-09-03T03:15:35.492171+00:00",
+      "latency_seconds": 5.759166,
+      "prompt_tokens": 3149,
+      "completion_tokens": 876,
+      "total_tokens": 4025,
+      "total_cost": 0.0031347,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "graph:step:3"
+      ]
+    },
+    {
+      "run_id": "01a06543-aef9-7e33-846b-4d3fc1e7e4b9",
+      "parent_run_id": "01a06543-aee4-7690-ad50-349c05ccb4a5",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:15:29.657802+00:00",
+      "end_time": "2026-09-03T03:15:30.456086+00:00",
+      "latency_seconds": 0.798284,
+      "prompt_tokens": 2345,
+      "completion_tokens": 74,
+      "total_tokens": 2419,
+      "total_cost": 0.00046406,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-aee4-7690-ad50-349c05ccb4a5",
+      "parent_run_id": "01a06543-a57f-72c2-8dca-4959df90652a",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:29.636798+00:00",
+      "end_time": "2026-09-03T03:15:30.458666+00:00",
+      "latency_seconds": 0.821868,
+      "prompt_tokens": 2345,
+      "completion_tokens": 74,
+      "total_tokens": 2419,
+      "total_cost": 0.00046406,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "graph:step:3"
+      ]
+    },
+    {
+      "run_id": "01a06543-ae7a-7b80-8d4b-5c8744ef5127",
+      "parent_run_id": "01a06543-ae78-7d00-aa64-bed592d908ad",
+      "name": "get_context_index",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:15:29.530173+00:00",
+      "end_time": "2026-09-03T03:15:29.729816+00:00",
+      "latency_seconds": 0.199643,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-ae78-7d00-aa64-bed592d908ad",
+      "parent_run_id": "01a06543-a588-7350-8c77-6a2f09e724dd",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:29.528427+00:00",
+      "end_time": "2026-09-03T03:15:29.731503+00:00",
+      "latency_seconds": 0.203076,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:2",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06543-ae04-74d3-b2fd-69e989b8d1bb",
+      "parent_run_id": "01a06543-ae02-7b52-b1af-26bb116872c8",
+      "name": "get_context_index",
+      "run_type": "tool",
+      "start_time": "2026-09-03T03:15:29.412309+00:00",
+      "end_time": "2026-09-03T03:15:29.633372+00:00",
+      "latency_seconds": 0.221063,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-ae02-7b52-b1af-26bb116872c8",
+      "parent_run_id": "01a06543-a57f-72c2-8dca-4959df90652a",
+      "name": "tools",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:29.410746+00:00",
+      "end_time": "2026-09-03T03:15:29.635472+00:00",
+      "latency_seconds": 0.224726,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:2",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06543-a5a4-7f61-ad41-239004aed7e3",
+      "parent_run_id": "01a06543-a59d-7d91-90d2-99534ecf8703",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:15:27.268073+00:00",
+      "end_time": "2026-09-03T03:15:30.659025+00:00",
+      "latency_seconds": 3.390952,
+      "prompt_tokens": 3122,
+      "completion_tokens": 595,
+      "total_tokens": 3717,
+      "total_cost": 0.0024241,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-a59d-7d91-90d2-99534ecf8703",
+      "parent_run_id": "01a06543-a59d-7d91-90d2-994d143eca46",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:27.261948+00:00",
+      "end_time": "2026-09-03T03:15:30.660557+00:00",
+      "latency_seconds": 3.398609,
+      "prompt_tokens": 3122,
+      "completion_tokens": 595,
+      "total_tokens": 3717,
+      "total_cost": 0.0024241,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "graph:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-a59d-7d91-90d2-994d143eca46",
+      "parent_run_id": "01a06543-a558-7900-99d6-a814ffe64a5f",
+      "name": "LangGraph",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:27.261506+00:00",
+      "end_time": "2026-09-03T03:15:47.769880+00:00",
+      "latency_seconds": 20.508374,
+      "prompt_tokens": 23431,
+      "completion_tokens": 2862,
+      "total_tokens": 26293,
+      "total_cost": 0.01210908,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-a599-7150-b909-13812c2e0c0d",
+      "parent_run_id": "01a06543-a58c-7180-8850-53e1a096aae9",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:15:27.257961+00:00",
+      "end_time": "2026-09-03T03:15:29.525348+00:00",
+      "latency_seconds": 2.267387,
+      "prompt_tokens": 3124,
+      "completion_tokens": 346,
+      "total_tokens": 3470,
+      "total_cost": 0.0018022,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-a598-7002-9528-c2ad0415a7d2",
+      "parent_run_id": "01a06543-a58c-7180-8850-53fdde60958f",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:15:27.256913+00:00",
+      "end_time": "2026-09-03T03:15:30.979332+00:00",
+      "latency_seconds": 3.722419,
+      "prompt_tokens": 2321,
+      "completion_tokens": 634,
+      "total_tokens": 2955,
+      "total_cost": 0.0022813,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-a58c-7180-8850-53fdde60958f",
+      "parent_run_id": "01a06543-a58b-72f2-8dfd-4095bc6bdeda",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:27.244814+00:00",
+      "end_time": "2026-09-03T03:15:30.980835+00:00",
+      "latency_seconds": 3.736021,
+      "prompt_tokens": 2321,
+      "completion_tokens": 634,
+      "total_tokens": 2955,
+      "total_cost": 0.0022813,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "graph:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-a58c-7180-8850-53e1a096aae9",
+      "parent_run_id": "01a06543-a588-7350-8c77-6a2f09e724dd",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:27.244185+00:00",
+      "end_time": "2026-09-03T03:15:29.527098+00:00",
+      "latency_seconds": 2.282913,
+      "prompt_tokens": 3124,
+      "completion_tokens": 346,
+      "total_tokens": 3470,
+      "total_cost": 0.0018022,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "graph:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-a58b-72f2-8dfd-4095bc6bdeda",
+      "parent_run_id": "01a06543-a557-7581-845f-4d55cbacf146",
+      "name": "LangGraph",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:27.243686+00:00",
+      "end_time": "2026-09-03T03:16:20.595121+00:00",
+      "latency_seconds": 53.351435,
+      "prompt_tokens": 42131,
+      "completion_tokens": 7638,
+      "total_tokens": 49769,
+      "total_cost": 0.0244146,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-a588-7350-8c77-6a2f09e724dd",
+      "parent_run_id": "01a06543-a558-7900-99d6-a80f00a249fb",
+      "name": "LangGraph",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:27.240097+00:00",
+      "end_time": "2026-09-03T03:15:55.383375+00:00",
+      "latency_seconds": 28.143278,
+      "prompt_tokens": 24020,
+      "completion_tokens": 4315,
+      "total_tokens": 28335,
+      "total_cost": 0.01533535,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-a585-7f60-a4b9-aafa5c5dae75",
+      "parent_run_id": "01a06543-a57f-72c2-8dca-49669e0ff3e7",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:15:27.237702+00:00",
+      "end_time": "2026-09-03T03:15:29.408039+00:00",
+      "latency_seconds": 2.170337,
+      "prompt_tokens": 2320,
+      "completion_tokens": 289,
+      "total_tokens": 2609,
+      "total_cost": 0.0014185,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-a57f-72c2-8dca-49669e0ff3e7",
+      "parent_run_id": "01a06543-a57f-72c2-8dca-4959df90652a",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:27.231964+00:00",
+      "end_time": "2026-09-03T03:15:29.409619+00:00",
+      "latency_seconds": 2.177655,
+      "prompt_tokens": 2320,
+      "completion_tokens": 289,
+      "total_tokens": 2609,
+      "total_cost": 0.0014185,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "graph:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-a57f-72c2-8dca-4959df90652a",
+      "parent_run_id": "01a06543-a556-7342-a11c-f184b21f9cf1",
+      "name": "LangGraph",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:27.231325+00:00",
+      "end_time": "2026-09-03T03:16:31.030330+00:00",
+      "latency_seconds": 63.799005,
+      "prompt_tokens": 62294,
+      "completion_tokens": 9440,
+      "total_tokens": 71734,
+      "total_cost": 0.03504113,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-a579-72c2-85b4-5cf6a559ba13",
+      "parent_run_id": "01a06543-a56f-7d70-ad64-1f5fdfb25b95",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:15:27.225143+00:00",
+      "end_time": "2026-09-03T03:15:30.272435+00:00",
+      "latency_seconds": 3.047292,
+      "prompt_tokens": 2717,
+      "completion_tokens": 486,
+      "total_tokens": 3203,
+      "total_cost": 0.0020301,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-a572-7502-a49e-12b378b61781",
+      "parent_run_id": "01a06543-a568-7200-a603-d4cdbafad034",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:15:27.218079+00:00",
+      "end_time": "2026-09-03T03:15:30.457420+00:00",
+      "latency_seconds": 3.239341,
+      "prompt_tokens": 2715,
+      "completion_tokens": 414,
+      "total_tokens": 3129,
+      "total_cost": 0.0018495,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-a56f-7d70-ad64-1f5fdfb25b95",
+      "parent_run_id": "01a06543-a568-7200-a603-d4b9d369d659",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:27.215449+00:00",
+      "end_time": "2026-09-03T03:15:30.273940+00:00",
+      "latency_seconds": 3.058491,
+      "prompt_tokens": 2717,
+      "completion_tokens": 486,
+      "total_tokens": 3203,
+      "total_cost": 0.0020301,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "graph:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-a568-7200-a603-d4cdbafad034",
+      "parent_run_id": "01a06543-a564-7352-855b-6354212cee14",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:27.208929+00:00",
+      "end_time": "2026-09-03T03:15:30.459751+00:00",
+      "latency_seconds": 3.250822,
+      "prompt_tokens": 2715,
+      "completion_tokens": 414,
+      "total_tokens": 3129,
+      "total_cost": 0.0018495,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "graph:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-a568-7200-a603-d4b9d369d659",
+      "parent_run_id": "01a06543-a55b-7fb1-b9e9-8502fe945096",
+      "name": "LangGraph",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:27.208480+00:00",
+      "end_time": "2026-09-03T03:19:27.089148+00:00",
+      "latency_seconds": 239.880668,
+      "prompt_tokens": 72578,
+      "completion_tokens": 14100,
+      "total_tokens": 86678,
+      "total_cost": 0.0468687,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-a564-7352-855b-6354212cee14",
+      "parent_run_id": "01a06543-a559-7cf3-b006-9656f083cfd1",
+      "name": "LangGraph",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:27.204851+00:00",
+      "end_time": "2026-09-03T03:21:48.681987+00:00",
+      "latency_seconds": 381.477136,
+      "prompt_tokens": 57325,
+      "completion_tokens": 11263,
+      "total_tokens": 68588,
+      "total_cost": 0.03937099,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-a55b-7fb1-b9e9-8502fe945096",
+      "parent_run_id": "01a06543-92e3-74e2-9279-0bfe69cc1614",
+      "name": "domain_expert",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:27.195584+00:00",
+      "end_time": "2026-09-03T03:19:27.090781+00:00",
+      "latency_seconds": 239.895197,
+      "prompt_tokens": 72578,
+      "completion_tokens": 14100,
+      "total_tokens": 86678,
+      "total_cost": 0.0468687,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "graph:step:3"
+      ]
+    },
+    {
+      "run_id": "01a06543-a559-7cf3-b006-9656f083cfd1",
+      "parent_run_id": "01a06543-92e3-74e2-9279-0bfe69cc1614",
+      "name": "domain_expert",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:27.193772+00:00",
+      "end_time": "2026-09-03T03:21:48.683057+00:00",
+      "latency_seconds": 381.489285,
+      "prompt_tokens": 57325,
+      "completion_tokens": 11263,
+      "total_tokens": 68588,
+      "total_cost": 0.03937099,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "graph:step:3"
+      ]
+    },
+    {
+      "run_id": "01a06543-a558-7900-99d6-a814ffe64a5f",
+      "parent_run_id": "01a06543-92e3-74e2-9279-0bfe69cc1614",
+      "name": "data_analyst",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:27.192982+00:00",
+      "end_time": "2026-09-03T03:15:47.773703+00:00",
+      "latency_seconds": 20.580721,
+      "prompt_tokens": 23431,
+      "completion_tokens": 2862,
+      "total_tokens": 26293,
+      "total_cost": 0.01210908,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "graph:step:3"
+      ]
+    },
+    {
+      "run_id": "01a06543-a558-7900-99d6-a80f00a249fb",
+      "parent_run_id": "01a06543-92e3-74e2-9279-0bfe69cc1614",
+      "name": "data_analyst",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:27.192052+00:00",
+      "end_time": "2026-09-03T03:15:55.387955+00:00",
+      "latency_seconds": 28.195903,
+      "prompt_tokens": 24020,
+      "completion_tokens": 4315,
+      "total_tokens": 28335,
+      "total_cost": 0.01533535,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "graph:step:3"
+      ]
+    },
+    {
+      "run_id": "01a06543-a557-7581-845f-4d55cbacf146",
+      "parent_run_id": "01a06543-92e3-74e2-9279-0bfe69cc1614",
+      "name": "web_researcher",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:27.191637+00:00",
+      "end_time": "2026-09-03T03:16:20.600095+00:00",
+      "latency_seconds": 53.408458,
+      "prompt_tokens": 42131,
+      "completion_tokens": 7638,
+      "total_tokens": 49769,
+      "total_cost": 0.0244146,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "graph:step:3"
+      ]
+    },
+    {
+      "run_id": "01a06543-a556-7342-a11c-f184b21f9cf1",
+      "parent_run_id": "01a06543-92e3-74e2-9279-0bfe69cc1614",
+      "name": "web_researcher",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:27.190668+00:00",
+      "end_time": "2026-09-03T03:16:31.036017+00:00",
+      "latency_seconds": 63.845349,
+      "prompt_tokens": 62294,
+      "completion_tokens": 9440,
+      "total_tokens": 71734,
+      "total_cost": 0.03504113,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "graph:step:3"
+      ]
+    },
+    {
+      "run_id": "01a06543-a554-7391-aee5-fde8e80524d9",
+      "parent_run_id": "01a06543-a554-7391-aee5-fddf93b7e2c2",
+      "name": "route_workstreams",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:27.188932+00:00",
+      "end_time": "2026-09-03T03:15:27.189264+00:00",
+      "latency_seconds": 0.000332,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "seq:step:3",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06543-a554-7391-aee5-fddf93b7e2c2",
+      "parent_run_id": "01a06543-92e3-74e2-9279-0bfe69cc1614",
+      "name": "router",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:27.188504+00:00",
+      "end_time": "2026-09-03T03:15:27.189628+00:00",
+      "latency_seconds": 0.001124,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "graph:step:2",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06543-a553-7010-8137-afe708194023",
+      "parent_run_id": "01a06543-92e5-70a3-9d0e-37c759e48ce2",
+      "name": "check_sufficient",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:27.187386+00:00",
+      "end_time": "2026-09-03T03:15:27.187814+00:00",
+      "latency_seconds": 0.000428,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cost": null,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "seq:step:3",
+        "max_iter_1"
+      ]
+    },
+    {
+      "run_id": "01a06543-9477-79c2-83ec-dbd52c058717",
+      "parent_run_id": "01a06543-9472-79f3-8070-6cb0e945d0b2",
+      "name": "ChatGoogleGenerativeAI",
+      "run_type": "llm",
+      "start_time": "2026-09-03T03:15:22.871041+00:00",
+      "end_time": "2026-09-03T03:15:27.181814+00:00",
+      "latency_seconds": 4.310773,
+      "prompt_tokens": 1258,
+      "completion_tokens": 863,
+      "total_tokens": 2121,
+      "total_cost": 0.00232781,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-9472-79f3-8070-6cb0e945d0b2",
+      "parent_run_id": "01a06543-9472-79f3-8070-6ca0a2b8ac03",
+      "name": "model",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:22.866964+00:00",
+      "end_time": "2026-09-03T03:15:27.183131+00:00",
+      "latency_seconds": 4.316167,
+      "prompt_tokens": 1258,
+      "completion_tokens": 863,
+      "total_tokens": 2121,
+      "total_cost": 0.00232781,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "graph:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-9472-79f3-8070-6ca0a2b8ac03",
+      "parent_run_id": "01a06543-92e5-70a3-9d0e-37c759e48ce2",
+      "name": "LangGraph",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:22.866373+00:00",
+      "end_time": "2026-09-03T03:15:27.183938+00:00",
+      "latency_seconds": 4.317565,
+      "prompt_tokens": 1258,
+      "completion_tokens": 863,
+      "total_tokens": 2121,
+      "total_cost": 0.00232781,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "seq:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-92e5-70a3-9d0e-37c759e48ce2",
+      "parent_run_id": "01a06543-92e3-74e2-9279-0bfe69cc1614",
+      "name": "orchestrator",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:22.469254+00:00",
+      "end_time": "2026-09-03T03:15:27.187969+00:00",
+      "latency_seconds": 4.718715,
+      "prompt_tokens": 1258,
+      "completion_tokens": 863,
+      "total_tokens": 2121,
+      "total_cost": 0.00232781,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1",
+        "graph:step:1"
+      ]
+    },
+    {
+      "run_id": "01a06543-92e3-74e2-9279-0bfe69cc1614",
+      "parent_run_id": null,
+      "name": "benchmark_glp1_market_iter1",
+      "run_type": "chain",
+      "start_time": "2026-09-03T03:15:22.467435+00:00",
+      "end_time": "2026-09-03T03:22:37.792064+00:00",
+      "latency_seconds": 435.324629,
+      "prompt_tokens": 308764,
+      "completion_tokens": 60778,
+      "total_tokens": 369542,
+      "total_cost": 0.20892826,
+      "tags": [
+        "benchmark",
+        "glp1_market",
+        "max_iter_1"
+      ]
+    }
+  ]
+}

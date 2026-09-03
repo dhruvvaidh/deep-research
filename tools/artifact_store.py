@@ -47,11 +47,17 @@ def read_artifact(name: str) -> str:
         name: Filename of the artifact to read (e.g. "market_trends.md").
 
     Returns:
-        Text content of the artifact.
+        Text content of the artifact, or an error message if it does not exist.
     """
     from sandbox.artifact_manager import read_artifact as _read
     ws = get_workspace()
-    return _read(ws, name)
+    try:
+        return _read(ws, name)
+    except Exception:
+        return (
+            f"No artifact found named '{name}'. Use list_artifacts() or get_context_index() "
+            "to see the exact stored filenames before retrying."
+        )
 
 
 @tool
